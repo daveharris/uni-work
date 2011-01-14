@@ -1,0 +1,53 @@
+<ASSEMBLER_INFO>
+ <WORKING_DIR>c:\</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files\AVR Studio\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files\AVR Studio\AvrAssembler2\Appnotes\m16def.inc</FILE>
+ </INCLUDED_FILES>
+ <LABELS>
+  <RESET><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>42</LINE></RESET>
+  <main><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>66</LINE></main>
+  <setupUSART><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>385</LINE></setupUSART>
+  <SetupADC><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>480</LINE></SetupADC>
+  <StartMessage><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>520</LINE></StartMessage>
+  <loop><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>74</LINE></loop>
+  <GetStart><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>85</LINE></GetStart>
+  <getchar><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>421</LINE></getchar>
+  <moveWheels><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>95</LINE></moveWheels>
+  <doMeasurements><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>232</LINE></doMeasurements>
+  <moveSampleWheel><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>129</LINE></moveSampleWheel>
+  <moveFilterWheel><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>150</LINE></moveFilterWheel>
+  <checkFilterWheelPosition><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>115</LINE></checkFilterWheelPosition>
+  <checkSampleWheelPosition><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>123</LINE></checkSampleWheelPosition>
+  <getNextState><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>174</LINE></getNextState>
+  <state1><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>190</LINE></state1>
+  <state2><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>194</LINE></state2>
+  <state3><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>198</LINE></state3>
+  <state0><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>202</LINE></state0>
+  <doDelay><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>206</LINE></doDelay>
+  <delay><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>211</LINE></delay>
+  <loopA><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>214</LINE></loopA>
+  <loopB><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>217</LINE></loopB>
+  <measureRedBlank><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>287</LINE></measureRedBlank>
+  <measureRedSample><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>282</LINE></measureRedSample>
+  <measureGreenBlank><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>292</LINE></measureGreenBlank>
+  <measureGreenSample><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>297</LINE></measureGreenSample>
+  <measureBlueBlank><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>272</LINE></measureBlueBlank>
+  <measureBlueSample><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>277</LINE></measureBlueSample>
+  <calculate><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>306</LINE></calculate>
+  <transmit><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>330</LINE></transmit>
+  <readADC><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>495</LINE></readADC>
+  <divide><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>574</LINE></divide>
+  <multiply><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>564</LINE></multiply>
+  <sendChar><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>405</LINE></sendChar>
+  <SendByte><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>437</LINE></SendByte>
+  <Nibble2ASCII><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>462</LINE></Nibble2ASCII>
+  <isHex><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>471</LINE></isHex>
+  <readadcloop><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>506</LINE></readadcloop>
+  <d8u_1><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>579</LINE></d8u_1>
+  <d8u_2><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>585</LINE></d8u_2>
+  <d8u_3><FILE>D:\Daves\Homework\PHYS340 DE2\david de2.asm</FILE><LINE>592</LINE></d8u_3>
+ </LABELS>
+</ASSEMBLER_INFO>

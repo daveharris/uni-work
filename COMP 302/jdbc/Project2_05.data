@@ -1,0 +1,270 @@
+
+
+CREATE TABLE customer (
+    customerid integer DEFAULT 0 NOT NULL,
+    l_name character(15) NOT NULL,
+    f_name character(15),
+    city character(15),
+    CONSTRAINT customer_city CHECK ((((city = 'Wellington'::bpchar) OR (city = 'Upper Hutt'::bpchar)) OR (city = 'Lower Hutt'::bpchar))),
+    CONSTRAINT customer_customerid CHECK ((customerid >= 0))
+);
+
+
+
+CREATE TABLE book (
+    isbn integer DEFAULT 0 NOT NULL,
+    title character(60) NOT NULL,
+    edition_no smallint DEFAULT 1,
+    numofcop smallint DEFAULT 1 NOT NULL,
+    numleft smallint DEFAULT 1 NOT NULL,
+    CONSTRAINT book_edition_no CHECK ((edition_no > 0)),
+    CONSTRAINT book_isbn CHECK ((isbn >= 0))
+);
+
+
+
+CREATE TABLE author (
+    authorid integer DEFAULT 0 NOT NULL,
+    name character(15),
+    surname character(15) NOT NULL,
+    CONSTRAINT book_authorid CHECK ((authorid >= 0))
+);
+
+
+
+CREATE TABLE book_author (
+    isbn integer DEFAULT 0 NOT NULL,
+    authorid integer DEFAULT 0 NOT NULL,
+    authorseqno smallint DEFAULT 1,
+    CONSTRAINT book_author_authorseqno CHECK ((authorseqno > 0)),
+    CONSTRAINT book_author_authorid CHECK ((authorid >= 0)),
+    CONSTRAINT book_author_isbn CHECK ((isbn >= 0))
+);
+
+
+
+CREATE TABLE cust_book (
+    isbn integer DEFAULT 0 NOT NULL,
+    duedate date,
+    customerid integer DEFAULT 0 NOT NULL,
+    CONSTRAINT cust_order_customerid CHECK ((customerid >= 0)),
+    CONSTRAINT cust_order_isbn CHECK ((isbn >= 0))
+);
+
+
+INSERT INTO customer VALUES (0, 'Default         ', 'Customer           ', NULL);
+INSERT INTO customer VALUES (1, 'Jacson         ', 'Kirk           ', 'Wellington     ');
+INSERT INTO customer VALUES (2, 'Leow           ', 'May-N          ', 'Wellington     ');
+INSERT INTO customer VALUES (3, 'Andreae        ', 'Peter          ', 'Lower Hutt     ');
+INSERT INTO customer VALUES (4, 'Noble          ', 'James          ', 'Upper Hutt     ');
+INSERT INTO customer VALUES (5, 'Tempero        ', 'Ewan           ', 'Upper Hutt     ');
+INSERT INTO customer VALUES (6, 'Anderson       ', 'Svend          ', 'Lower Hutt     ');
+INSERT INTO customer VALUES (7, 'Nickson        ', 'Ray            ', 'Upper Hutt     ');
+INSERT INTO customer VALUES (8, 'Dobbie         ', 'Gill           ', 'Upper Hutt     ');
+INSERT INTO customer VALUES (9, 'Martin         ', 'Paul           ', 'Wellington     ');
+INSERT INTO customer VALUES (10, 'Barmouta       ', 'Alex           ', 'Upper Hutt     ');
+INSERT INTO customer VALUES (11, 'Xu             ', 'Gang           ', 'Lower Hutt     ');
+INSERT INTO customer VALUES (12, 'McMurray       ', 'Linda          ', 'Wellington     ');
+INSERT INTO customer VALUES (13, 'Somerfield     ', 'Nigel          ', 'Wellington     ');
+INSERT INTO customer VALUES (14, 'Anslow         ', 'Craig          ', 'Wellington     ');
+INSERT INTO customer VALUES (15, 'Gandhi         ', 'Amit           ', 'Upper Hutt     ');
+INSERT INTO customer VALUES (16, 'Yi             ', 'Shusen         ', 'Lower Hutt     ');
+INSERT INTO customer VALUES (17, 'Zhou           ', 'Daisy          ', 'Lower Hutt     ');
+INSERT INTO customer VALUES (18, 'Chui           ', 'Chang          ', 'Wellington     ');
+INSERT INTO customer VALUES (19, 'Wojnar          ', 'Maciej          ', 'Wellington     ');
+INSERT INTO customer VALUES (20, 'Dolman          ', 'Jerome          ', 'Wellington     ');
+INSERT INTO customer VALUES (21, 'Devrukhaker          ', 'Guruprasad          ', 'Upper Hutt     ');
+
+
+INSERT INTO book(isbn, title, edition_no) VALUES (0, 'Default Book Name                                           ', NULL);
+INSERT INTO book VALUES (7777, 'Readings in Database Systems                                ', 1, 1, 1);
+INSERT INTO book VALUES (9009, 'Problem solving with Java                                   ', 2, 5, 5);
+INSERT INTO book VALUES (1928, 'Database Management Systems                                 ', 3, 2, 2);
+INSERT INTO book VALUES (1010, 'Data Models                                                 ', 1, 1, 1);
+INSERT INTO book VALUES (2222, 'Database Principles                                         ', 1, 1, 1);
+INSERT INTO book VALUES (3333, 'Principles of Database and Knoledge-Base Systems            ', 1, 2, 2);
+INSERT INTO book VALUES (8888, 'Building the Data Warehouse                                 ', 1, 5, 5);
+INSERT INTO book VALUES (1001, 'Database Modeling & Design                                  ', 1, 1, 1);
+INSERT INTO book VALUES (1111, 'Fundamentals of Database Systems                            ', 3, 3, 3);
+INSERT INTO book VALUES (4444, 'Principles of Database Systems                              ', 2, 5, 5);
+INSERT INTO book VALUES (9999, 'Principles of Database Design                               ', 1, 10, 10);
+INSERT INTO book VALUES (5555, 'Object_Relational DBMSs: The Next Great Wave                ', 1, 4, 4);
+
+
+
+INSERT INTO author VALUES (0, 'Default Name   ', 'Default Surname');
+INSERT INTO author VALUES (2, 'Pavle          ', 'Mogin          ');
+INSERT INTO author VALUES (3, 'Ramez          ', 'Elmasri        ');
+INSERT INTO author VALUES (4, 'Shamkant       ', 'Navathe        ');
+INSERT INTO author VALUES (5, 'Ivan           ', 'Lukovic        ');
+INSERT INTO author VALUES (6, 'Miro           ', 'Govedarica     ');
+INSERT INTO author VALUES (7, 'Michael        ', 'Stonebraker    ');
+INSERT INTO author VALUES (8, 'Donald         ', 'Moore          ');
+INSERT INTO author VALUES (9, 'William        ', 'Inmon          ');
+INSERT INTO author VALUES (1, 'Toby           ', 'Teorey         ');
+INSERT INTO author VALUES (22, 'Milica         ', 'Mogin          ');
+INSERT INTO author VALUES (10, 'Donald         ', 'Ullman         ');
+INSERT INTO author VALUES (11, 'Elliot         ', 'Koffman        ');
+INSERT INTO author VALUES (12, 'Ursula         ', 'Woltz          ');
+INSERT INTO author VALUES (13, 'Raghu          ', 'Ramakrishnan   ');
+INSERT INTO author VALUES (14, 'Johannes       ', 'Gehrke         ');
+
+
+
+
+INSERT INTO book_author VALUES (2222, 5, 2);
+INSERT INTO book_author VALUES (1111, 4, 2);
+INSERT INTO book_author VALUES (1111, 3, 1);
+INSERT INTO book_author VALUES (2222, 2, 1);
+
+INSERT INTO book_author VALUES (5555, 8, 2);
+INSERT INTO book_author VALUES (5555, 7, 1);
+INSERT INTO book_author VALUES (7777, 7, 1);
+INSERT INTO book_author VALUES (8888, 9, 1);
+INSERT INTO book_author VALUES (9999, 5, 2);
+INSERT INTO book_author VALUES (9999, 6, 3);
+INSERT INTO book_author VALUES (1001, 1, 1);
+INSERT INTO book_author VALUES (9009, 11, 1);
+INSERT INTO book_author VALUES (9009, 12, 2);
+INSERT INTO book_author VALUES (3333, 10, 1);
+INSERT INTO book_author VALUES (4444, 10, 1);
+INSERT INTO book_author VALUES (9999, 2, 1);
+INSERT INTO book_author VALUES (1928, 14, 2);
+INSERT INTO book_author VALUES (1928, 13, 1);
+
+
+
+
+
+
+ALTER TABLE ONLY customer
+    ADD CONSTRAINT customer_pkey PRIMARY KEY (customerid);
+
+
+
+ALTER TABLE ONLY book
+    ADD CONSTRAINT book_pkey PRIMARY KEY (isbn);
+
+
+ALTER TABLE ONLY author
+    ADD CONSTRAINT author_pkey PRIMARY KEY (authorid);
+
+
+
+ALTER TABLE ONLY book_author
+    ADD CONSTRAINT book_author_pkey PRIMARY KEY (isbn, authorid);
+
+
+
+ALTER TABLE ONLY cust_book
+    ADD CONSTRAINT cust_book_pkey PRIMARY KEY (isbn, customerid);
+
+
+
+CREATE CONSTRAINT TRIGGER "<unnamed>"
+    AFTER INSERT OR UPDATE ON book_author
+    FROM book
+    NOT DEFERRABLE INITIALLY IMMEDIATE
+    FOR EACH ROW
+    EXECUTE PROCEDURE "RI_FKey_check_ins" ('<unnamed>', 'book_author', 'book', 'UNSPECIFIED', 'isbn', 'isbn');
+
+
+
+CREATE CONSTRAINT TRIGGER "<unnamed>"
+    AFTER DELETE ON book
+    FROM book_author
+    NOT DEFERRABLE INITIALLY IMMEDIATE
+    FOR EACH ROW
+    EXECUTE PROCEDURE "RI_FKey_setdefault_del" ('<unnamed>', 'book_author', 'book', 'UNSPECIFIED', 'isbn', 'isbn');
+
+
+
+CREATE CONSTRAINT TRIGGER "<unnamed>"
+    AFTER UPDATE ON book
+    FROM book_author
+    NOT DEFERRABLE INITIALLY IMMEDIATE
+    FOR EACH ROW
+    EXECUTE PROCEDURE "RI_FKey_cascade_upd" ('<unnamed>', 'book_author', 'book', 'UNSPECIFIED', 'isbn', 'isbn');
+
+
+
+CREATE CONSTRAINT TRIGGER "<unnamed>"
+    AFTER INSERT OR UPDATE ON book_author
+    FROM author
+    NOT DEFERRABLE INITIALLY IMMEDIATE
+    FOR EACH ROW
+    EXECUTE PROCEDURE "RI_FKey_check_ins" ('<unnamed>', 'book_author', 'author', 'UNSPECIFIED', 'authorid', 'authorid');
+
+
+
+CREATE CONSTRAINT TRIGGER "<unnamed>"
+    AFTER DELETE ON author
+    FROM book_author
+    NOT DEFERRABLE INITIALLY IMMEDIATE
+    FOR EACH ROW
+    EXECUTE PROCEDURE "RI_FKey_setdefault_del" ('<unnamed>', 'book_author', 'author', 'UNSPECIFIED', 'authorid', 'authorid');
+
+
+
+CREATE CONSTRAINT TRIGGER "<unnamed>"
+    AFTER UPDATE ON author
+    FROM book_author
+    NOT DEFERRABLE INITIALLY IMMEDIATE
+    FOR EACH ROW
+    EXECUTE PROCEDURE "RI_FKey_cascade_upd" ('<unnamed>', 'book_author', 'author', 'UNSPECIFIED', 'authorid', 'authorid');
+
+
+
+CREATE CONSTRAINT TRIGGER fk_cb_c
+    AFTER INSERT OR UPDATE ON cust_book
+    FROM customer
+    NOT DEFERRABLE INITIALLY IMMEDIATE
+    FOR EACH ROW
+    EXECUTE PROCEDURE "RI_FKey_check_ins" ('fk_cb_c', 'cust_book', 'customer', 'UNSPECIFIED', 'customerid', 'customerid');
+
+
+
+CREATE CONSTRAINT TRIGGER fk_cb_c
+    AFTER DELETE ON customer
+    FROM cust_book
+    NOT DEFERRABLE INITIALLY IMMEDIATE
+    FOR EACH ROW
+    EXECUTE PROCEDURE "RI_FKey_noaction_del" ('fk_cb_c', 'cust_book', 'customer', 'UNSPECIFIED', 'customerid', 'customerid');
+
+
+
+CREATE CONSTRAINT TRIGGER fk_cb_c
+    AFTER UPDATE ON customer
+    FROM cust_book
+    NOT DEFERRABLE INITIALLY IMMEDIATE
+    FOR EACH ROW
+    EXECUTE PROCEDURE "RI_FKey_noaction_upd" ('fk_cb_c', 'cust_book', 'customer', 'UNSPECIFIED', 'customerid', 'customerid');
+
+
+
+CREATE CONSTRAINT TRIGGER fk_cb_b
+    AFTER INSERT OR UPDATE ON cust_book
+    FROM book
+    NOT DEFERRABLE INITIALLY IMMEDIATE
+    FOR EACH ROW
+    EXECUTE PROCEDURE "RI_FKey_check_ins" ('fk_cb_b', 'cust_book', 'book', 'UNSPECIFIED', 'isbn', 'isbn');
+
+
+
+CREATE CONSTRAINT TRIGGER fk_cb_b
+    AFTER DELETE ON book
+    FROM cust_book
+    NOT DEFERRABLE INITIALLY IMMEDIATE
+    FOR EACH ROW
+    EXECUTE PROCEDURE "RI_FKey_noaction_del" ('fk_cb_b', 'cust_book', 'book', 'UNSPECIFIED', 'isbn', 'isbn');
+
+
+
+CREATE CONSTRAINT TRIGGER fk_cb_b
+    AFTER UPDATE ON book
+    FROM cust_book
+    NOT DEFERRABLE INITIALLY IMMEDIATE
+    FOR EACH ROW
+    EXECUTE PROCEDURE "RI_FKey_noaction_upd" ('fk_cb_b', 'cust_book', 'book', 'UNSPECIFIED', 'isbn', 'isbn');
+
+

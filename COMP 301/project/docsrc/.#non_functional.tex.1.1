@@ -1,0 +1,97 @@
+\documentclass[a4paper,10pt]{report}
+
+
+% Title Page
+\title{Comp301 -- Non Functional Requirements}
+\author{Group 6 Solutions}
+
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This document is part of Deliverable Two, COMP301 Group Project 2005. This document must be read in conjunction with the Class Diagrams and Sequence Diagrams contained in the Umbrello\textsuperscript{TM} file, \verb+../part2.xmi+ \\ \\ Group 6 Solutions is a Registered Company under the Companies Act 1993, and has four (4) employees: Neil James Ramsay (Leader) 300069252; David Alexander Keane (Contact) 300069137; David Jonathan Harris 300069566; Vipul Delwadia 300069307. \\ \\ \centerline{Copyright (c) 2005. All rights reserved.}
+\end{abstract}
+
+
+\section*{Usability}
+The computer system has to be easy to learn and use for everyday use.  Employees of Atlantis Shipping Company are given adequate training to be proficient with computers at a general level.  The aim of this training is to make the employees aware of the features of the computer system, and the consequences of certain actions.  A paper-based documenation manual will be available at the time of delivery.  This is a indepth explanation of the various features of the system is aimed at the operators in headquaters.
+The will be various manuals available on delivery of the software. These are used to both train the employees and as a reference manual for the System Administrator.  The documents that will be available are operating, user, installation and technical manuals and technical specifications.
+
+There would be capability for authorised users to have external access to the servers. This is needed in the case of server failure or data gathering.  This means that the System Administrator can fix any problems without being on-site.
+
+
+\section*{Reliability}
+The accepted down-time of the server would be approximately 1/2 hour per month.  The headquaters has to be up-and-running for the company as a whole to function.  The accecpted down-time of the computer system on-board the ship will be zero minutes, as it is an integral part of the function of the ship.  If a specified fault occours, a log file will be written and send directly via email both to Team 6 Solutions\textregistered \ and the System Administrator of Atlantis Shipping Company\textregistered .  The employees of Atlantis Shipping Company\textregistered \ can send a 'bug report' to the System Administrator.  It is expected that all computers with our softwae running will have anti-virus software, and it is kept up-to-date.  The server is expected to have a hardware firewall, and all ports closed except needed.
+
+The system must be very robust. For example, if data is input incorrectly, a message should pop up and the user should have the chance to enter the correct data.  The system should not crash or try to add incorrect data, and thus all inputs should be checked for consistency.  In the event of 
+
+
+\section*{Performance}
+The system should be very quick to respond to user commands.  It should respond from sleep mode to a stage where the user can put in their username and password within five seconds.  If the user asks for information from the system, the maximum time the user should have to wait for a response is 5 seconds in the headquarters.  When the user is aboard a ship, the time should be no longer than 10 seconds. The time difference is due to the latency invovled with accessing the server from a remote location,cvs updae through various communication networks.
+
+what is the maximum allowable responds time to requests for information from the system? The maximum in the office should be 5 seconds. The maximum on the ships would be 10 seconds. 
+how long from when data is entered into the system must it be available to searches at other locations?    We would prefer practically instantenous, allowing for a few seconds lag due to travelling through the network. 
+
+
+
+\section*{Supportability}
+
+
+\section*{Implementation}
+The hardware has to be able to used in machines or servers of different systems, or in foreseeable systems.  For example, Human Interface Devices (HID) have to be compatable with current systems and older machines that still may be in-use.  Also hardware that is cheap to buy becasue it is using out-dated technology is not advisable because in a few years time the old technology may not be supported. An example of this is the change of ethernet cable from BNC connectors to RJ45.
+
+The choice of implemenation language is important.  As Atlantis Shipping Company is currently using two operating systems (namely edhat\textregistered\ Linux and Microsoft\textregistered\ Windows\textregistered\ 2000), the language needs to be chosen carefully so that it can be run on many platforms and architectures without needing to be modified.  Therefore a good choice of language would be Java or C++.  It needs to be chosen so that it can be transfered quickly and easily from one hardware or software environment to another.
+
+\section*{Interface}
+As the system has to be run on different platforms and archtectures, it has to be backwards compatable in terms of both hardware and software.  The system also needs to be able to be compatable with foreseeable changes in hardware and software.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section*{Hardware}
+ No technical training is needed.   The System Administrator is, however required to have an in-depth knowledge of computer and communication networks.  However, the Ship Bridge Officer is the only the employee aboard the ship to have access to the computer system.  There needs to be the ability to have group hierarchy of users set up. These groups have different levels of permissions, (for example, the System Manager has permissions to add/remove/modify users, and requesting various updates etc.).  The computer system will need to have the ability to send and receive various types of reports (for example, weather reports from Inmarsat).  It will need to have the ability to send and receive fax messages.  Messages can be received passively by the system, but only authorised people can send faxes.
+
+Customer requiring individual assistance for shipping, can also phone the helpdesk.  There must be a comprehensive phone system with a number of phone operators.  These operators do not need to have any technical experince, but knowledge of how to use the phone system's features (such as hold, passing calls etc).
+
+The general computer set up would be a number of meduim speed desktops computers, connected to a server cluster.    The majority of users in the Altantis Shipping Company Headquarters will perform system tasks using well understood interactions devices such as monitors, keyboards and mice connected to a office-based computer system.  The headquarters operate on a dedicated T1 network, with only authorized users having access to the Internet.The specifications of the desktop machines are expected to be Intel\textregistered\ Pentium\textregistered\ 3, 1024MB RAM, 50 GB hard drives, and 17 inch display.  The current Operating System is Redhat\textregistered\ Linux.  
+
+
+The computers will be touch-screen to make it easier to operate while at sea.  Therefore there will be no mouse, but a keyboard shall be used to entering text for emails and suchlike.  The computers onboard the ships are expected to be Pentium 4s, 1024 MB RAM and 60GB hard drives. The current Operating System is Microsoft\textregistered\ Windows\textregistered\ 2000 on these machines.  The system shall have the ability to use both satelite and radio communications.  The primary means of communicating with shore shall be through satelite link.  It is necessary for the computer to detect wether a satelite link is up and able to be used.  As well as sending information to headquarters or various agencies, the system must have the ability to recieve reports or information.  These can inculude, but not limited to weather reports from Inmarsat and updated assignments from headquarters.
+
+
+
+\subsection*{User Interface and Human Factors}
+
+
+
+
+\subsection*{Computer system at the Altantis Shipping Company Headquarters}
+
+\subsection*{Computer system onboard the Altantis Shipping Company vessels}
+The main means of communication to shore for communicating with both Headquarters and Government or private agencies will be through the computer system.  
+
+
+
+
+
+\section*{Security Issues}
+
+\subsection*{Communication Security}
+All communications from the ship and shore are encrypted in accordance with any requrements by external parties.  Only authorized users have access to the internet, outgoing communications and outside remote access into the servers at the headquarters.
+
+\subsection*{Access Security}
+All users shall have be a memeber of 
+
+
+\end{document}

@@ -1,0 +1,106 @@
+
+RCS file: /u/students/ramsayneil/comp201t11/COMP201/Project1/hotel.cc,v
+Working file: hotel.cc
+head: 1.23
+branch:
+locks: strict
+access list:
+symbolic names:
+	WORKING: 1.22
+keyword substitution: kv
+total revisions: 23;	selected revisions: 23
+description:
+----------------------------
+revision 1.23
+date: 2004/05/02 15:00:03;  author: keanedavi;  state: Exp;  lines: +10 -0
+Includes Big Comment at top of CC File
+----------------------------
+revision 1.22
+date: 2004/05/02 13:52:02;  author: delwadvipu;  state: Exp;  lines: +20 -26
+Commented and backup files created, data file is now called hotel.htl, and the backup is called hotel.htl.bak
+----------------------------
+revision 1.21
+date: 2004/05/02 11:47:04;  author: keanedavi;  state: Exp;  lines: +9 -20
+fixed UI Typos. removed currentDate code. used booking extraction operator rather than print. added delete methods for pointers.
+----------------------------
+revision 1.20
+date: 2004/05/02 09:44:35;  author: delwadvipu;  state: Exp;  lines: +1 -7
+tidied up loading from file output
+----------------------------
+revision 1.19
+date: 2004/05/02 09:25:39;  author: keanedavi;  state: Exp;  lines: +3 -0
+general touch-ups
+----------------------------
+revision 1.18
+date: 2004/05/02 06:27:21;  author: keanedavi;  state: Exp;  lines: +40 -6
+New Booking Added to menu
+----------------------------
+revision 1.17
+date: 2004/05/01 06:35:23;  author: delwadvipu;  state: Exp;  lines: +5 -3
+fixed instatiation of hotel class problems
+----------------------------
+revision 1.16
+date: 2004/05/01 04:36:53;  author: ramsayneil;  state: Exp;  lines: +1 -0
+fixed - when cin is cleared, flags are reset too
+----------------------------
+revision 1.15
+date: 2004/04/30 00:56:44;  author: keanedavi;  state: Exp;  lines: +6 -1
+ncorrect Room Numbers for booking menu caught hung drawn and quartere
+CS: ----------------------------------------------------------------------
+----------------------------
+revision 1.14
+date: 2004/04/30 00:14:53;  author: ramsayneil;  state: Exp;  lines: +1 -0
+fixed - segfault where rooms* was not initialised in the constructor
+----------------------------
+revision 1.13
+date: 2004/04/30 00:04:25;  author: delwadvipu;  state: Exp;  lines: +6 -5
+fixed listing of rooms by storing the rooms object as a pointer in hotel class
+----------------------------
+revision 1.12
+date: 2004/04/29 05:42:56;  author: delwadvipu;  state: Exp;  lines: +1 -1
+Fixed more bugs, loading of rooms now works but listing of rooms crashes the program
+----------------------------
+revision 1.11
+date: 2004/04/26 00:45:39;  author: delwadvipu;  state: Exp;  lines: +12 -245
+maintenance, moved class menus to their respective classes, updated GROUP.xmi to match, fixed compile issues with other source files
+----------------------------
+revision 1.10
+date: 2004/04/23 00:58:06;  author: delwadvipu;  state: Exp;  lines: +196 -29
+implemented categoriesMenu in hotel.cc, added renameCategory to categories.cc, modified rooms' printSummary to take the ID as a parameter, cosmetic changes to room.cc & room.h, updated uml diagram to have room class overloaded << operator
+----------------------------
+revision 1.9
+date: 2004/04/22 07:35:30;  author: delwadvipu;  state: Exp;  lines: +35 -15
+committing so that I can work from home, nearly implemented bookingsMenu
+----------------------------
+revision 1.8
+date: 2004/04/21 11:44:49;  author: delwadvipu;  state: Exp;  lines: +2 -2
+more bugfixes, rooms aren't being loaded into the map however
+----------------------------
+revision 1.7
+date: 2004/04/21 08:02:24;  author: delwadvipu;  state: Exp;  lines: +75 -15
+Put in cout statements + added to hotel menu(s), still testing
+----------------------------
+revision 1.6
+date: 2004/04/21 03:27:37;  author: delwadvipu;  state: Exp;  lines: +78 -2
+changed some method names, implemented main menu
+----------------------------
+revision 1.5
+date: 2004/04/19 05:06:34;  author: delwadvipu;  state: Exp;  lines: +1 -1
+made compilable, hotel.cc i.e. "test" actually runs! holy sh*t!!!
+----------------------------
+revision 1.4
+date: 2004/04/17 04:50:37;  author: delwadvipu;  state: Exp;  lines: +5 -6
+made compilable, hopefully all is good
+----------------------------
+revision 1.3
+date: 2004/04/16 04:04:42;  author: harrisdavi3;  state: Exp;  lines: +4 -4
+changed 'out' to 'handle'
+----------------------------
+revision 1.2
+date: 2004/04/16 01:04:31;  author: delwadvipu;  state: Exp;  lines: +54 -5
+Added displayMenu method, implemented file methods
+----------------------------
+revision 1.1
+date: 2004/04/14 22:45:36;  author: harrisdavi3;  state: Exp;
+inital import
+=============================================================================

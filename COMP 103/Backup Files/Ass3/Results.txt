@@ -1,0 +1,79 @@
+Name: David Harris
+usercode: harrisdavi3 
+id # : 300069566
+
+Questions on CheckEnrolments
+
+Average Courses-short
+Timing SortedArraySet:
+Time: 608
+Timing ArraySet:
+Time: 6923
+
+Average Courses-long
+Timing SortedArraySet:
+Time: 616
+Timing ArraySet:
+Time: 13428
+
+Average for Courses-longest
+Timing SortedArraySet:
+Time: 699
+Timing ArraySet:
+Time: 45816
+
+Average for Courses-bad
+Timing SortedArraySet:
+Time: 1864
+Timing ArraySet:
+Time: 16678
+
+Question 1 and 2
+The SortedArraySet was much much faster than the ArraySet class, especially when 
+the amount of content in the files gets larger.  It was interesting to note that 
+although courses-long is twice the courses-short, the program only takes a few 
+more milliseconds to read the file.  The reason why the SortedArraySet is so 
+much faster than the ArraySet is because it uses a binary search, rather than 
+looking at each item in turn.  Thus it makes a huge difference to the overall
+time for the program to run. On the smaller data file it runs 10 times faster 
+than the ArraySet.  On the longest data file the binary search was almost 9 
+times faster than the normal search.
+
+
+Question 3
+I think that if the length of the enrolments file was doubled, the time taken for the
+SortedArraySet would still be about half of the time taken to the ArraySet.  In my sample data
+above, for small files, the time taken for the SortedArraySet is half that of the ArraySet.
+The time taken to do ArraySet would be twice that of normal, as it has to make twice as many calculations.
+However, the time taken for SortedArraySet, would be much less than half, as the marginal time taken with a
+binary search is no where near the same as the number of lines added.
+
+
+Question 4
+If the courses were multiples by 10, I don't think that it would really affect the time the time to run
+the SortedArraySet.  As the short, long and longest are all double each other, the time taken
+is basically the same.  Therefore, if the file was 10 times larger, the time would not change that much
+compared to the original.  However the ArraySet is much much slower.  The time increases rapidly with the
+additon of lines, and as the time taken between courses-short and courses-long is double, with about
+double the lines.  The same thing ocours with courses-long and courses-longest, except that for double the
+lines, the time is tripled.  Therefore when the files when multipled by 10, will take about twice as long 
+as they normally do.
+The reason the times are so different is because the cost of a binary search is O(log(n)) whereas the normal 
+search is O(n).
+
+
+Question 5
+The only way to go is to use a binary search.  This speeds up the procees so much
+and the code is not very difficult at all.  For the extra benefit of the time saving,
+it is worth putting more time in to making the code more complicated.  Even though it
+may take longer getting the code up and running, it would be worht the reward of
+not having to wait as long on the spot.  The only difference between ArraySet and SortedArraySet is
+the binary search, and it makes to program run twice as fast.  Even though the
+enrolment file would be tripled in size, it wouldn't really make much of a
+difference to the overall run-time.  However, the fact that if the array in
+either Set class has to be doubled and all the elemnets copied in to the array
+will take a long time if there are lost os data.  A vector would be good in
+thris case as you just use the method addLast(), and you never need to copy the
+elements over, the vector just grows to accomidate the addition of data.  this
+would save time, and is easier to handle than an array of a fixed size.
+

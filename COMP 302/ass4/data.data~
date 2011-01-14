@@ -1,0 +1,27 @@
+INSERT INTO "departments" VALUES ('Comp      ','ComSci              ');
+INSERT INTO "departments" VALUES ('Math      ','Mathematics         ');
+INSERT INTO "departments" VALUES ('Stat      ','Statistics          ');
+
+
+INSERT INTO "lecturers" VALUES (10001,'John                ','Comp      ');
+INSERT INTO "lecturers" VALUES (90009,'Pavle               ','Comp      ');
+INSERT INTO "lecturers" VALUES (50005,'Pondy               ','Comp      ');
+INSERT INTO "lecturers" VALUES (20002,'Vladimir            ','Math      ');
+INSERT INTO "lecturers" VALUES (60006,'Col in              ','Math      ');
+INSERT INTO "lecturers" VALUES (80008,'John                ','Stat      ');
+
+
+INSERT INTO "courses" VALUES ('COMP302   ','Databases           ','Comp      ');
+INSERT INTO "courses" VALUES ('COMP305   ','Op Systems          ','Comp      ');
+INSERT INTO "courses" VALUES ('MATH114   ','Disc Math           ','Comp      ');
+INSERT INTO "courses" VALUES ('MATH214   ','Disc Math           ','Comp      ');
+INSERT INTO "courses" VALUES ('COMP306   ','Data Com            ','Comp      ');
+INSERT INTO "courses" VALUES ('STAT193   ','Statistics          ','Stat      ');
+
+
+
+
+INSERT INTO "lec_course" VALUES (10001,'COMP305          ');
+INSERT INTO "lec_course" VALUES (10001,'COMP306          ');
+INSERT INTO "lec_course" VALUES (60006,'MATH214          ');
+INSERT INTO "lec_course" VALUES (90009,'COMP302          ');

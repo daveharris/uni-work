@@ -1,0 +1,79 @@
+\documentclass[a4paper,10pt]{report}
+
+
+% Title Page
+\title{Comp301 -- Non Functional Requirements}
+\author{Group 6 Solutions}
+
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This document is part of Deliverable Two, COMP301 Group Project 2005. This document must be read in conjunction with the Class Diagrams and Sequence Diagrams contained in the Umbrello\textsuperscript{TM} file, \verb+../part2.xmi+ \\ \\ Group 6 Solutions is a Registered Company under the Companies Act 1993, and has four (4) employees: Neil James Ramsay (Leader) 300069252; David Alexander Keane (Contact) 300069137; David Jonathan Harris 300069566; Vipul Delwadia 300069307. \\ \\ \centerline{Copyright \copyright\ 2005. All rights reserved.}
+\end{abstract}
+
+
+\chapter{Quality Requirements}
+\section{Usability}
+The computer system has to be easy to learn and for everyday use.  Employees of Atlantis Shipping Company are given adequate training to be proficient with computers at a general level.  This is a one day course and is to be attended within 6 months of commencement of employment, and tailored to the individual needs of the different users.  The aim of this training is to make the employees aware of the features of the computer system, and the consequences of certain actions. A syllabus for this training will be provided with the system.
+
+A documenation manual will be available at the time of delivery, in both soft and hard copies. The manuals available at delivery time are operating, user, installation and technical manuals.  They are in-depth reference guides explaining the various features of the system, aimed at the operators in headquaters and those personnel on the ship.  There will also be detailed technical specifications, designed for the System Administrator.
+
+The system will support a number of languages, initially starting with English, Hindi, Spanish, French, and Pinyin.  There will also be functionality to easily include more languages as the needs of employees become apparent.  The default lanuage will be New Zealand English.
+
+There will be the capability for authorised users to have external access to the servers. This is needed in the case of server failure or data gathering.  This means that the System Administrator will be able to fix most problems without being on-site.
+
+
+
+\section{Reliability}
+Lack of communication or computer failure due to outside, uncontrollable forces (such as adverse weather conditions or power failure) is tolerated, but must be kept to an absolute minimum. The use of Uninterruptable Power Supplies for the servers is recommended. Non-scheduled server or computer downtime at headquarters is to be kept to a minimum, and it is the responsibility of the System Administrator to make sure that all systems are working efficently, and under the correct conditions, in order to limit such downtime.  It is also the responsibility of the System Administrator to monitor and fix any security flaws in hardware at Atlantis Shipping Company\textregistered.  Scheduled server maintanence is only to occur during non-working hours, for a maximum of tewnty-four hours, with at least four weeks advance notice. Preferably, over the downtime, a hired replacement server will run in it's place.
+
+If any sort of fault occours, a log file will be written and send directly via email to the System Administrator of Atlantis Shipping Company\textregistered\ via email.  Employees of Atlantis Shipping Company\textregistered \ can send also send a 'bug report' to the System Administrator.  It is required that all computers with our software running will have anti-virus software that is kept up-to-date.
+
+The system must be very robust. For example, if data is input incorrectly, a message should pop up and the user should have the chance to enter the correct data.  The system should not crash or try to add incorrect data, and thus all inputs should be checked for consistency.  In the event of 
+
+
+
+\section{Performance}
+The system should be very quick to respond to user commands.  It should reach a stage where the user can login with their authentication details within five seconds.  If the user asks for information from the system, the maximum time the user should have to wait for a response is five seconds in the headquarters.  When the user is aboard a ship, the time should be no longer than ten seconds. The time difference is due to the latency involved with accessing the server from a remote location, through various communication networks.  When information is added or modified (for example, the addition of an assignment to a ship) the information should be available almost immediately because the time to transfer data through the network is very short.
+
+
+
+\section{Supportability}
+The hardware has to be able to used in machines or servers of different systems, or in foreseeable future systems.  Hardware has to be compatable with current systems and older machines that still may be in-use.
+
+The system should, as much as possible, support any developments in the foreseeable future.  Where that is not possible, every effort shall be made to design the system in such a way that it can be updated quickly and easily to any changes in both hardware or software.  Also the formats of numbers and measurements should be able to be changed, for example the weights of the assignments be calculated in pounds if an American arm of the company was opened.
+
+\chapter{Pseudo Requirements}
+\section{Implementation Requirements}
+The choice of implemenation language is important.  As Atlantis Shipping Company is currently using two operating systems (namely Redhat\textregistered\ Linux and Microsoft\textregistered\ Windows\textregistered\ 2000), the language needs to be chosen carefully so that it can be run on many platforms and architectures without needing to be modified, or if not so, it can be done quickly and easily.  Therefore a good choice of language would be Java.
+
+All communication has to be encrypted, to a level which is deemed suitable for the given situation.  Ship-to-shore communications are handled by the third party company Inmarsat\textregistered .  Once the software is handed over to Atlantis Shipping Company\textregistered , Group 6 Solutions\textregistered\ is not responsible for monitoring of or consequenses of security breaches due to the standard of encryption used by Inmarsat.
+
+
+
+\section{Interface Requirements}
+As the system has to be run on different platforms and archtectures, it has to be backwards compatable in terms of both hardware and software.  The software needs to be able to be installed and run at a usable speed on older machines.  This may limit the use of graphics or the support of certain technologies that may still be in use by Atlantis Shipping Company\textregistered. This may facilitate the need for a more suitable interface for older machines.
+
+The system will have hotkeys (simulaneous key combinations), to allow frequent users the ability to perform typical jobs quicker, to allow the efficient use of their time. However, this will not be at the expense of an intuitive interface for infreqent users.
+
+
+
+\section{Operations/Packaging Requirements}
+There will have to be at all times a System Administrator who has overall power and responsibility for making sure that the system is functioning at it's full potential at all times.  The System Administrator has total access and control over the addition and maintanance of users and user groups.  Any problems with the system should first go through the System Administrator, and then through to Group 6 Soultions\textregistered if need-be.
+
+Group 6 Solutions shall initially install all the software on all the desktops, servers and ship computers.  The installation files shall be placed on Compact Disc (CD), and shall have comprehensive installation instructions, should Atlantis Shipping Company\textregistered\ have to re-install in the future.  The System Administrator will be given training in the installation process and any errors or special features that may be of interest.
+
+
+
+\section{Legal Requirements}
+In signing the end user agreement, and by notification of the security measures in place, Atlantis Shipping Company\textregistered\ releases Group 6 Solutions\textregistered\ from any civil action taken against them in terms of keeping information private, and the consequences of not doing so.  This is with respect to the \underline{Privacy Act 1993} or any future superceding legislation.
+
+Group 6 Solutions\textregistered\ agrees to transfer the copyright for all code created under this contract to Atlantis Shipping Company\textregistered, but retains the copyright for previously created libraries. However, Group 6 Solutions\textregistered\ provides Atlantis Shipping Company\textregistered\ with an exclusive licence to use the binaries of the previously-created libraries. This is in line with the provisions of the \underline{Copyright Act 1994} or any future superceding legislation.
+
+The expectation is that Atlantis Shipping Company\textregistered\ will buy the copyright of the software from Group 6 Solutions\textregistered .  The intelectual property of employees of Group 6 Solutions\textregistered\ is protected.
+
+
+
+\end{document}

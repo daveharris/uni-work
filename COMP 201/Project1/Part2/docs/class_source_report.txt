@@ -1,0 +1,26 @@
+Hotel
+Common class
+
+Categories
+Modified version of Neil's class
+
+Rooms
+Combined version of Neil's and Vipul's
+
+Room
+Common class - slightly modified
+
+BookingSchedule
+Neil's class
+
+Booking
+Common class
+
+Contact
+David H's class - slightly modified
+
+Date
+Created from scratch - all members had similar ideas
+
+Guests
+Created from scratch - mutually decided

@@ -1,0 +1,16 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {chapter}{\numberline {2}Description of Design Task}{2}
+\contentsline {chapter}{\numberline {3}Performance, Problems and Improvements}{5}
+\contentsline {chapter}{\numberline {4}Cost Estimate}{6}
+\contentsline {chapter}{\numberline {5}Appendices}{7}
+\contentsline {section}{\numberline {5.1}Biasing the Emitter Follower}{7}
+\contentsline {subsection}{\numberline {5.1.1}Calculate $V_{E}$}{7}
+\contentsline {subsection}{\numberline {5.1.2}Choose $R_{E}$}{7}
+\contentsline {subsection}{\numberline {5.1.3}Calculate $R_{1}$ and $R_{2}$}{7}
+\contentsline {subsection}{\numberline {5.1.4}Choose $C_{c1}$ and $C_{C2}$}{7}
+\contentsline {subsection}{\numberline {5.1.5}Calculate $ Z_{in}$ and $ Z_{out}$}{7}
+\contentsline {section}{\numberline {5.2}Biasing the Common Base}{8}
+\contentsline {subsection}{\numberline {5.2.1}Calculate $R_{E}$}{8}
+\contentsline {subsection}{\numberline {5.2.2}Calculate $R_{C}$}{9}
+\contentsline {section}{\numberline {5.3}Rectifier}{9}
+\contentsline {section}{\numberline {5.4}Full circuit diagram}{10}

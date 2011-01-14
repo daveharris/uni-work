@@ -1,0 +1,117 @@
+
+RCS file: /u/students/ramsayneil/comp201t11/COMP201/Project1/categories.cc,v
+Working file: categories.cc
+head: 1.26
+branch:
+locks: strict
+access list:
+symbolic names:
+	WORKING: 1.25
+keyword substitution: kv
+total revisions: 26;	selected revisions: 26
+description:
+----------------------------
+revision 1.26
+date: 2004/05/02 15:00:03;  author: keanedavi;  state: Exp;  lines: +10 -0
+Includes Big Comment at top of CC File
+----------------------------
+revision 1.25
+date: 2004/05/02 13:03:46;  author: harrisdavi3;  state: Exp;  lines: +8 -0
+Commented
+----------------------------
+revision 1.24
+date: 2004/05/02 11:33:06;  author: keanedavi;  state: Exp;  lines: +6 -2
+fixed fileIO
+----------------------------
+revision 1.23
+date: 2004/05/02 09:38:38;  author: keanedavi;  state: Exp;  lines: +13 -27
+did away with the exorbitant error-checking on load
+----------------------------
+revision 1.22
+date: 2004/05/02 09:34:17;  author: keanedavi;  state: Exp;  lines: +2 -20
+removed printing to cout during load
+----------------------------
+revision 1.21
+date: 2004/05/01 02:36:23;  author: ramsayneil;  state: Exp;  lines: +3 -3
+fixed - using delimiter instead of NULL
+----------------------------
+revision 1.20
+date: 2004/04/30 02:37:14;  author: ramsayneil;  state: Exp;  lines: +13 -6
+fixed - issue where non-existant categorie may be removed / edited
+----------------------------
+revision 1.19
+date: 2004/04/30 00:26:47;  author: keanedavi;  state: Exp;  lines: +9 -8
+At last the file IO on the damn thing works.
+----------------------------
+revision 1.18
+date: 2004/04/30 00:17:28;  author: keanedavi;  state: Exp;  lines: +5 -5
+Categories Counter now loads from File. You can't uze a stringstream twice vipul!!!
+----------------------------
+revision 1.17
+date: 2004/04/28 04:47:46;  author: delwadvipu;  state: Exp;  lines: +2 -2
+General bugfixes, compiles fine but still reading from file doesn't work for rooms. Makefile now has an option to compile only
+----------------------------
+revision 1.16
+date: 2004/04/26 00:45:39;  author: delwadvipu;  state: Exp;  lines: +69 -0
+maintenance, moved class menus to their respective classes, updated GROUP.xmi to match, fixed compile issues with other source files
+----------------------------
+revision 1.15
+date: 2004/04/23 00:58:06;  author: delwadvipu;  state: Exp;  lines: +11 -0
+implemented categoriesMenu in hotel.cc, added renameCategory to categories.cc, modified rooms' printSummary to take the ID as a parameter, cosmetic changes to room.cc & room.h, updated uml diagram to have room class overloaded << operator
+----------------------------
+revision 1.14
+date: 2004/04/21 11:44:49;  author: delwadvipu;  state: Exp;  lines: +4 -2
+more bugfixes, rooms aren't being loaded into the map however
+----------------------------
+revision 1.13
+date: 2004/04/21 08:02:24;  author: delwadvipu;  state: Exp;  lines: +31 -22
+Put in cout statements + added to hotel menu(s), still testing
+----------------------------
+revision 1.12
+date: 2004/04/21 03:26:54;  author: delwadvipu;  state: Exp;  lines: +3 -4
+touchups
+----------------------------
+revision 1.11
+date: 2004/04/19 05:06:34;  author: delwadvipu;  state: Exp;  lines: +3 -3
+made compilable, hotel.cc i.e. "test" actually runs! holy sh*t!!!
+----------------------------
+revision 1.10
+date: 2004/04/19 03:44:37;  author: delwadvipu;  state: Exp;  lines: +1 -1
+a
+----------------------------
+revision 1.9
+date: 2004/04/19 02:41:13;  author: delwadvipu;  state: Exp;  lines: +4 -14
+updated to match header
+----------------------------
+revision 1.8
+date: 2004/04/19 00:37:16;  author: delwadvipu;  state: Exp;  lines: +18 -5
+general touchups, tested with tester, no known errors
+----------------------------
+revision 1.7
+date: 2004/04/17 14:15:57;  author: delwadvipu;  state: Exp;  lines: +0 -1
+test commit, ignore this version change
+----------------------------
+revision 1.6
+date: 2004/04/17 14:12:14;  author: delwadvipu;  state: Exp;  lines: +38 -1
+Completed loadFromFile method. Compiles but is untested.
+----------------------------
+revision 1.5
+date: 2004/04/17 04:50:04;  author: delwadvipu;  state: Exp;  lines: +26 -18
+implemented saveToFile method
+----------------------------
+revision 1.4
+date: 2004/04/15 23:13:04;  author: harrisdavi3;  state: Exp;  lines: +15 -15
+static works!
+----------------------------
+revision 1.3
+date: 2004/04/15 03:45:03;  author: delwadvipu;  state: Exp;  lines: +20 -16
+made all methods static, finished printCategories method
+----------------------------
+revision 1.2
+date: 2004/04/14 22:50:46;  author: harrisdavi3;  state: Exp;  lines: +43 -0
+tested with tester and fixed bugs
+----------------------------
+revision 1.1
+date: 2004/04/13 02:44:19;  author: ramsayneil;  state: Exp;
+initial import
+=============================================================================

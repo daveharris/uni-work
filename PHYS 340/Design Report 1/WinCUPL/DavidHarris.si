@@ -1,0 +1,47 @@
+Name     PHYS340;
+PartNo   00;
+Date     5/05/2005;
+Revision 01;
+Designer David Harris;
+Company  VUW;
+Assembly None;
+Location VUW;
+Device   G16V8A;
+
+/* *************** INPUT PINS *********************/
+/* Counter clock*/
+/* Mode, fullstep or halfstep*/
+/* Direction, clockwise or anti-clockwise*/
+/* Output enable*/
+/* *************** OUTPUT PINS *********************/
+/* Define state control field*/
+/*define upFull*/
+/*define downFull*/
+/*define upHalf*/
+/*define downhalf*/
+
+ORDER: Q0, Q1, Q2, Q3, clk, dir, mode, !oe; 
+
+
+VECTORS:
+****C000
+****C000
+****C000
+****C000
+****C010
+****C010
+****C010
+****C010
+****C000
+****C000
+****C100
+****C100
+****C100
+****C100
+****C100
+****C000
+****C000
+****C000
+****C000
+****C000
+****C000

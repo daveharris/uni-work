@@ -1,0 +1,151 @@
+/* Layout Stylesheet */ 
+body {
+  margin: 0;
+  padding: 0;
+  background: #808080;
+  color: #333333;
+}
+	 
+#hdr {
+  height: 35px;
+  background: #c0c0c0;
+  color: #000000;
+  border:solid #000000;
+  border-width: 2px 0px;
+  margin: 10px 0 0 0;
+}
+#ftr {
+  position: relative;
+  height: 40px;
+  background: #c0c0c0;
+  color: #000000;
+  border: solid #000000;
+  border-width: 2px 0px;
+  padding: 3px;
+  text-align: center;
+}
+
+#mid-section {
+  margin:auto;
+}
+
+#title {
+  color: #424242;
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+#sidebar {
+  position: absolute;
+  top: 69px;
+  left: 20px;
+  width: 180px;
+  border: 2px solid #000000;
+  background: #c0c0c0;
+  color: #333333;
+  margin: 0px;
+  padding: 0px;
+  height: 223px;
+}
+
+#main {
+  margin: 20px 20px 20px 220px;
+  border: 2px solid #000000;
+  background: #ffffff;
+  color: #333333;
+  padding: 20px;
+  position: relative;
+}
+
+.center {
+  text-align: center;
+  vertical-align: middle;
+  padding: 2px;
+}
+
+.left {
+  float: left;
+  padding: 4px;
+}
+
+.right {
+  float: right;
+  padding: 3px;
+}
+
+img {
+  border: 0;
+}
+
+td {
+  border: solid #424242;
+  border-width: 1px;
+  padding: 5px;
+}
+
+th {
+  border: solid #424242;
+  border-width: 1px;
+  padding: 5px;
+}
+
+table {
+  border: solid #424242;
+  border-width: medium;
+  border-collapse: collapse;
+}
+
+hr {
+  height: 2;
+}
+  
+h4 {
+  margin:0; 
+  padding: 5px 0;
+  text-decoration: underline;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+
+/* Presentation Stylesheet */
+a:link {
+  color: RoyalBlue;
+}
+ 
+a:visited {
+  color: Indigo;
+}
+ 
+ 
+ /*Sidebar declarations */
+#navcontainer {
+  width: 200px;
+}
+
+#navcontainer ul {
+  margin-left: 8px;
+  padding-left: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+#navcontainer a {
+  display: block;
+  padding: 3px;
+  width: 160px;
+  border-bottom: 1px solid #eee;
+}
+
+#navcontainer a:link, #navlist a:visited {
+  color: #EEE;
+  text-decoration: none;
+}
+
+#navcontainer a:hover {
+  background-color: #808080;
+  color: #fff;
+}

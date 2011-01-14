@@ -1,0 +1,27 @@
+/*-- Robbery
+--\copy robber_skills(skillid, skilldescription) FROM comp302/project1/data/robberskills_05.data
+DROP TABLE skills_temp;
+
+CREATE TABLE skills_temp (
+skillid             SERIAL,
+Nickname            char(30),
+SkillDescription    char(15),
+SkillLevel          int,
+SkillPreference     char(2)
+);
+
+\copy skills_temp(Nickname, SkillDescription, SkillLevel, SkillPreference) FROM comp302/project1/data/robberskills_05.data
+
+SELECT robberid, skillid, skilllevel, skillpreference FROM (Robber NATURAL JOIN skills_temp);
+
+-- Skills
+--SELECT skillid, skilldescription FROM (Robber NATURAL JOIN skills_temp);*/
+CREATE TABLE acc_temp (
+RobberId        SERIAL,
+BankName        char(15),
+City            char(15),
+Rdate           date,
+ShareMoney      int
+);
+
+-- -- \copy acc_temp FROM comp302/project1/data/accomplices_05.data

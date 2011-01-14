@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+body {
+	background-color: #FFFFCC;
+}
+.style1 {color: #CC0000}
+.style2 {color: #0000FF}
+-->
+</style>
+</head>
+<body>
+ <p align="center" class="style1"><strong>TECH102 - FOUNDATIONS OF DIGITAL TECHNOLOGY </strong></p>
+ <p align="center" class="style1"><strong>LECTURE NOTES </strong></p>
+ <p align="center" class="style1"><strong><font size="5">Image Resolution Worksheet</font></strong></p>
+ <p align="left" class="style1"><strong>After observing the effects of reducing the spatial resolution of an image (outdoor scene) we worked in small groups on a worksheet designed to illustrate the principles and implications of the setting pixel sizes for images. </strong></p>
+ <p align="left" class="style1"> <strong>A DIGITAL PHOTOGRAPH </strong>&#13;</p>
+ <p align="left" class="style1"> <strong>Consider an image held close for careful examination, </strong><strong>e.g. a printed photograph. First, </strong><strong>how close should we assume people are holding the photo? Recall </strong><strong>we measured approximately our near points (closest point at </strong><strong>which an object can be focused) in a previous class. </strong><strong>&#13;</strong>&#13;<strong>The nearpoint changes with age – elderly people have to hold a book or </strong><strong>newspaper at some distance to focus it. </strong><strong>&#13;</strong>&#13;<strong>Generally  25 cm is used as a benchmark for  calculations, but </strong><strong>younger people can actually hold a photograph quite close and s</strong><strong>ee </strong><strong>more details. Students in Tech 102 mostly had near points closer than 25 cm for example. </strong></p>
+ <p align="left" class="style1">&nbsp;</p>
+ <p align="left" class="style1"><strong>GEOMETRY FOR WORKSHEET </strong></p>
+ <p align="left" class="style1"><img src="res.gif" width="638" height="134"> </p>
+ <p align="left" class="style1"><strong>WORKSHEET ANSWERS </strong>&#13;</p>
+ <p align="left" class="style1"> <strong>Using </strong><strong>theta</strong><strong> = 3x10^ </strong><strong>-4 </strong><strong>radians and D = 25 cm, what is the maximum size </strong><strong>of pixels to produce an image that is smooth to the human eye? </strong><strong> &#13;</strong>&#13;<span class="style2"><strong>0.0075 cm, about the thickness of a human hair. </strong><strong>&#13;</strong>&#13;</span></p>
+ <p align="left" class="style1"> <strong>Consider an image that fills most of an A4 sheet, perhaps 18 cm x </strong><strong>26 cm. How many pixels will be needed? 
+
+ 
+ <span class="style2"><strong>8,320,000 pixels </strong></span><strong>&#13;</strong>&#13;</strong></p>
+ <p align="left" class="style1"> <strong>If the image uses 24 bit colour, how many bytes of data is involved? </strong><strong> &#13;</strong>&#13;<span class="style2"><strong>24.96 MB </strong></span>&#13;</p>
+ <p align="left" class="style1"> <strong>Using the pixel size you calculated in step one, find the number of </strong><strong>pixels per inch along a line on the paper. 1 inch = 2.54 cm. </strong><strong>Comment on your result in terms of printer specifications you have </strong><strong>seen advertised. &#13;</strong>&#13;<span class="style2"><strong>About 340 dpi &#13;</strong>&#13;<strong>(dots per inch). Printers are commonly 600 or 1200 dpi so the human eye cannot distinguish the individual dots. &#13;</strong>&#13;<strong>&#13;</strong>&#13;</span></p>
+ <p align="left" class="style1"> <strong>Consider a data projector used to display an image that has XGA resolution (1024 x 768). Assuming the image on the screen is 2 meters wide </strong><strong>and 1.5 meters tall, how close would you have to sit to resolve individual pixels? Hint: first find the size of one of the pixels on the screen. </strong>&#13;<span class="style2"><strong>Pixel about 2mm across. </strong><strong>&#13;</strong>&#13;<strong>0.002m/D = 3x10^ -4 </strong><strong>so D = 6.7 m Indeed, from a few meters the pixels produced by the projector in LT 006 (somewhat larger image) are visible to most people, and at 6 or 7 meters are just barely visible to some. </strong></span></p>
+ <p align="left" class="style1">&nbsp;</p>
+ <p align="left" class="style1"><strong>EXPECTED FILE SIZES </strong></p>
+ <p align="left" class="style1"><strong>We estimated that a 200x400, 24-bit colour image would occupy</strong></p>
+ <p align="left" class="style1"><strong>200x400x3 bytes = 240,000 bytes. </strong></p>
+ <p align="left" class="style1"><strong>Using our RGB simulator we created a uniform green image and saved is as a bitmap. The file size was 244 KB. Seems like a lot for a small patch of colour!</strong></p>
+ <p align="left" class="style1">&nbsp;</p>
+ <p align="left" class="style1"><strong>MOVIES</strong></p>
+ <p align="left" class="style1"> <strong>Note that the human eye is actually a movie camera. &#13;</strong>&#13;<strong>Experiments show that the eye snaps about 20 frames per second. Thus </strong><strong>changes from one frame to the next at more than 20 frames per second give the perception of continuous motion. Modern </strong><strong>movies are displayed at 24 frames per second. </strong>&#13;</p>
+ <p align="left" class="style1"> <strong>Exercise: Calculate the number of bytes in a two hour movie displayed at XGA resolution at 24 frames per second. </strong>&#13;</p>
+ <p align="left" class="style2"><strong>3 bytes/pixel x 1024 x 768 pixels x 24 frames/sec x 3600 sec/hr x 2 hr = 408 GB!!!</strong></p>
+ <p align="left" class="style1">&nbsp;</p>
+ <p align="left" class="style1"> <strong>COMPRESSION</strong></p>
+ <p align="left" class="style1"> <strong>We obviously need some way to compress the data. For example,</strong><strong> consider our single image. We really just need to say 200 x 400 all </strong><strong>colour 65280. Shouldn't take 240 KB.</strong><strong>&#13;</strong>&#13;</p>
+ <p align="left" class="style1"> <strong>Using our RGB simulator we found that the same image saved as a JPG is only 2 KB. It looks the same.</strong></p>
+ <p align="left" class="style1"><strong>So we turn next to the topic of data compression in general and data compression for image files in particular. </strong></p>
+ <p align="left" class="style1"><strong>&#13;</strong>&#13;&#13;</p>
+ <p align="left" class="style1">&nbsp;</p>
+</body>
+</html>

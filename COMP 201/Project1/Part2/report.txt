@@ -1,0 +1,51 @@
+David Harris 300069566
+Write up for COMP201 Project 1
+=====================================================
+
+Individual Contribution
+=====================================================
+I have working very hard on our group project. I have been working with the group for most of the time. The first time the group met in the holidays (Vipul, Neil and I attended) we made a design from our individual UML class diagrams. My design was along the general lines of the other members' designs, but was a more simplified version. I had missed a proper class to handle rooms, for example. I just had a vector that held all the Room objects rather than having having a Rooms class.
+
+On the first day we split up the classes to be written initially. We divided the classes betweenthe three of us and wrote the header files and class files from the new group UML class diagram.  We stuck to our classes initially, and wrote the simple methods. After that, Neil set up at CVS repository, and we got used to using CVS. This turned out to be a very useful tool. 
+
+During the second week i was away so I was not able to do and coding. When i came back, Vipul took me through the pieces of code that I did not understand. I read through all the code and got back up to speed with what had occoured in my absence.
+
+I started writing the main hotel class and categories class, but not much could be done to hotel without the other classes implemented. I wrote mostly wrote bookings class and about half of rooms class. I also wrote most of menu alignment, with a lot of help from Vipul. In doing this I overloaded the << operator frequently. After the initial creation, we have all worked on have each others code, all doing about the same amount of work.
+
+
+Appraisal of Design Quality
+=====================================================
+Our Design looks very simple from the menu alone, with is very good. It hides away all the inner workings of the program amd just shows the receptionist the menus. This is good because the receptionist is probably not a computer programmer and therefore wants the program to work and doesn't care how it does it. The menu struture is very clear and simple. It took a lot of work to get it to line up at the end. David Keane made the menu structure on paper and Vipul implemented it. It is very intuitive to use with commands like 'a' to add something. If the program is being used by someone who is not very used to compters, the menu would still able to be used effectivley.
+
+We have been very careful to pass objects by reference instead of value. We were very aware of memory leaks and the "shallow copy" problem.
+
+We have tried to use the STL libraries as much as possible because the algorithms are very efficient and it is standard in classes. This means that the functions are as fast as possible, with very little work on our part.
+
+I was Vipul and Neil's idea to use an XML file for the saving format. This made it easy and made it just one file to read rather than having to save and read from multiple files.
+
+I found iterators quite difficult, even though they are quite similar to java's enumerators. I found that overloading operators was quite easy and very useful once implemented. Getting the menus alligned correctly took a long time, with a lot of guess-work and internet research.
+
+At first we used a STL vector but on the way through we had to change it to a STL map.
+
+
+
+
+
+
+
+
+
+
+
+
+Ranking of Team
+=====================================================
+
+Name				Username			Rank
+David Harris		|harrisdavi3		|5
+
+David Keane			|keanedavi			|4
+
+Vipul Delwadia		|delwadvipu			|5
+
+Neil Ramsay			|ramsayneil			|4

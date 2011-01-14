@@ -1,0 +1,15 @@
+compile	= "datalink.c network.c routing.c transport.c"
+
+drawframes = true
+messagerate = 1000ms
+propagationdelay = 1500ms
+
+host Wellington {
+    x=150, y=150
+    link to Auckland {costperframe = 1, probframeloss  = 0 }
+}
+
+host Auckland {
+    x=150, y=250
+    link to Wellington {costperframe = 1, probframeloss  = 0 }
+}

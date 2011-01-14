@@ -1,0 +1,63 @@
+CSIM(WM): CUPL Simulation Program
+Version 5.0a Serial# 
+Copyright (c) 1983, 1998 Logical Devices, Inc.
+CREATED Sun May 08 11:55:11 2005
+
+LISTING FOR SIMULATION FILE: DavidHarris.si
+
+   1: Name     PHYS340;
+   2: PartNo   00;
+   3: Date     5/05/2005;
+   4: Revision 01;
+   5: Designer David Harris;
+   6: Company  VUW;
+   7: Assembly None;
+   8: Location VUW;
+   9: Device   G16V8A;
+  10: 
+  11: /* *************** INPUT PINS *********************/
+  12: /* Counter clock*/
+  13: /* Mode, fullstep or halfstep*/
+  14: /* Direction, clockwise or anti-clockwise*/
+  15: /* Output enable*/
+  16: /* *************** OUTPUT PINS *********************/
+  17: /* Define state control field*/
+  18: /*define upFull*/
+  19: /*define downFull*/
+  20: /*define upHalf*/
+  21: /*define downhalf*/
+  22: 
+  23: FIELD count = [Q3,Q2,Q1,Q0];
+  24: FIELD state = [mode,dir];
+  25:
+  26: ORDER: Q0, Q1, Q2, Q3, clk, dir, mode, !oe; 
+  27: 
+  28: 
+
+=================
+            m    
+          cdo!   
+      QQQQlido   
+      0123kree   
+=================
+0001: LHLHC000
+0002: LHLLC000
+0003: LHHLC000
+0004: LLHLC000
+0005: HLHLC010
+0006: HLLHC010
+0007: LHLHC010
+0008: LHHLC010
+0009: LLHLC000
+0010: HLHLC000
+0011: LLHLC100
+0012: LHHLC100
+0013: LHLLC100
+0014: LHLHC100
+0015: LLLHC100
+0016: LHLHC000
+0017: LHLLC000
+0018: LHHLC000
+0019: LLHLC000
+0020: HLHLC000
+0021: HLLLC000

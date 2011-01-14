@@ -1,0 +1,190 @@
+DROP TABLE Bank CASCADE;
+DROP TABLE Robbery CASCADE;
+DROP TABLE Plans CASCADE;
+DROP TABLE Robber CASCADE;
+DROP TABLE Skills CASCADE;
+DROP TABLE Robber_Skills CASCADE;
+DROP TABLE Has_Account CASCADE;
+DROP TABLE Accomplices CASCADE;
+DROP TABLE Skills_temp;
+DROP TABLE Accomplices_temp;
+DROP TABLE Has_account_temp;
+
+
+CREATE TABLE Bank (
+bankName        char(15),
+city            char(15),
+accounts        int             NOT NULL,
+security        char(15)        NOT NULL        DEFAULT 'weak',
+CONSTRAINT Bank_acc_check CHECK (accounts >= 0),
+CONSTRAINT Bank_sec_check CHECK (security IN ('weak', 'good', 'very good', 'excellent')),
+CONSTRAINT Bank_pk PRIMARY KEY (bankname, city)
+);
+
+
+CREATE TABLE Robbery (
+bankName        char(15),
+city            char(15),
+rDate           date,
+amount          decimal             NOT NULL,
+CONSTRAINT Robbery_fk FOREIGN KEY (bankname, city) REFERENCES Bank
+        ON DELETE CASCADE       ON UPDATE CASCADE,
+CONSTRAINT Robbery_amt_check CHECK (amount >= 0),
+CONSTRAINT Robbery_pk PRIMARY KEY (bankname, city, rdate)
+);
+
+
+CREATE TABLE Plans (
+bankName        char(15),
+city            char(15),
+numRobbers      int             NOT NULL        DEFAULT 1,
+pDate           date,
+CONSTRAINT Plans_fk FOREIGN KEY (bankname, city) REFERENCES Bank
+        ON DELETE CASCADE       ON UPDATE CASCADE,
+CONSTRAINT Plans_num_check CHECK (numRobbers >= 1),
+CONSTRAINT Plans_pk PRIMARY KEY (bankname, city, pdate)
+);
+
+CREATE TABLE Robber (
+robberId        SERIAL,
+nickname        char(30),
+age             int             NOT NULL,
+prisonYears     int             NOT NULL,
+CONSTRAINT Robber_age_check CHECK (age > 0 AND prisonYears >= 0 AND age > PrisonYears),
+CONSTRAINT Robber_pk PRIMARY KEY (robberId)
+);
+
+
+CREATE TABLE Skills (
+skillId             SERIAL,
+skillDescription    char(20)        UNIQUE      NOT NULL,
+CONSTRAINT Skills_pk PRIMARY KEY (skillId)
+);
+
+
+CREATE TABLE Robber_Skills (
+robberId            int,
+skillId             int,
+skillPreference     int          NOT NULL,
+skillLevel          char(2)      NOT NULL,
+CONSTRAINT Robber_skills_skill_fk FOREIGN KEY (skillId) REFERENCES Skills
+        ON DELETE CASCADE       ON UPDATE CASCADE,
+CONSTRAINT Robber_skills_robber_fk FOREIGN KEY (robberId) REFERENCES Robber
+        ON DELETE CASCADE       ON UPDATE CASCADE,
+CONSTRAINT Robber_skills_pk PRIMARY KEY (robberId, skillId)
+);
+
+
+CREATE TABLE Has_Account (
+robberId        int,
+bankName        char(15),
+city            char(15),
+CONSTRAINT Has_account_robberid_fk FOREIGN KEY (robberId) REFERENCES Robber
+        ON DELETE CASCADE       ON UPDATE CASCADE,
+CONSTRAINT Has_account_bankname_city_fk FOREIGN KEY (bankName, city) REFERENCES Bank
+        ON DELETE CASCADE       ON UPDATE CASCADE,
+CONSTRAINT Has_acc_pk PRIMARY KEY (robberId, bankName, city)
+);
+
+
+CREATE TABLE Accomplices (
+robberId        SERIAL,
+bankName        char(15)        NOT NULL,
+city            char(15)        NOT NULL,
+rDate           date            NOT NULL,
+share      int             NOT NULL,
+CONSTRAINT accomplices_money CHECK (share >= 0),
+CONSTRAINT Accomplices_robberid_fk FOREIGN KEY (robberId) REFERENCES Robber
+        ON DELETE CASCADE       ON UPDATE CASCADE,
+CONSTRAINT Accomplices_bankname_city_rdate_fk FOREIGN KEY (bankName, city, rdate) REFERENCES Robbery
+        ON DELETE CASCADE       ON UPDATE CASCADE,
+CONSTRAINT Accomplices_pk PRIMARY KEY (robberId, bankName, city, rDate)
+);
+
+
+-- 2. Populating database
+-- Bank
+\copy Bank FROM data/bank_05.data
+
+-- Robbery
+\copy Robbery FROM data/robbery_05.data
+
+-- Plans
+\copy Plans(bankname, city, pdate, numrobbers) FROM data/plans_05.data
+
+-- Robber
+\copy Robber(nickname, age, prisonyears) FROM data/robber_05.data
+
+-- Skills
+CREATE TABLE Skills_temp (
+nickName            char(30),
+skillDescription    char(15),
+skillLevel          int,
+skillPreference     char(2)
+);
+\copy Skills_temp(nickname, skillDescription, skillLevel, skillPreference) FROM data/robberskills_05.data
+INSERT INTO Skills(skillDescription) SELECT DISTINCT Skilldescription FROM (Robber NATURAL JOIN Skills_temp);
+
+-- Robber_Skills
+INSERT INTO Robber_skills SELECT robberid, skillid, skilllevel, skillpreference FROM (Robber NATURAL JOIN Skills_temp) INNER JOIN skills ON skills_temp.skillDescription = skills.skillDescription;
+
+-- Has_Account
+CREATE TABLE Has_account_temp (
+nickname        char(30),
+bankName        char(15),
+city            char(15)
+);
+\copy Has_account_temp FROM data/hasaccount_05.data
+INSERT INTO Has_Account(bankName, city, robberId) SELECT bankName, city, robberId FROM (Has_account_temp NATURAL JOIN Robber);
+
+-- Accomplices
+CREATE TABLE Accomplices_temp (
+nickname        char(30),
+bankName        char(30),
+city            char(30),
+rDate           date,
+share      decimal
+);
+\copy Accomplices_temp FROM data/accomplices_05.data
+INSERT INTO Accomplices SELECT robberid, bankname, city, rdate, share FROM ((Robber NATURAL JOIN Robbery) NATURAL JOIN Accomplices_temp);
+
+
+/*
+harrisdavi3=> \i data/updates_05.cmds
+
+(a) INSERT INTO Bank VALUES ('EasyLoan Bank', Evanston , 100, poor );
+psql:data/updates_05.cmds:2: ERROR:  ExecInsert: rejected due to CHECK constraint "bank_sec_check" on "bank"
+
+(b) INSERT INTO Bank VALUES ('Loanshark Bank', Evanston , 100, very good );
+psql:data/updates_05.cmds:4: ERROR:  Cannot insert a duplicate key into unique index bank_pk
+
+(c) INSERT INTO Bank VALUES ('EasyLoan Bank', Evanston , -5, excellent );
+psql:data/updates_05.cmds:6: ERROR:  ExecInsert: rejected due to CHECK constraint "bank_acc_check" on "bank"
+
+(d) INSERT INTO Skills Values (11, Guarding );
+psql:data/updates_05.cmds:8: ERROR:  Cannot insert a duplicate key into unique index skills_skilldescription_key
+
+(e) INSERT INTO Robber VALUES (125,'Jail Mouse',25, 35);
+psql:data/updates_05.cmds:10: ERROR:  ExecInsert: rejected due to CHECK constraint "robber_age_check" on "robber"
+
+(f) INSERT INTO Robber VALUES (4, Shotgun , 70, 0);
+psql:data/updates_05.cmds:12: ERROR:  Cannot insert a duplicate key into unique index robber_pk
+
+(g) INSERT INTO Robber_Skills(robberid, skillid, skillpreference, skilllevel) VALUES (1, 7, 1, A+ );
+psql:data/updates_05.cmds:14: ERROR:  Cannot insert a duplicate key into unique index robber_skills_pk
+
+(h) INSERT INTO Robber_Skills(robberid, skillid, skillpreference, skilllevel) VALUES (125, 1, 1, A+ );
+psql:data/updates_05.cmds:16: ERROR:  robber_skills_robber_fk referential integrity violation - key referenced from robber_skills not found in robber
+
+(i) INSERT INTO Robber_Skills(robberid, skillid, skillpreference, skilllevel) VALUES (3, 11, 3, A+ );
+psql:data/updates_05.cmds:18: ERROR:  robber_skills_skill_fk referential integrity violation - key referenced from robber_skills not found in skills
+
+(j) INSERT INTO Robbery VALUES ('NXP Bank', Chicago , 1999-01-08 , 1000);
+psql:data/updates_05.cmds:20: ERROR:  Cannot insert a duplicate key into unique index robbery_pk
+
+
+
+
+
+
+*/

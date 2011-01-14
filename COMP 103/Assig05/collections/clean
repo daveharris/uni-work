@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Written by AgentNoel(c) - 13/08/03
+
+	~/clean.pl < "$1" > "$1"2
+	mv "$1"2 "$1"
+
+
+#for i in $*;
+#do
+#	/u/students/harrisdavi3/clean.pl < "$i" > "$i"2
+#	mv "$i"2 "$i"
+#done
+
+

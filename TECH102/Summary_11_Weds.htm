@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+body {
+	background-color: #FFFFCC;
+}
+.style9 {color: #CC0000}
+-->
+</style>
+</head>
+<body>
+ <p align="center" class="style9"><strong>TECH102 - FOUNDATIONS OF DIGITAL TECHNOLOGY </strong></p>
+ <p align="center" class="style9"><strong>LECTURE NOTES </strong></p>
+ <p align="center" class="style9">Seeing the Invisible</p>
+ <p align="left" class="style9"><strong> Images of anything &#13;</strong></p>
+ <p align="left" class="style9"> One can imagine making an image to display any data that varies from point to point in space.&#13;&#13;</p>
+ <p align="left" class="style9"> For example, one might measure the temperature at points and displaying the data as a gray scale image with 0 C = black and 100 C = white. &#13;</p>
+ <p align="left" class="style9"> Or measure the water content of flesh and displaying that as a gray scale image with black = driest and white = wet. </p>
+ <p align="left" class="style9">Or
+
+
+ measure magnetic field as a function of position and display gray scale with large fields as white, small as black. </p>
+ <p align="left" class="style9"> Or determine the density of electrons is a material and display as a gray scale image with white = high density, black low. </p>
+ <p align="left" class="style9">Or 
+
+
+ Measure the population density of a certain insect in a field and display as gray scale image with high density white, low black. &#13;</p>
+ <p align="left" class="style9">Things like these examples are done reqularly. </p>
+ <p align="left" class="style9">&nbsp;</p>
+ <p align="left" class="style9"><strong> Gray scale image for temperature&#13;</strong></p>
+ <p align="left" class="style9"> Computer monitors will only display 256 levels of gray and there's no point in displaying more than that as we learned when we studied the human eye. 
+
+
+ But for data analysis I will want better resolution than 1/256. Here's an image of a circuit board in which whiter colours correspond to higher temperatures.</p>
+ <p align="left" class="style9"><img src="V__1.jpg" width="320" height="240"><strong><strong><strong><strong>&#13;</strong></strong></strong></strong></p>
+ <p align="left" class="style9">Note:</p>
+ <p align="left" class="style9"> There are no white dots on the chips. &#13;&#13;The board is green.&#13;&#13;White has nothing to do with colour – it's hot. </p>
+ <p align="left" class="style9">&nbsp;</p>
+ <p align="left" class="style9"><strong>Higher Resolution<strong>&#13;</strong></strong></p>
+ <p align="left" class="style9"> Suppose I have more accurate thermal information. Suppose I have 12 bit data (4096 possible values). What then?&#13;My temperature resolution is now 100/4096 = 0.0244 C.&#13;&#13;For data analysis I will keep all that resolution, but for display on a computer screen I will compress to 8 bit data as follows: </p>
+ <p align="left" class="style9"> 12 bit temp value 8 bit value&#13;</p>
+ <p align="left" class="style9">0 – 15: 0; 15-31: 1; 32-47 2; …&#13;4080-4095: 255 </p>
+ <p align="left" class="style9">False Colours: A Colour Palette</p>
+ <p align="left" class="style9"> We can make our displays clearer by assigning RGB values to the 256 different levels of gray I am using for display?&#13;&#13;For example, suppose I took that image and displayed it with red for 256, blue for zero, and shades of gray between?&#13;&#13;Called a colour palette. Name this one Red Hot &#13;&#13;</p>
+ <p align="left" class="style9">The result is an image with false colour</p>
+ <p align="left" class="style9"><img src="V__2.jpg" width="320" height="240"> </p>
+ <p align="left" class="style9">&nbsp;</p>
+ <p align="left" class="style9">Here's another example </p>
+ <p align="left" class="style9"><img src="V__3.jpg" width="320" height="240"><strong>&#13;</strong></p>
+ <p align="left" class="style9"> White very hot, red hot, green warm, blue cool</p>
+ <p align="left" class="style9">How do they do that?</p>
+ <p align="left" class="style9"> An image is just an array of numbers that are interpreted as colours. &#13;&#13;</p>
+ <p align="left" class="style9"> These images are 240x320 = 76800 array elements or pixels. &#13;&#13;</p>
+ <p align="left" class="style9"> I could have used 76800 little thermometers to measure the temperature and then put the whole mess in an excel file. Then I could make an image from that data. &#13;&#13;But there's a better way as we shall see shortly. &#13;<strong>&#13;&#13;
+ </strong></p>
+</body>
+</html>

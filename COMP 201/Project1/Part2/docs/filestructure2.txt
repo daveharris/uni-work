@@ -1,0 +1,94 @@
+<hotel>
+	<categories> #call Categories::Categories(handle)
+		<categories>
+			
+		</categories>
+		<counter>
+			
+		</counter>
+	</categories> #return - hotel
+	<rooms> #call Rooms::Rooms(handle)
+		<room>
+			<ID>
+				
+			</ID> #call Room::Room(handle)
+			<name>
+				
+			</name>
+			<capacity>
+				
+			</capacity>
+			<rate>
+				
+			</rate>
+			<category>
+				
+			</category>
+			<bookingschedule> #call BookingSchedule(handle)
+				<booking>
+					<ID>
+						
+					</ID> #call Booking::Booking(handle)
+					<contact> #call Contact::Contact(handle)
+						<name>
+							
+						</name>
+						<address>
+							
+						</address>
+						<number> 
+						
+						</number>
+					</contact> #return - booking
+					<date> #call Date::Date(handle)
+						<day>
+							
+						</day> 
+						<month>
+							
+						</month>
+						<year>
+							
+						</year>
+						<time>
+							
+						</time>
+					</date> #return - booking
+					<date> #call Date::Date(handle)
+						<day>
+							
+						</day> 
+						<month>
+							
+						</month>
+						<year>
+							
+						</year>
+						<time>
+							
+						</time>
+					</date> #return - booking
+					<guests> #call Guests:Guests(handle)
+						<guests>
+ 							<guest>
+								
+							</guest>
+						</guests>
+                                                <counter>
+							
+                                                </counter>
+					</guests> #return - guests
+					<rate>
+						
+					</rate>
+				</booking> #return - bookingschedule
+				<counter>
+					
+				</counter>
+			</bookingschedule> #return - room
+		</room> #return - rooms
+		<counter>
+			
+		</counter>
+	</rooms> #return - hotel
+</hotel>

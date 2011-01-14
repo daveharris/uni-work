@@ -1,0 +1,81 @@
+{\rtf1\ansi\deff1\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\fnil\fprq0\fcharset0 Arial;}{\f2\fnil\fprq0\fcharset0 Arial;}{\f3\fnil\fprq0\fcharset0 Courier New;}{\f4\fnil\fprq0\fcharset0 Times New Roman;}{\f5\fnil\fprq0\fcharset0 Verdana;}{\f6\fswiss\fprq2\fcharset0 Arial;}{\f7\fnil\fprq2\fcharset0 Mincho;}{\f8\fnil\fprq2\fcharset0 Tahoma;}}
+{\colortbl;\red0\green0\blue0;\red128\green128\blue128;}
+{\stylesheet{\s1\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\af1\afs24\lang255\ltrch\dbch\af1\afs24\langfe255\loch\f1\fs24\lang2057\snext1 Default;}
+{\s2\li720\ri0\lin720\rin0\fi-426\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\afs24\lang255\ltrch\dbch\afs24\langfe255\loch\fs24\lang2057\sbasedon3\snext3 Contents 1;}
+{\s3\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\af4\afs24\lang255\ltrch\dbch\af4\afs24\langfe255\loch\f4\fs24\lang1033\sbasedon1\snext1 Normal;}
+{\s4\li1440\ri0\lin1440\rin0\fi-426\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\afs24\lang255\ltrch\dbch\afs24\langfe255\loch\fs24\lang2057\sbasedon3\snext3 Contents 2;}
+{\s5\li2160\ri0\lin2160\rin0\fi-426\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\afs24\lang255\ltrch\dbch\afs24\langfe255\loch\fs24\lang2057\sbasedon3\snext3 Contents 3;}
+{\s6\li2880\ri0\lin2880\rin0\fi-426\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\afs24\lang255\ltrch\dbch\afs24\langfe255\loch\fs24\lang2057\sbasedon3\snext3 Contents 4;}
+{\s7\cf1\tx431{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\afs24\lang255\ltrch\dbch\afs24\langfe255\loch\fs24\lang2057\sbasedon8\snext3 Numbered Heading 1;}
+{\s8\sb440\sa60\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\afs34\lang255\ab\ltrch\dbch\afs34\langfe255\ab\loch\fs34\lang2057\b\sbasedon3\snext3 Heading 1;}
+{\s9\cf1\tx431{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\afs24\lang255\ltrch\dbch\afs24\langfe255\loch\fs24\lang2057\sbasedon10\snext3 Numbered Heading 2;}
+{\s10\sb440\sa60\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\afs28\lang255\ab\ltrch\dbch\afs28\langfe255\ab\loch\fs28\lang2057\b\sbasedon3\snext3 Heading 2;}
+{\s11\li720\ri0\lin720\rin0\fi-426\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\af1\afs24\lang255\ltrch\dbch\af1\afs24\langfe255\loch\f1\fs24\lang2057\sbasedon1\snext1 Square List;}
+{\s12\li720\ri0\lin720\rin0\fi-426\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\afs24\lang255\ltrch\dbch\afs24\langfe255\loch\fs24\lang2057\sbasedon3\snext1 Lower Roman List;}
+{\s13\li720\ri0\lin720\rin0\fi-426\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\af1\afs24\lang255\ltrch\dbch\af1\afs24\langfe255\loch\f1\fs24\lang2057\sbasedon1\snext1 Diamond List;}
+{\s14\li720\ri0\lin720\rin0\fi-426\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\af1\afs24\lang255\ltrch\dbch\af1\afs24\langfe255\loch\f1\fs24\lang2057\sbasedon1\snext1 Numbered List;}
+{\s15\li720\ri0\lin720\rin0\fi-426\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\af1\afs24\lang255\ltrch\dbch\af1\afs24\langfe255\loch\f1\fs24\lang2057\sbasedon1\snext1 Triangle List;}
+{\s16\cf1\tx431{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\afs24\lang255\ltrch\dbch\afs24\langfe255\loch\fs24\lang2057\sbasedon17\snext3 Numbered Heading 3;}
+{\s17\sb440\sa60\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\afs24\lang255\ab\ltrch\dbch\afs24\langfe255\ab\loch\fs24\lang2057\b\sbasedon3\snext3 Heading 3;}
+{\s18\li720\ri0\lin720\rin0\fi-426\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\af1\afs24\lang255\ltrch\dbch\af1\afs24\langfe255\loch\f1\fs24\lang2057\sbasedon1\snext1 Dashed List;}
+{\s19\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\af1\afs24\lang255\ltrch\dbch\af1\afs24\langfe255\loch\f1\fs24\lang2057\sbasedon14\snext1 Upper Roman List;}
+{\s20\sb440\sa60\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\afs24\lang255\ab\ltrch\dbch\afs24\langfe255\ab\loch\fs24\lang2057\b\sbasedon3\snext3 Heading 4;}
+{\s21\li720\ri0\lin720\rin0\fi-426\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\af1\afs24\lang255\ltrch\dbch\af1\afs24\langfe255\loch\f1\fs24\lang2057\sbasedon1\snext1 Heart List;}
+{\s22\sb240\sa117\cf1\qc{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\afs32\lang255\ab\ltrch\dbch\afs32\langfe255\ab\loch\fs32\lang2057\b\sbasedon3\snext3 Contents Header;}
+{\s23\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\af1\afs24\lang255\ltrch\dbch\af1\afs24\langfe255\loch\f1\fs24\lang2057\sbasedon14\snext1 Upper Case List;}
+{\s24\li720\ri0\lin720\rin0\fi-426\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\af1\afs24\lang255\ltrch\dbch\af1\afs24\langfe255\loch\f1\fs24\lang2057\sbasedon1\snext1 Bullet List;}
+{\s25\li720\ri0\lin720\rin0\fi-426\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\af1\afs24\lang255\ltrch\dbch\af1\afs24\langfe255\loch\f1\fs24\lang2057\sbasedon1\snext1 Hand List;}
+{\s26\li720\ri0\lin720\rin0\fi-426\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\af1\afs24\lang255\ltrch\dbch\af1\afs24\langfe255\loch\f1\fs24\lang2057\sbasedon1\snext1 Tick List;}
+{\s27\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\af1\afs24\lang255\ltrch\dbch\af1\afs24\langfe255\loch\f1\fs24\lang2057\sbasedon14\snext1 Lower Case List;}
+{\s28\li1440\ri1440\lin1440\rin1440\fi0\sa117\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\afs24\lang255\ltrch\dbch\afs24\langfe255\loch\fs24\lang2057\sbasedon3\snext1 Block Text;}
+{\s29\cf1\tx1584{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\af1\afs24\lang255\ltrch\dbch\af1\afs24\langfe255\loch\f1\fs24\lang2057\sbasedon7\snext3 Section Heading;}
+{\s30\li720\ri0\lin720\rin0\fi-426\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\af1\afs24\lang255\ltrch\dbch\af1\afs24\langfe255\loch\f1\fs24\lang2057\sbasedon1\snext1 Implies List;}
+{\s31\li720\ri0\lin720\rin0\fi-426\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\af1\afs24\lang255\ltrch\dbch\af1\afs24\langfe255\loch\f1\fs24\lang2057\sbasedon1\snext1 Box List;}
+{\s32\li720\ri0\lin720\rin0\fi-426\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\af1\afs24\lang255\ltrch\dbch\af1\afs24\langfe255\loch\f1\fs24\lang2057\sbasedon1\snext1 Star List;}
+{\s33\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\af3\afs24\lang255\ltrch\dbch\af3\afs24\langfe255\loch\f3\fs24\lang2057\sbasedon3\snext1 Plain Text;}
+{\s34\cf1\tx1584{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\af1\afs24\lang255\ltrch\dbch\af1\afs24\langfe255\loch\f1\fs24\lang2057\sbasedon7\snext3 Chapter Heading;}
+{\s35\sb240\sa120\keepn\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\af8\afs28\lang255\ltrch\dbch\af7\afs28\langfe255\loch\f6\fs28\lang2057\sbasedon1\snext36 Heading;}
+{\s36\sa120\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\af1\afs24\lang255\ltrch\dbch\af1\afs24\langfe255\loch\f1\fs24\lang2057\sbasedon1\snext36 Text body;}
+{\s37\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\af1\afs24\lang255\ltrch\dbch\af1\afs24\langfe255\loch\f1\fs24\lang2057\sbasedon36\snext37 List;}
+{\s38\sb120\sa120\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\af1\afs20\lang255\ai\ltrch\dbch\af1\afs20\langfe255\ai\loch\f1\fs20\lang2057\i\sbasedon1\snext38 Caption;}
+{\s39\cf1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\af1\afs24\lang255\ltrch\dbch\af1\afs24\langfe255\loch\f1\fs24\lang2057\sbasedon1\snext39 Index;}
+{\*\cs41\cf1\rtlch\af1\afs24\lang255\ltrch\dbch\af1\afs24\langfe255\loch\f1\fs24\lang2057 Endnote Characters;}
+{\*\cs42\cf1\rtlch\afs24\lang255\ltrch\dbch\afs24\langfe255\loch\fs24\lang2057\sbasedon43 Endnote Text;}
+{\*\cs43\cf1\rtlch\af4\afs24\lang255\ltrch\dbch\af4\afs24\langfe255\loch\f4\fs24\lang1033 Normal;}
+{\*\cs44\cf1{\*\updnprop5800}\up6\rtlch\af1\afs20\lang255\ltrch\dbch\af1\afs20\langfe255\loch\f1\fs20\lang2057 Endnote Reference;}
+{\*\cs45\cf1\rtlch\afs20\lang255\ltrch\dbch\afs20\langfe255\loch\fs20\lang2057\sbasedon43 Footnote Text;}
+{\*\cs46\cf1{\*\updnprop5800}\up6\rtlch\af1\afs20\lang255\ltrch\dbch\af1\afs20\langfe255\loch\f1\fs20\lang2057 Footnote Reference;}
+}
+{\info{\creatim\yr2005\mo9\dy15\hr12\min1}{\revtim\yr1601\mo1\dy1\hr0\min0}{\printim\yr2005\mo9\dy15\hr12\min45}{\comment StarWriter}{\vern6450}}\deftab720
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse199\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\pgdscnxt0 Default;}
+{\pgdsc1\pgdscuse195\pgwsxn12240\pghsxn15840\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\pgdscnxt1 Endnote;}}
+{\*\pgdscno0}\paperh15840\paperw12240\margl1440\margr1440\margt1440\margb1440\sectd\sbknone\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnar
+\pard\plain \ltrpar\s3\cf1\ul\sl240\slmult1\qc{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\rtlch\afs28\lang255\ab\ltrch\dbch\afs28\langfe255\ab\loch\fs28\lang2057\b {\loch\f1\fs28\lang2057\i0\b ESCI132 - Tutorial 7}
+\par \pard\plain \ltrpar\s3\cf1\sl240\slmult1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\ql\rtlch\afs22\lang255\ltrch\dbch\afs22\langfe255\loch\fs22\lang2057 {\loch\f1\fs22\lang2057\i0\b0 David Harris}
+\par \pard\plain \ltrpar\s3\cf1\sl240\slmult1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\ql\rtlch\afs22\lang255\ltrch\dbch\afs22\langfe255\loch\fs22\lang2057 {\loch\f1\fs22\lang2057\i0\b0 300069566}
+\par \pard\plain \ltrpar\s3\cf1\sl240\slmult1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\ql\rtlch\afs22\lang255\ltrch\dbch\afs22\langfe255\loch\fs22\lang2057 
+\par \pard\plain \ltrpar\s3\cf1\sl240\slmult1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\ql\rtlch\afs22\lang255\ltrch\dbch\afs22\langfe255\loch\fs22\lang2057 {\loch\f1\fs22\lang2057\i0\b0 Scientists in Antarctica have announced that the melting of the 1`ice sheets may not only be due to global warming, but also the natural cycle of melting and freezing.}
+\par \pard\plain \ltrpar\s3\cf1\sl240\slmult1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\ql\rtlch\afs22\lang255\ltrch\dbch\afs22\langfe255\loch\fs22\lang2057 
+\par \pard\plain \ltrpar\s3\cf1\sl240\slmult1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\ql\rtlch\afs22\lang255\ltrch\dbch\afs22\langfe255\loch\fs22\lang2057 {\loch\f1\fs22\lang2057\i0\b0 There are two ice sheets that make up the continent of Antarctica.  The East Antarctic Ice Sheet (EAIS) is a 4km thick slab of ice that is relatively stable.  In contrast, the West Antarctic Ice Sheet (WAIS) is only about 100m thick, and is sitting on land
+ that is below sea level which is inherently unstable.  If the EAIS melted it would raise the global sea level by 60m, however this is in no danger of melting.  The report has found that WAIS is very unstable and if it melted the sea level would raise betw
+een 3m and 6m.  This would devastate large areas of land, and many islands.  Those particularly affected would be small pacific islands, only a few metres above the current sea level.}
+\par \pard\plain \ltrpar\s3\cf1\sl240\slmult1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\ql\rtlch\afs22\lang255\ltrch\dbch\afs22\langfe255\loch\fs22\lang2057 
+\par \pard\plain \ltrpar\s3\cf1\sl240\slmult1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\ql\rtlch\afs22\lang255\ltrch\dbch\afs22\langfe255\loch\fs22\lang2057 {\loch\f1\fs22\lang2057\i0\b0 The report released today has found that the cause to the sudden melting of the Antarctic ice sheets could be the combination of global warming and the natural cycle of ice formation.  Up until today's findings, it was generally thought that the increase o
+f greenhouse gasses (especially CO{{\*\updnprop5801}\dn9 2}) and the associated warming of the environment was causing the ice sheets to melt at increasing rates.  The temperature has been found to oscillate between warm and cool periods.  The report states that we are just going
+ through a normally warm period, before plunging into a cool period.}
+\par \pard\plain \ltrpar\s3\cf1\sl240\slmult1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\ql\rtlch\afs22\lang255\ltrch\dbch\afs22\langfe255\loch\fs22\lang2057 
+\par \pard\plain \ltrpar\s3\cf1\sl240\slmult1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\ql\rtlch\afs22\lang255\ltrch\dbch\afs22\langfe255\loch\fs22\lang2057 {\loch\f1\fs22\lang2057\i0\b0 The increase of temperature and greenhouse gasses has caused ice to melt in unprecedented areas.  In the last 25 years alone, the mean temperature has increased by 2{\f5 \'b0}C.  However, there is evidence that the ice sheets have melted in the last century due to 
+internal forces.  This information was gleaned from ice cores.  These are multiple-metre lengths of ice that has been drilled from the ice from depths of up to 4km.  These are then analysed and parameters such as oxygen content, isotope levels are measured
+.  Drilling into the ice allows us to find the {\b0\ulnone age} of the ice.  With current technology, we can drill down to about 1,000,000 years.  It has been proposed that the WAIS is about 3 million years old, when it last melted and was covered with foliage and dino
+saurs roamed the land.}
+\par \pard\plain \ltrpar\s3\cf1\sl240\slmult1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\ql\rtlch\afs22\lang255\ltrch\dbch\afs22\langfe255\loch\fs22\lang2057 
+\par \pard\plain \ltrpar\s3\cf1\sl240\slmult1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\ql\rtlch\afs22\lang255\ltrch\dbch\afs22\langfe255\loch\fs22\lang2057 {\loch\f1\fs22\lang2057\i0\b0 The melting of the ice sheets has caused the explosion of so-called ice-streams.  These are rivers of ice that flow from the dome of the ice sheets down to the shore which can travel at up to 1m per day.  They travel so quickly because they are sliding alo
+ng the slippery mud, which is created when the snow melts due to extreme pressure of the ice on-top.  Ice shelves are huge masses of ice that are attached to the continent but are floating on sea water.  With the increasing temperature, these are also melt
+ing at increased rate, which removes the buttress effect.  This is where ice shelves create a barrier that stops the ice streams from flowing directly into the sea.  Thus, with the barrier now removed, the ice streams speed up.}
+\par \pard\plain \ltrpar\s3\cf1\sl240\slmult1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\ql\rtlch\afs22\lang255\ltrch\dbch\afs22\langfe255\loch\fs22\lang2057 
+\par \pard\plain \ltrpar\s3\cf1\sl240\slmult1{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\ql\rtlch\af4\afs24\lang255\ltrch\dbch\af4\afs24\langfe255\loch\f4\fs24\lang1033{\loch\f1\fs22\lang2057\i0\b0\lang2057\fs22\f1 The internal cycle of melting and forming of ice sheets is called the binge/purge model.  Scientists are not sure if we are in one cycle, or half-way in fact halfway between them.  Further drilling and analysis will tell for sure, but it seems that the com
+bined effect of global warming caused by CO{{\*\updnprop5801}\dn9 2} emissions and the internal working of the ice sheets is causing their demise.  However, it is know that if the WAIS does indeed melt, it will cause world-wide havoc, with an unknown effect on global climate.  Ho
+wever, that being said, we still need to find economic and efficient alternatives to petrol to reduce our CO{{\*\updnprop5801}\dn9 2} emissions}
+\par }

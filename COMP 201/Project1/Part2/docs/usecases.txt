@@ -1,0 +1,22 @@
+Add Booking
+Remove Booking
+Edit Booking
+     Edit Contact
+	  Edit Name
+	  Edit Address
+	  Edit Phone Number
+     Edit Dates
+     Edit Guests
+	  Add Guest
+	  Remove Guest
+	  Rename Guest
+Add Room
+Remove Room
+Edit Room
+     Edit Name
+     Edit Category
+     Edit Rate
+     Edit Capacity
+Add Category
+Remove Category
+Rename Category

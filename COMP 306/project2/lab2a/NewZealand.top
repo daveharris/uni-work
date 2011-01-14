@@ -1,0 +1,36 @@
+host NewPlymouth{
+    x=50, y=280
+    link to Wellington  { costperframe = 2 }
+    link to Hamilton    { costperframe = 1 }
+}
+host Hamilton {
+    x=150, y=150
+    link to NewPlymouth { costperframe = 1 }
+    link to Taupo       { costperframe = 2 }
+    link to Napier      { costperframe = 2 }
+    link to Auckland    { costperframe = 3 }
+}
+host Taupo {
+    x=150, y=250
+    link to Hamilton    { costperframe = 2 }
+    link to Wellington  { costperframe = 3 }
+}
+
+host Wellington {
+    x=150, y=410
+    link to Taupo       { costperframe = 3 }
+    link to Masterton   { costperframe = 1 }
+    link to NewPlymouth { costperframe = 2 }
+}
+host Auckland {
+    x=135, y=30
+    link to Hamilton 	{ costperframe = 3 }
+}
+host Napier {
+    x=315, y=220
+    link to  Hamilton 	{ costperframe = 2 }
+}
+host Masterton {
+    x=215, y=370
+    link to Wellington 	{ costperframe = 1 }
+}

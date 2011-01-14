@@ -1,0 +1,168 @@
+
+RCS file: /u/students/ramsayneil/comp201t11/COMP201/Project1/bookingschedule.cc,v
+Working file: bookingschedule.cc
+head: 1.38
+branch:
+locks: strict
+access list:
+symbolic names:
+	WORKING: 1.37
+keyword substitution: kv
+total revisions: 38;	selected revisions: 38
+description:
+----------------------------
+revision 1.38
+date: 2004/05/02 15:00:03;  author: keanedavi;  state: Exp;  lines: +10 -0
+Includes Big Comment at top of CC File
+----------------------------
+revision 1.37
+date: 2004/05/02 14:03:52;  author: harrisdavi3;  state: Exp;  lines: +7 -12
+replace stringstream with direct input in file loading
+----------------------------
+revision 1.36
+date: 2004/05/02 12:53:49;  author: harrisdavi3;  state: Exp;  lines: +24 -7
+Commented. Took out browseBookings()
+----------------------------
+revision 1.35
+date: 2004/05/02 11:32:39;  author: keanedavi;  state: Exp;  lines: +51 -16
+modified printSchedule to allow filtering of old bookings
+----------------------------
+revision 1.34
+date: 2004/05/02 09:44:35;  author: delwadvipu;  state: Exp;  lines: +1 -17
+tidied up loading from file output
+----------------------------
+revision 1.33
+date: 2004/05/02 09:23:23;  author: keanedavi;  state: Exp;  lines: +8 -3
+isFree logic no longer allows 0 day bookings. new Bookings can't overlap old ones
+----------------------------
+revision 1.32
+date: 2004/05/02 09:04:01;  author: harrisdavi3;  state: Exp;  lines: +86 -30
+completed menu system(s)
+----------------------------
+revision 1.31
+date: 2004/05/02 06:29:04;  author: keanedavi;  state: Exp;  lines: +7 -3
+newBooking now checks checkout is at least 1 day after checkin
+----------------------------
+revision 1.30
+date: 2004/05/02 04:28:00;  author: delwadvipu;  state: Exp;  lines: +76 -34
+implemented guest edit menu, fixed guests class errors
+----------------------------
+revision 1.29
+date: 2004/05/02 03:29:09;  author: harrisdavi3;  state: Exp;  lines: +13 -0
+Changed so it could handle the total room takings and menu
+----------------------------
+revision 1.28
+date: 2004/05/02 03:10:27;  author: ramsayneil;  state: Exp;  lines: +1 -1
+fixed - added ) to end of if statement
+----------------------------
+revision 1.27
+date: 2004/05/02 02:18:31;  author: harrisdavi3;  state: Exp;  lines: +8 -26
+Attempted to fix logic flaw in isFree()
+----------------------------
+revision 1.26
+date: 2004/05/02 01:36:18;  author: harrisdavi3;  state: Exp;  lines: +1 -1
+cahnged setiosflags() to restiosflags()
+----------------------------
+revision 1.25
+date: 2004/05/02 00:44:09;  author: delwadvipu;  state: Exp;  lines: +60 -21
+changed so that print summary takes a room *
+----------------------------
+revision 1.24
+date: 2004/05/01 22:18:03;  author: delwadvipu;  state: Exp;  lines: +4 -4
+added method to booking class that returns a pointer to the guests object stored within the booking class
+added > to pair declaration within booking menu system
+----------------------------
+revision 1.23
+date: 2004/05/01 06:37:41;  author: keanedavi;  state: Exp;  lines: +10 -0
+End of work update.
+----------------------------
+revision 1.22
+date: 2004/05/01 06:26:11;  author: harrisdavi3;  state: Exp;  lines: +3 -2
+added guests to list of deps
+----------------------------
+revision 1.21
+date: 2004/05/01 05:11:21;  author: harrisdavi3;  state: Exp;  lines: +5 -1
+fixed - when ignore called flags are cleared
+----------------------------
+revision 1.20
+date: 2004/05/01 04:39:50;  author: ramsayneil;  state: Exp;  lines: +16 -4
+fixed - error checking for invalid data
+----------------------------
+revision 1.19
+date: 2004/05/01 02:37:09;  author: ramsayneil;  state: Exp;  lines: +6 -6
+fixed - looks for used booking instead of other way round
+----------------------------
+revision 1.18
+date: 2004/05/01 02:24:55;  author: ramsayneil;  state: Exp;  lines: +11 -2
+completed - isFree function - hope it works
+----------------------------
+revision 1.17
+date: 2004/05/01 02:05:56;  author: harrisdavi3;  state: Exp;  lines: +2 -1
+changed so that uses << operator in booking class from menu method
+----------------------------
+revision 1.16
+date: 2004/04/30 04:48:21;  author: keanedavi;  state: Exp;  lines: +2 -2
+Date entry works in the Adding of a Booking
+----------------------------
+revision 1.15
+date: 2004/04/28 04:47:46;  author: delwadvipu;  state: Exp;  lines: +9 -9
+General bugfixes, compiles fine but still reading from file doesn't work for rooms. Makefile now has an option to compile only
+----------------------------
+revision 1.14
+date: 2004/04/26 00:45:39;  author: delwadvipu;  state: Exp;  lines: +115 -0
+maintenance, moved class menus to their respective classes, updated GROUP.xmi to match, fixed compile issues with other source files
+----------------------------
+revision 1.13
+date: 2004/04/21 11:44:49;  author: delwadvipu;  state: Exp;  lines: +9 -3
+more bugfixes, rooms aren't being loaded into the map however
+----------------------------
+revision 1.12
+date: 2004/04/21 08:02:24;  author: delwadvipu;  state: Exp;  lines: +8 -1
+Put in cout statements + added to hotel menu(s), still testing
+----------------------------
+revision 1.11
+date: 2004/04/21 01:10:03;  author: delwadvipu;  state: Exp;  lines: +3 -2
+made compilable
+----------------------------
+revision 1.10
+date: 2004/04/21 00:39:17;  author: delwadvipu;  state: Exp;  lines: +57 -39
+implemented file constructor
+----------------------------
+revision 1.9
+date: 2004/04/20 22:41:50;  author: ramsayneil;  state: Exp;  lines: +9 -1
+fixed assignment operator - agrument needs to be const
+added methods - isFree, browseBookings
+----------------------------
+revision 1.8
+date: 2004/04/20 01:32:56;  author: ramsayneil;  state: Exp;  lines: +8 -6
+corrected assignment operator - should be same as copy constructor
+----------------------------
+revision 1.7
+date: 2004/04/19 05:06:34;  author: delwadvipu;  state: Exp;  lines: +5 -3
+made compilable, hotel.cc i.e. "test" actually runs! holy sh*t!!!
+----------------------------
+revision 1.6
+date: 2004/04/17 11:49:31;  author: ramsayneil;  state: Exp;  lines: +32 -0
+added destructor, copy constructor, and assignment operator
+----------------------------
+revision 1.5
+date: 2004/04/17 01:59:53;  author: ramsayneil;  state: Exp;  lines: +2 -2
+passes rate not room ID
+----------------------------
+revision 1.4
+date: 2004/04/16 04:48:50;  author: keanedavi;  state: Exp;  lines: +16 -6
+Debugged, Compilable, but untested.
+----------------------------
+revision 1.3
+date: 2004/04/16 03:26:39;  author: keanedavi;  state: Exp;  lines: +21 -2
+Initial Implementation
+printSchedule, and loading from file not yet supported
+----------------------------
+revision 1.2
+date: 2004/04/14 22:52:47;  author: ramsayneil;  state: Exp;  lines: +33 -0
+initial import
+----------------------------
+revision 1.1
+date: 2004/04/13 02:44:19;  author: ramsayneil;  state: Exp;
+initial import
+=============================================================================

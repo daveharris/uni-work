@@ -1,0 +1,43 @@
+run : hotel
+	clear; ./hotel
+
+test: hotel
+	clear; ( echo "l" ; echo "r" ; echo "v" ; echo "1" ; cat - ) | ./hotel
+
+only : hotel
+
+gdb : hotel
+	clear; gdb hotel
+
+hotel : booking.o bookingschedule.o categories.o contact.o date.o hotel.o room.o rooms.o 
+	g++ -o hotel booking.o bookingschedule.o categories.o contact.o date.o hotel.o room.o rooms.o
+
+booking.o : booking.cc booking.h contact.h date.h room.h
+	g++ -c -g booking.cc
+
+bookingschedule.o : bookingschedule.cc bookingschedule.h date.h booking.h room.h
+	g++ -c -g bookingschedule.cc
+
+categories.o : categories.cc categories.h
+	g++ -c -g categories.cc
+
+contact.o : contact.cc contact.h
+	g++ -c -g contact.cc
+
+date.o : date.cc date.h
+	g++ -c -g date.cc
+
+hotel.o : hotel.cc hotel.h categories.h rooms.h date.h
+	g++ -c -g hotel.cc
+
+room.o : room.cc room.h bookingschedule.h
+	g++ -c -g room.cc
+
+rooms.o : rooms.cc rooms.h room.h date.h
+	g++ -c -g rooms.cc
+
+clean :
+	-rm *.o
+
+tidy :
+	-rm *~ .*~ .\#* \#*

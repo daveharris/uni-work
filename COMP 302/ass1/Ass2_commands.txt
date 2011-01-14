@@ -1,0 +1,14 @@
+CREATE TABLE loaned_book (
+CustomerId        int NOT NULL,
+DueDate           date,
+ISBN              int NOT NULL,
+CONSTRAINT Loaned_book_PK PRIMARY KEY(CustomerID, ISBN)
+);
+
+CREATE TABLE customer (
+CustomerID           int,
+L_Name               char(15),
+F_Name               char(15),
+City                 char(15),
+CONSTRAINT Customer_Pk PRIMARY KEY(CustomerID)
+);

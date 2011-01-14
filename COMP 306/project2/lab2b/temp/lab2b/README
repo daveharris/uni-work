@@ -1,0 +1,6 @@
+Compile tops by:
+	gcc -lcrypto tops.c -o top
+	./top ../flooding.top
+
+
+This program should be run when you get a new topology file to produce public and private keys.  The script will, if required create a data directory where it is run which will contain the public and provate keys.

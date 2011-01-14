@@ -1,0 +1,9 @@
+I have tried to add the #ifdef CHANGED and #endif around the parts that I have changed but I cant 
+get it to compile.  I remember Peter K saying in the tutorial that if you forget it is not then 
+end of the world.
+
+I have changed basically every method, and have inculded my cvs diff or routing.c as proof.
+
+Regards
+David Harris
+300069566

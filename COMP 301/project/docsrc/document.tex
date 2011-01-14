@@ -1,0 +1,1235 @@
+\documentclass[a4paper,10pt]{report}
+
+% Title Page
+\title{Comp301 -- Use Case Descriptions Document}
+\author{Group 6 Solutions}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\begin{abstract}
+This document is part of Deliverable One, COMP301 Group Project 2005. This document must be read in conjunction with the Use Case Diagrams contained in the Umbrello\textsuperscript{TM} file, \verb+../usecases.xmi+ \\ \\Group 6 Solutions is a Registered Company under the Companies Act 1993, and has four (4) employees: Neil James Ramsay (Leader) 300069252; David Alexander Keane (Contact) 300069137; David Jonathan Harris 300069566; Vipul Delwadia 300069307. \\ \\\centerline{Copyright (c) 2005. All rights reserved.}
+\end{abstract}
+
+\chapter{Cargo Management}
+\section{Request Allocation of Space on an Assignment}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+    \item HQ:Customer Service Representative
+  \end{itemize}
+\item[Secondary Actors] \
+  \begin{itemize}
+    \item HQ:Shipping Manager
+  \end{itemize}
+\item[Entry Condition]
+  The Customer Service Representative is already authenticated with the system.
+\item[Flow of Events] \
+  \begin{enumerate}
+    \item The Customer Service Representative selects the ``Request Allocation of Space'' feature from the system display. The system displays a form for the input of cargo details.
+    \item The Customer Service Representative enters the details into the system.
+    \item A notification is sent to the Shipping Manger
+    \item The system notifies the Customer Service Representative that the information has been passed to the Shipping Manager.
+    \item The system records the Allocation Request in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] None
+\item[Exit Condition]
+  An Assignment is now ready to be allocated to a ship by the Shipping Manager
+\item[Special Conditions] None
+\end{description}
+
+\section{Request Deallocation of Space on an Assignment}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+    \item HQ:Customer Service Representative
+  \end{itemize}
+\item[Secondary Actors]\
+  \begin{itemize}
+    \item HQ:Shipping Manager
+  \end{itemize}
+\item[Entry Condition]
+  The Customer Service Representative is already authenticated with the system.
+\item[Flow of Events] \
+  \begin{enumerate}
+    \item The Customer Service Representative selects the ``Request Deallocation of Space'' feature from the system display. The system displays a list of space allocations completed, or to be completed.
+    \item The Customer Service Representative selects the allocation to be deleted.
+    \item A notification is sent to the Shipping Manger
+    \item The system notifies the Customer Service Representative that the information has been passed to the Shipping Manager.
+    \item The system records the Deallocation Request in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] None
+\item[Exit Condition]
+  An Assignment is now ready to be deallocated from a ship by the Shipping Manager
+\item[Special Conditions] None
+\end{description}
+
+\section{Allocate Assignment to Ship}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+    \item HQ:Shipping Manager
+  \end{itemize}
+\item[Secondary Actors] \
+  \begin{itemize}
+    \item Ship Bridge Officer
+  \end{itemize}
+\item[Entry Condition]
+  The Shipping Manager is already authenticated with the system.
+\item[Flow of Events] \
+  \begin{enumerate}
+    \item The Shipping Manager selects the ``allocate assignment to ship'' feature from the system display. The system displays the fleet list.
+    \item The Shipping Manager selects which ship they want to allocate an assignment to. The system prompts the Shipping Manager for the necessary details.
+    \item The system allocates the assignment as requested, and notifies the Shipping Manager.
+    \item A notification is sent to the Ship Bridge Officer.
+    \item The system records the Assignment Allocation in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{itemize}
+   \item If there is no space on the selected ship to be allocated, a error message will notify the Shipping Manager of the situation
+   \item There is a lack of communication between ship and HQ. The system displays a error message advising the Shipping Manager.
+  \end{itemize}
+\item[Exit Condition]
+  An Assignment is allocated to the selected ship, otherwise a error message is displayed, informing the Shipping Manager of the situation.
+\item[Special Conditions] None
+\end{description}
+
+\section{Deallocate Assignment from Ship}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+    \item HQ:Shipping Manager
+  \end{itemize}
+\item[Secondary Actors] \
+  \begin{itemize}
+    \item Ship Bridge Officer
+  \end{itemize}
+\item[Entry Condition]
+  The Shipping Manager is already authenticated with the system.
+\item[Flow of Events] \
+  \begin{enumerate}
+    \item The Shipping Manager selects the ``deallocate assignment to ship'' feature from the system display. The system displays the fleet list.
+    \item The Shipping Manager selects which ship they want to deallocate an assignment from. The system asks the Shipping Manager to confirm their request.
+    \item The system deallocates the assignment as requested, and notifies the Shipping Manager.
+    \item A notification is sent to the Ship Bridge Officer.
+    \item The system records the Assignment Deallocation in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{itemize}
+   \item There is a lack of communication between ship and HQ. The system displays a error message advising the Shipping Manager.
+  \end{itemize}
+\item[Exit Condition]
+  An Assignment is deallocated from the selected ship, otherwise a error message is displayed, informing the Shipping Manager of the situation.
+\item[Special Conditions] None
+\end{description}
+
+\section{View Space on Assignment}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+    \item Ship Bridge Officer
+    \item HQ: Shipping Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The Shipping Manager or Ship Bridge Officer is already authenticated with the system
+\item[Flow of Events] \
+  \begin{enumerate}
+    \item The user selects the ``view space on assignment'' feature from the system display. The system displays the assignment list.
+    \item The user selects which assignment to view space on.
+    \item The system displays the space on the selected ship.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{itemize}
+    \item The allocation of space displayed may not reflect the current allocation of space on the ship. The system displays the time/date of last ship status update.
+  \end{itemize}
+\item[Exit Condition] None
+\item[Special Conditions] None
+\end{description}
+
+\section{Allocate Space on Assignment}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+    \item HQ: Shipping Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The Shipping Manager is already authenticated with the system
+\item[Flow of Events] \
+  \begin{enumerate}
+    \item The Shipping Manager selects the ``allocate space on assignment'' feature from the system display. The system displays the assignment list.
+    \item The Shipping Manager selects which assignment they want to allocate space on. The system prompts the Shipping Manager for necessary details.
+    \item The system allocates space on the assignment, updates the assignment's status.
+    \item The system records the Space Allocation in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{itemize}
+    \item If there is no space on the selected assignment to be allocated, the system will display a notification to the Customer Representative.
+    \item If there is a lack of communication between HQ and Shipping Manager, the system displays a error message advising the Shipping Manager.
+    \item The allocation of space displayed may not reflect the current allocation of space on the assignment. The system displays the time/date of last assignment status update.
+  \end{itemize}
+\item[Exit Condition]
+ Space is allocated to the selected assignment, otherwise a error message is displayed.
+\item[Special Conditions] None
+\end{description}
+
+\section{Deallocate Space on Assignment}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+    \item HQ: Shipping Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The Shipping Manager is already authenticated with the system
+\item[Flow of Events] \
+  \begin{enumerate}
+    \item The Shipping Manager selects the ``request deallocation of space on assignment'' feature from the system display. The system displays the assignment list.
+    \item The Shipping Manager selects which assignment they want to deallocate space from..
+    \item The system deallocates space from the assignment, updates the assignment's status, and notifies the Customer Representative.
+    \item The system records the Space Deallocation in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{itemize}
+    \item If there is a lack of communication between HQ and Shipping Manager, the system displays a error message advising the Shipping Manager.
+    \item The allocation of space displayed may not reflect the current allocation of space on the assignment. The system displays the time/date of last assignment status update.
+  \end{itemize}
+\item[Exit Condition]
+ Space is deallocated from the selected assignment, otherwise a error message is displayed.
+\item[Special Conditions] None
+\end{description}
+
+\chapter{Monitor Assignment Status}
+\section{Request Assignment Status Update}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+    \item Headquarters: Shipping Manager
+  \end{itemize}
+\item[Secondary Actors] \
+  \begin{itemize}
+    \item Ship Bridge Officer
+  \end{itemize}
+\item[Entry Condition]
+  The Shipping Manager is already authenticated with the system.
+\item[Flow of Events] \
+  \begin{enumerate}
+    \item The shipping manager selects the ``update assignment status'' feature from the system display. The system displays the assignment list.
+    \item The shipping manager selects the desired assignment. 
+    \item The system requests an updated assignment status from the ship.
+    \item The system records the Status Update Request in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{itemize}
+    \item The status displayed may not reflect the current status of the assignment (e.g. ship was unable to update the assignment status). The system displays the time/date of last user input for each individual attribute.
+    \item There is a lack of communication between ship and HQ. The system displays an error message advising the user.
+  \end{itemize}
+\item[Exit Condition]
+  The system reflects the current status of the assignment.
+\item[Special Conditions] None
+\end{description}
+
+
+\section{View Assignment Status}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item Ship Bridge Officer, HQ: Shipping Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The authorized user is already authenticated with the system.
+\item[Flow of Events] \
+  \begin{enumerate}
+    \item The user selects the ``view assignment status'' feature from the system display. The system displays the assignment list.
+    \item The shipping manager selects the desired assignment.
+    \item The system displays the status of that assignment.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{itemize}
+    \item The status displayed may not reflect the current status of the assignment (e.g. ship was unable to update the assignment status). The system displays the time/date of last user input for each individual attribute.
+  \end{itemize}
+\item[Exit Condition] None
+\item[Special Conditions] None
+\end{description}
+
+\section{Update Assignment Status}
+\begin{description}
+  \item[Primary Actors] \
+    \begin{itemize}
+      \item Ship Bridge Officer
+    \end{itemize}
+  \item[Secondary Actors] \
+    \begin{itemize}
+      \item HQ: Shipping Manager
+    \end{itemize}
+  \item[Entry Condition]
+    The Ship Bridge Officer is already authenticated with the system.
+  \item[Flow of Events] \
+    \begin{enumerate}
+      \item The ship bridge officer selects the ``update assignment status'' feature from the system display.
+      \item The system asks the user for the necessary details of the assignment's status, which the user provides.
+      \item The system updates itself with the new status, and displays it.
+      \item The system sends a notification of the update to the assignment's status to the HQ: Shipping Manager.
+    \item The system records the Assignment Status Update in the Activity Log.
+    \end{enumerate}
+  \item[Exceptional Flows] \
+    \begin{itemize}
+      \item The system cannot obtain the internal attributes automatically. The system displays an error message advising the user.
+      \item The user inputs invalid details. The system notifies the user of the situation and requests that the user re-enter the invalid details.
+      \item There is a lack of communication between the ship and HQ. The system notifies the user this is the case.
+    \end{itemize}
+  \item[Exit Condition] The system reflects the current status of the assignment.
+  \item[Special Conditions] None
+\end{description}
+
+
+\chapter{Monitor Ship Status}
+\section{Request Ship Status Update}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+    \item HQ: Shipping Manager
+  \end{itemize}
+\item[Secondary Actors] \
+  \begin{itemize}
+    \item Ship Bridge Officer
+  \end{itemize}
+\item[Entry Condition]
+  The Shipping Manager is already authenticated with the system.
+\item[Flow of Events] \
+  \begin{enumerate}
+    \item The shipping manager selects the ``update ship status'' feature from the system display. The system displays the fleet list.
+    \item The shipping manager selects the desired ship. The system requests an updated status from the ship via fax.
+    \item The system records the Ship Status Update Request in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{itemize}
+   \item There is a lack of communication between ship and HQ. The system displays a error message advising the user.
+  \end{itemize}
+\item[Exit Condition]
+  A Request has been made to the selected ship for a ship status update.
+
+\item[Special Conditions] None
+\end{description}
+
+
+\section{View Ship Status}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item Ship Bridge Officer, HQ: Shipping Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The authorized user is already authenticated with the system.
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The user selects the ``view ship status'' feature from the system display. The system displays the fleet list.
+  \item The user selects the desired ship.
+  \item The system displays current the status of that ship.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{itemize}
+   \item The status displayed may not reflect the current status of the ship (e.g. ship was unable to update status). The system displays the time/date of last user input for each individual attribute (e.g. fuel, position, piracy).
+  \end{itemize}
+\item[Exit Condition] None 
+\item[Special Conditions] None  
+\end{description}
+
+
+
+\section{Update Ship Status}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+    \item Ship Bridge Officer
+  \end{itemize}
+\item[Secondary Actors] \
+  \begin{itemize}
+    \item HQ: Shipping Manager
+  \end{itemize}
+\item[Entry Condition]
+  The Ship Bridge Officer is already authenticated with the system.
+\item[Flow of Events] \
+  \begin{itemize}
+    \item The Ship Bridge Officer selects the ``update ship status'' feature from the system display. The system displays the fleet list.
+    \item The Ship Bridge Officer enters the appropriate data into the system.
+    \item The system sends the updated status to HQ via fax.
+    \item The system records the Ship Status Update in the Activity Log.
+  \end{itemize}
+\item[Exceptional Flows] \
+  \begin{itemize}
+   \item The status displayed may not reflect the current status of the ship (e.g. ship was unable to update status). The system displays the time/date of last user input for each individual attribute (e.g. fuel, position, piracy).
+   \item There is a lack of communication between ship and HQ. The system displays a error message advising the user.
+  \end{itemize}
+ \item[Special Conditions] \
+  \begin{itemize}
+  \item If the update was successful, the system reflects the current status of the ship, otherwise the current data is out of date and the update needs to be re-sent.
+  \item There is a lack of communication between ship and HQ. The system displays a error message advising the user.
+  \end{itemize}
+\end{description}
+
+
+\chapter{Meteorological update}
+\section{Request Meteorological Details}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item Ship Bridge Officer
+  \end{itemize}
+\item[Secondary Actors] \
+  \begin{itemize}
+  \item Inmarsat
+  \end{itemize}
+\item[Entry Condition]
+  The Ship Bridge Officer is already authenticated with the system
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The Ship Bridge Officer selects the ``request meteorological update'' feature from the system display. The system displays the region list.
+  \item The Ship Bridge Officer selects the desired region.
+  \item The system requests an updated status from Inmarsat.
+    \item The system records the Meteorological Detail Request in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{itemize}
+  \item The Inmarsat service may not be online, and therefore a meteorological update request would not be received.
+  \end{itemize}
+\item[Exit Condition]
+  A Request has been made to Inmarsat for a meteorological update.
+\item[Special Conditions] None
+\end{description}
+
+
+
+\section{View Meteorological Details}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item Ship Bridge Officer
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The Ship Bridge Officer is already authenticated with the system
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The Ship Bridge Officer selects the ``view meteorological update'' feature from the system display. The system displays the region list.
+  \item The Ship Bridge Officer selects the desired region.
+  \item The system displays the meteorological status.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{itemize}
+  \item The status displayed may not reflect the current meteorological status of the ship. The system displays the time/date of last Inmarsat meteorological status update.
+  \end{itemize}
+\item[Exit Condition] None
+\item[Special Conditions] None
+\end{description}
+
+
+
+\section{Provide Meteorological Details}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item Inmarsat
+  \end{itemize}
+\item[Secondary Actors] \
+  \begin{itemize}
+  \item Ship Bridge Officer
+  \end{itemize}
+\item[Entry Condition] None
+  \item[Flow of Events] \
+  \begin{enumerate}
+  \item The system receives a meteorological status update from Inmarsat.
+  \item The system records the Receipt of Meteorological Details in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{itemize}
+  \item The Inmarsat service may not be online, and therefore a meteorological update would not be sent.
+  \end{itemize}
+\item[Exit Condition]
+  A meteorological status update from Inmarsat has been received.
+\item[Special Conditions] \ None
+\end{description}
+
+
+\chapter{Predict Delivery Time and/or Cost}
+\section{Request Delivery Prediction}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item HQ: Shipping Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The Shipping Manager is already authenticated with the system.
+\item[Flow of Events] \
+  \begin{enumerate}
+    \item The shipping manager selects the ``request delivery prediction'' feature from the system display. The system displays the assignment list.
+    \item The shipping manager selects the desired assignment. The system requests an update of the assignment and assignment's ship status (if required).
+    \item The system calculates the expected delivery time and cost based on the newly received data, and displays it.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{itemize}
+  \item The system cannot receive the latest data, i.e. the ship's and/or assignment's current status.
+  \end{itemize}
+\item[Exit Condition] None
+\item[Special Conditions] None
+\end{description}
+
+\section{Request Delivery Time Prediction}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item HQ: Shipping Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The Shipping Manager is already authenticated with the system.
+\item[Flow of Events] \
+  \begin{enumerate}
+    \item The shipping manager selects the ``request delivery time prediction'' feature from the system display. The system displays the assignment list.
+    \item The shipping manager selects the desired assignment. The system requests an update of the assignment and assignment's ship status (if required).
+    \item The system calculates the expected delivery time based on the newly received data, and displays it.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{itemize}
+  \item The system cannot receive the latest data, i.e. the ship's and/or assignment's current status.
+  \end{itemize}
+\item[Exit Condition] None
+\item[Special Conditions] None
+\end{description}
+
+\section{Request Delivery Cost Prediction}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item HQ: Shipping Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The Shipping Manager is already authenticated with the system.
+\item[Flow of Events] \
+  \begin{enumerate}
+    \item The shipping manager selects the ``request delivery cost prediction'' feature from the system display. The system displays the assignment list.
+    \item The shipping manager selects the desired assignment. The system requests an update of the assignment and assignment's ship status (if required).
+    \item The system calculates the expected delivery cost based on the newly received data, and displays it.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{itemize}
+  \item The system cannot receive the latest data, i.e. the ship's and/or assignment's current status.
+  \end{itemize}
+\item[Exit Condition] None
+\item[Special Conditions] None
+\end{description}
+
+
+\chapter{Submit Information to Government Agencies}
+\section{Provide Government Agencies with Documentation}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+    \item Time
+  \end{itemize}
+\item[Secondary Actors] \
+  \begin{itemize}
+    \item Government
+  \end{itemize}
+\item[Entry Condition]
+  The Government agency requires the document
+\item[Flow of Events] \
+  \begin{enumerate}
+    \item Transmit document to Government agency
+    \item Receive receipt of document from Government agency
+    \item The system records the Sending of Documentation to Government Agencies in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{itemize}
+    \item Document cannot be transmitted. A message is generated and sent to the relevant person in Atlantis HQ.
+    \item No receipt is received. A message is generated and sent to the relevant person in Atlantis HQ.
+  \end{itemize}
+\item[Exit Condition]
+  The document has been transmitted to the Government agency
+\item[Special Conditions] \
+  \begin{itemize}
+    \item A receipt of the transmission has been received
+  \end{itemize}
+\end{description}
+
+\chapter{Submit Information to Private Agencies}
+\section{Provide Private Agencies with Documentation}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+    \item Time
+  \end{itemize}
+\item[Secondary Actors] \
+  \begin{itemize}
+    \item Private Agency
+  \end{itemize}
+\item[Entry Condition]
+  The private agency requires the document
+\item[Flow of Events] \
+  \begin{enumerate}
+    \item Transmit document to private agency
+    \item Receive receipt of document from private agency
+    \item The system records the sending of Documentation to Private Agencies in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{itemize}
+    \item Document cannot be transmitted. A message is generated and sent to the relevant person in Atlantis HQ.
+    \item No receipt is received. A message is generated and sent to the relevant person in Atlantis HQ.
+  \end{itemize}
+\item[Exit Condition]
+  The document has been transmitted to the private agency
+\item[Special Conditions] \
+  \begin{itemize}
+    \item A receipt of the transmission has been received
+  \end{itemize}
+\end{description}
+
+
+\chapter{Authentication and User Management}
+\section{Log In}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item User
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  No-one else is logged in at the terminal.
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The user initiates the ``Log On'' feature of the system. 
+  \item The system prompts them for identifying information.
+  \item The user provides the requested information.
+  \item The system notifies the user that they have been authenticated, and are able to perform tasks that they are authorised to do.
+    \item The system records that the user logged on in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{enumerate}
+  \item If the user does not enter the identifying information in a timely fashion, the system reverts to the previous state, and the use case is terminated.
+  \item If the identifying information provided does not match a user in the system, the system notifies the user of what did not match, the system then reverts to it's previous state, and the use case is terminated.
+  \end{enumerate}
+\item[Exit Condition]
+  The user is authenticated with the system.
+\item[Special Conditions] None
+\end{description}
+
+\section{Log Out}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item User
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The user is currently authenticated with the system
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The User initiates the ``Log Out'' feature of the system. 
+  \item The system prompts for confirmation.
+  \item The user confirms its request.
+  \item The system notifies the User that they are no longer authenticated with the system.
+    \item The system records that the user logged out in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{enumerate}
+  \item If the user rejects the confirmation of log-out, the user remains authenticated with the system, and the use case terminates.
+  \end{enumerate}
+\item[Exit Condition]
+  The user is no longer authenticated with the system.
+\item[Special Conditions] None
+\end{description}
+
+\section{Add User}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item System Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The user is currently authenticated with the system, and has required privileges
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The System Manager selects the ``Add User'' option
+  \item The system asks for identifying information for the new user
+  \item The System Manager provides the new user's identifying information
+  \item The system asks for information regarding the new user's privileges on the system.
+  \item The System Manager provides the information.
+  \item The system presents the information entered, and asks the System Manager to confirm the addition of the user.
+  \item The System Manager confirms the addition.
+  \item The system notifies the System Manager that the user has been added to the system.
+    \item The system records the user addition in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{enumerate}
+  \item If the identifying information matches the identifying information for another user, the system notifies the System Manager about the error, and the use case is terminated.
+  \item If the System Manager cancels the addition of the user, then the System Manager is notified that the addition was canceled, and the use case terminates.
+  \end{enumerate}
+\item[Exit Condition]
+  The new user now exists in the system.
+\item[Special Conditions] None
+\end{description}
+
+\section{Remove User}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item System Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The user is currently authenticated with the system, and has required privileges
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The System Manager selects the ``Remove User'' option
+  \item The system asks for the identity of the user to be removed.
+  \item The System Manager provides the user's identity.
+  \item The system displays the user's identity, and requests confirmation.
+  \item The System Manager confirms.
+  \item The system notifies the System Manager that the user has been removed from the system successfully.
+    \item The system records the user removal in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{enumerate}
+  \item If the user identity does not exist, the system notifies the System Manager that the user doesn't exist, and the use case terminates.
+  \item If the System Manager cancels rather than confirms the removal, the system notifies the System Manager that the removal has been cancelled successfully.
+  \item If the System Manager to be removed is the only user with full privileges, then the system notifies the System Manager that the user cannot be removed.
+  \item If the System Manager attempts to remove themself, then the system notifies the System Manager that the user cannot be removed.
+  \end{enumerate}
+\item[Exit Condition]
+  The user has been removed from the system.
+\item[Special Conditions]
+\begin{itemize}
+\item At least one user with full privileges must exist.
+\end{itemize}
+\end{description}
+
+\section{Modify User Privileges}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item User Administrator
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The administrator is currently authenticated with the system, and has required privileges.
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The System Manager selects the ``Modify User Privileges'' option
+  \item The system asks for the identity of the user to be modified.
+  \item The System Manager provides the user's identity.
+  \item The system displays the user's current privileges, and asks what privileges need be added or removed.
+  \item The System Manager selects and/or deselects the privileges in order to create the desired set of privileges.
+  \item The system displays the privileges to be given, and asks for confirmation
+  \item The System Manager confirms.
+  \item The system notifies the System Manager that the user has had their privileges updated in the system successfully.
+    \item The system records the privileges modification in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{enumerate}
+  \item If the user identity does not exist, the system notifies the System Manager that the user doesn't exist, and the use case terminates.
+  \item If the user cancels rather than confirms the modification, the system notifies the System Manager that the modification has been cancelled successfully.
+  \end{enumerate}
+\item[Exit Condition]
+  The user has their privileges in the system modified.
+\item[Special Conditions] 
+\begin{itemize}
+\item At least one user with full privileges must exist.
+\end{itemize}
+\end{description}
+
+\section{Modify Own User Details}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item User
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The user is currently authenticated with the system, and has required privileges.
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The user selects the ``Modify User Details'' option.
+  \item The system asks for the user's new details.
+  \item The user provides their new details.
+  \item The system asks for confirmation of the modification.
+  \item The user confirms the modification.
+  \item The system notifies the user that their identifying information in the system has been modified successfully.
+    \item The system records the modification of identifying information in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{enumerate}
+  \item If the user cancels rather than confirms the modification, the system notifies the user that the modification has been cancelled successfully.
+  \end{enumerate}
+\item[Exit Condition]
+  The user has their identifying information in the system modified.
+\item[Special Conditions] None
+\end{description}
+
+
+\section{Modify Another User}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item HQ:System Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The System Manager is currently authenticated with the system, and has required privileges.
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The System Manager selects the ``Modify Another User'' option.
+  \item The system displays the user list.
+  \item The System Manager selects the user to be modified.
+  \item The system asks for the user's new details.
+  \item The System Manager provides the user's new details.
+  \item The system asks for confirmation of the modification.
+  \item The System Manager confirms the modification.
+  \item The system records the modification of identifying information in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{enumerate}
+  \item If the System Manager cancels rather than confirms the modification, the system notifies the System Manager that the modification has been cancelled successfully.
+  \end{enumerate}
+\item[Exit Condition]
+  The user has their identifying information in the system modified.
+\item[Special Conditions] None
+\end{description}
+
+\chapter{Logging System Management}
+\section{View Activity Log}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item HQ:System Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The System Manager is currently authenticated with the system, and has required privileges.
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The System Manager selects the ``View Activity Log'' option.
+  \item The system displays the activity log as currently stored in the system.
+  \end{enumerate}
+\item[Exceptional Flows] None
+\item[Exit Condition] None
+\item[Special Conditions] None
+\end{description}
+
+\section{Print Activity Log}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item HQ:System Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The System Manager is currently authenticated with the system, and has required privileges.
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The System Manager selects the ``Print Activity Log'' option.
+  \item The system sends the Activity Log Printout to the nearest working printer.
+  \end{enumerate}
+\item[Exceptional Flows] None
+\item[Exit Condition]
+  The activity log has been sent to the printer.
+\item[Special Conditions] None
+\end{description}
+
+\section{Delete Activity Log}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item HQ:System Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The System Manager is currently authenticated with the system, and has required privileges.
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The System Manager selects the ``Delete Activity Log'' option.
+  \item The system request confirmation of the deletion.
+  \item The System Manger confirms.
+  \item The system deletes the activity log.
+  \end{enumerate}
+\item[Exceptional Flows]  \
+  \begin{enumerate}
+  \item If the activity log has not been printed in the previous hour, the deletion is rejected, and the user is notified about the reason for the rejection, and the use case terminates.
+  \end{enumerate}
+\item[Exit Condition]
+  The activity log in the system is now empty.
+\item[Special Conditions] None
+\end{description}
+
+\chapter{Ship Management}
+\section{Add Ship}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item HQ:System Manager, HQ:Shipping Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The user is currently authenticated with the system, and has required privileges.
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The user selects the ``Add Ship'' option.
+  \item The system shows the data entry screen, and asks for the new ship's details.
+  \item The user provides the details requested
+  \item The system adds the ship to the Fleet List, and notifies the user that the addition was successful.
+    \item The system records the Ship Addition in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{enumerate}
+  \item If the user cancels the addition at any time, the system notifies the user that the cancellation was successful, and the use case terminates.
+  \item If the user does not provide the details required to create ship, the user is notified of the missing fields, and the system returns to the data entry page.
+  \item 
+  \end{enumerate}
+\item[Exit Condition]
+  The system has the new ship in the Fleet List.
+\item[Special Conditions] None
+\end{description}
+
+\section{Remove Ship}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item HQ:System Manager, HQ:Shipping Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The user is currently authenticated with the system, and has required privileges.
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The user selects the ``Remove Ship'' option.
+  \item The system displays the Fleet List and asks the user to select the ship to remove.
+  \item The user selects the ship to be removed.
+  \item The system removes the ship from the Fleet List, and notifies the user that the removal was successful.
+    \item The system records the Ship Removal in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{enumerate}
+  \item If the user cancels the removal at any time, the system notifies the user that the cancellation was successful, and the use case terminates.
+  \end{enumerate}
+\item[Exit Condition]
+  The system no longer has the ship in the Fleet List.
+\item[Special Conditions] None
+\end{description}
+
+\section{Modify Ship}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item HQ:System Manager, HQ:Shipping Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The user is currently authenticated with the system, and has required privileges.
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The user selects the ``Modify Ship'' option.
+  \item The system displays the Fleet List and asks the user to select the ship to modify.
+  \item The user selects the ship to be modified.
+  \item The system shows the data entry screen, and asks the user to change the details.
+  \item The user modifies the Data Entry screen to reflect the modifications to the ship.
+  \item The system removes the ship from the Fleet List, and notifies the user that the modification was successful.
+    \item The system records the Ship Modification in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{enumerate}
+  \item If the user cancels the modification at any time, the system notifies the user that the cancellation was successful, and the use case terminates.
+  \end{enumerate}
+\item[Exit Condition]
+  The system now reflects the changes made to the ship.
+\item[Special Conditions] None
+\end{description}
+
+\chapter{Route Management}
+\section{Add Port}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item HQ:System Manager, HQ:Shipping Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The user is currently authenticated with the system, and has required privileges.
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The user selects the ``Add Port'' option.
+  \item The system displays the Port Entry Screen, and asks the user to input data.
+  \item The user enters the data.
+  \item The system adds the port to the Port List, and notifies the user that the addition was successful.
+    \item The system records the Port Addition in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{enumerate}
+  \item If the user cancels the addition at any time, the system notifies the user that the cancellation was successful, and the use case terminates.
+  \end{enumerate}
+\item[Exit Condition]
+  The system now has the port in the Port List.
+\item[Special Conditions] None
+\end{description}
+
+\section{Update Port}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item HQ:System Manager, HQ:Shipping Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The user is currently authenticated with the system, and has required privileges.
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The user selects the ``Modify Port'' option.
+  \item The system displays the Port and asks the user to select the port to modify.
+  \item The user selects the port to be modified.
+  \item The system shows the data entry screen, and asks the user to change the details.
+  \item The user modifies the Data Entry screen to reflect the modifications to the port.
+  \item The system updates the port and notifies the user that the modification was successful.
+    \item The system records the Port Update in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{enumerate}
+  \item If the user cancels the update at any time, the system notifies the user that the cancellation was successful, and the use case terminates.
+  \end{enumerate}
+\item[Exit Condition]
+  The system now reflects the changes made to the ship.
+\item[Special Conditions] None
+\end{description}
+
+\section{Remove Port}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item HQ:System Manager, HQ:Shipping Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The user is currently authenticated with the system, and has required privileges.
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The user selects the ``Remove Port'' option.
+  \item The system displays the Port List and asks the user to select the port to remove.
+  \item The user selects the port to be removed.
+  \item The system removes the port from the Port List, and notifies the user that the removal was successful.
+    \item The system records the Port removal in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{enumerate}
+  \item If the user cancels the removal at any time, the system notifies the user that the cancellation was successful, and the use case terminates.
+  \end{enumerate}
+\item[Exit Condition]
+  The system no longer has the port in the Port List.
+\item[Special Conditions] None
+\end{description}
+
+\section{View Port}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item HQ:System Manager, HQ:Shipping Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The user is currently authenticated with the system, and has required privileges.
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The user selects the ``View Port'' option.
+  \item The system displays the Port List and asks the user to select the port to view.
+  \item The user selects the port to be viewed.
+  \item The system displays the Port's information on the screen.
+  \end{enumerate}
+\item[Exceptional Flows] None
+\item[Exit Condition] None
+\item[Special Conditions] None
+\end{description}
+
+\section{Add Route}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item HQ:System Manager, HQ:Shipping Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The user is currently authenticated with the system, and has required privileges.
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The user selects the ``Add Route'' option.
+  \item The system displays the Route Entry Screen, and asks the user to select the ports in sequence.
+  \item The user enters the data.
+  \item The system adds the route to the route list, and notifies the user that the addition was successful.
+    \item The system records the Route Addition in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{enumerate}
+  \item If the user cancels the addition at any time, the system notifies the user that the cancellation was successful, and the use case terminates.
+  \end{enumerate}
+\item[Exit Condition]
+  The system now has the route in the Route List.
+\item[Special Conditions] None
+\end{description}
+
+\section{Update Route}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item HQ:System Manager, HQ:Shipping Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The user is currently authenticated with the system, and has required privileges.
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The user selects the ``Modify Route'' option.
+  \item The system displays the Ports in the order they are visited.
+  \item The user selects the visitation to be modified.
+  \item The system shows the port list, and asks the user for the port to replace the previously selected one.
+  \item The user selects the replacement port.
+  \item The system replaces the port in the route, notifies the user that the modification was successful, and asks whether the modification is complete.
+  \item The user notifies the system the modification is complete.
+  \item The system notifies the user that the modification was successful.
+    \item The system records the Route Modification in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{enumerate}
+  \item If the user cancels the modification at any time, the system notifies the user that the cancellation was successful, and the use case terminates.
+  \item If at 6, the user says the modification is incomplete, the use case jumps to 2, and continues.
+  \end{enumerate}
+\item[Exit Condition]
+  The system now reflects the modified route.
+\item[Special Conditions] None
+\end{description}
+
+\section{Remove Route}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item HQ:System Manager, HQ:Shipping Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The user is currently authenticated with the system, and has required privileges.
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The user selects the ``Delete Route'' option.
+  \item The system displays Route List, and asks the user to select the Route to be deleted.
+  \item The user selects the route to be deleted.
+  \item The system notifies the user that the deletion was successful.
+    \item The system records the Route Deletion in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{enumerate}
+  \item If the user cancels the removal at any time, the system notifies the user that the cancellation was successful, and the use case terminates.
+  \end{enumerate}
+\item[Exit Condition]
+  The system no longer has the route stored in the system.
+\item[Special Conditions] None
+\end{description}
+
+\section{View Route}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item HQ:System Manager, HQ:Shipping Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The user is currently authenticated with the system, and has required privileges.
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The user selects the ``View Route'' option.
+  \item The system displays the Route, including the ports visited.
+  \end{enumerate}
+\item[Exceptional Flows] None
+\item[Exit Condition] None
+\item[Special Conditions] None
+\end{description}
+
+
+\chapter{System Management}
+\section{Delete Activity Log}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item HQ:System Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The user is currently authenticated with the system, and has required privileges.
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The user selects the ``Delete Activity Log'' option.
+  \item The system asks the user for confirmation of deletion.
+  \item The user confirms deletion.
+  \item The system removes activity log, and notifies the user that the addition was successful.
+  \item The system records the activity log deletion in the Activity Log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{enumerate}
+  \item If the user cancels the addition at any time, the system notifies the user that the cancellation was successful, and the use case terminates.
+  \end{enumerate}
+\item[Exit Condition]
+  The activity log is deleted, and the first addition to the new log is that the old log was deleted.
+\item[Special Conditions] None
+\end{description}
+
+
+\section{Print Activity Log}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item HQ:System Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The user is currently authenticated with the system, and has required privileges.
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The user selects the ``View Activity Log'' option.
+  \item The system prints the log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{enumerate}
+  \item None
+  \end{enumerate}
+\item[Exit Condition]
+  None
+\item[Special Conditions] None
+\end{description}
+
+
+\section{View Activity Log}
+\begin{description}
+\item[Primary Actors] \
+  \begin{itemize}
+  \item HQ:System Manager
+  \end{itemize}
+\item[Secondary Actors] None
+\item[Entry Condition]
+  The user is currently authenticated with the system, and has required privileges.
+\item[Flow of Events] \
+  \begin{enumerate}
+  \item The user selects the ``Print Activity Log'' option.
+  \item The system displays the log.
+  \end{enumerate}
+\item[Exceptional Flows] \
+  \begin{enumerate}
+  \item None
+  \end{enumerate}
+\item[Exit Condition]
+  None
+\item[Special Conditions] None
+\end{description}
+
+
+
+\end{document}

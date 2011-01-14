@@ -1,0 +1,53 @@
+
+RCS file: /u/students/ramsayneil/comp201t11/COMP201/Project1/guests.cc,v
+Working file: guests.cc
+head: 1.10
+branch:
+locks: strict
+access list:
+symbolic names:
+	WORKING: 1.9
+keyword substitution: kv
+total revisions: 10;	selected revisions: 10
+description:
+----------------------------
+revision 1.10
+date: 2004/05/02 15:00:03;  author: keanedavi;  state: Exp;  lines: +8 -0
+Includes Big Comment at top of CC File
+----------------------------
+revision 1.9
+date: 2004/05/02 13:12:47;  author: delwadvipu;  state: Exp;  lines: +23 -20
+commented and indented
+----------------------------
+revision 1.8
+date: 2004/05/02 09:24:27;  author: keanedavi;  state: Exp;  lines: +11 -23
+fileIO completed
+----------------------------
+revision 1.7
+date: 2004/05/02 05:53:05;  author: harrisdavi3;  state: Exp;  lines: +18 -0
+Implemented the << operator for printing out the edit menu for guests
+----------------------------
+revision 1.6
+date: 2004/05/02 04:28:00;  author: delwadvipu;  state: Exp;  lines: +11 -17
+implemented guest edit menu, fixed guests class errors
+----------------------------
+revision 1.5
+date: 2004/05/01 06:26:11;  author: harrisdavi3;  state: Exp;  lines: +29 -28
+added guests to list of deps
+----------------------------
+revision 1.4
+date: 2004/05/01 03:40:32;  author: keanedavi;  state: Exp;  lines: +92 -15
+Fully implemented, however untested
+----------------------------
+revision 1.3
+date: 2004/04/30 23:24:25;  author: delwadvipu;  state: Exp;  lines: +15 -7
+still doesn't compile, wierd errors, save for later
+----------------------------
+revision 1.2
+date: 2004/04/30 06:00:01;  author: delwadvipu;  state: Exp;  lines: +4 -0
+implemented getIterator method
+----------------------------
+revision 1.1
+date: 2004/04/30 05:54:36;  author: delwadvipu;  state: Exp;
+initial import
+=============================================================================

@@ -1,0 +1,24 @@
+// The stanza class has the following interface:
+
+// return the stanza's kind (message,iq,presence)
+const char *    kindString();
+
+// return an array of elemnts that match key
+// this is an array of const char *
+const char**    getElements(const char * key);
+
+// return a count of the number of elements in the stanza that match this key
+// this is useful to  get a count of the number char * getElements reutrns
+int             getElementsCount(const char * key);
+
+// return who the stanza was to, NULL if not to anyone
+const char *    to();
+// return who the stanza was from, NULL if not from anyone
+const char *    from();
+//returns the stanza's id
+const char *    id();
+//returns the stanza's type - examples of possible values are get, set, subscribed etc
+const char *    type();
+
+// return the stanza as a string
+const char *    toString();

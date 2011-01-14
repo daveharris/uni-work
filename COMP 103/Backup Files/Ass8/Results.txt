@@ -1,0 +1,295 @@
+					Assingnment 8 Results
+			===================================
+
+Name : David Harris
+Username : harrisdavi3
+ID : 300069566
+
+All times are averages and run in java- client mode.
+
+
+
+Part 3 - Using the SortedArrayMap implementation
+======================================
+Ascending
+------------------------
+Processing File
+Finished Processing file
+Processing the actions took: 130 milliseconds.
+
+Descending
+-----------------------
+Processing File
+Finished Processing file
+Processing the actions took: 142 milliseconds.
+
+Random
+-----------------------
+Processing File
+Finished Processing file
+Processing the actions took: 161 milliseconds.
+
+
+Part 4 - Using the BSTMap implementation
+======================================
+Ascending
+------------------------
+Processing File
+Finished Processing file
+Processing the actions took: 602 milliseconds.
+
+Descending
+------------------------
+Processing File
+Finished Processing file
+Processing the actions took: 556 milliseconds.
+
+Random
+------------------------
+Processing File
+Finished Processing file
+Processing the actions took: 161 milliseconds.
+
+Part 5 - Report
+======================================
+When using the SortedArrayMap (SAM), the times were significantly shorter than than when using the BSTMap implementation.
+However, it is interesting to note that the random times for both implementations are almost the same.  The SAM is 4 times faster 3
+for the ascending and  descending than the BSTMap implementation.  Therefore, if this program were to be used ina real life application
+ it wouldn't really matter which implementation was used as the data would be random.
+
+The reason why the BSTMap is much slower when using ascending or descending is because it adds it all to one side of the tree, either the
+left or the right but it has to go down to the end to add it.  This means the tree is un-balanced.  The reason why random is so faster is 
+because it can add it either to the right or the left, making the tree much more balanced. This means that the time taken to add is much 
+longer than that of the SAM.  As the SAM is a 'linear' structure, each add doesn't increase with the amount of entries.
+
+
+
+Extension - Part 2
+======================================
+======================================
+
+BSTMap()
+======================================
+Test 1
+-----------------------------------------------------
+Initial number of accounts: 500
+Generate how many additional transactions: 10,000
+Frequency of new Accounts (% of transactions): 5
+Frequency of closure (% of transactions): 30
+Ascending
+Processing the actions took: 179 milliseconds.
+
+Test 2
+-----------------------------------------------------
+Initial number of accounts: 500
+Generate how many additional transactions: 10,000
+Frequency of new Accounts (% of transactions): 5
+Frequency of closure (% of transactions): 30
+Descending
+Processing the actions took: 168 milliseconds.
+
+ Test 3
+-----------------------------------------------------
+Initial number of accounts: 500
+Generate how many additional transactions: 10,000
+Frequency of new Accounts (% of transactions): 5
+Frequency of closure (% of transactions): 30
+Random
+Processing the actions took: 147 milliseconds.
+
+
+
+ 
+ 
+ Test 4
+-----------------------------------------------------
+Initial number of accounts: 10000
+Generate how many additional transactions: 100000
+Frequency of new Accounts (% of transactions): 5
+Frequency of closure (% of transactions): 30
+Ascending
+Processing the actions took: 48112 milliseconds.
+
+ Test 5
+-----------------------------------------------------
+Initial number of accounts: 10000
+Generate how many additional transactions: 100000
+Frequency of new Accounts (% of transactions): 5
+Frequency of closure (% of transactions): 30
+Descending
+Processing the actions took: 39510 milliseconds.
+
+ Test 6
+-----------------------------------------------------
+Initial number of accounts: 10000
+Generate how many additional transactions: 100000
+Frequency of new Accounts (% of transactions): 5
+Frequency of closure (% of transactions): 30
+Random
+Processing the actions took:  1515 milliseconds.
+
+
+
+ 
+ 
+ Test 7
+-----------------------------------------------------
+Initial number of accounts: 100
+Generate how many additional transactions: 100000
+Frequency of new Accounts (% of transactions): 1
+Frequency of closure (% of transactions): 50
+Ascending
+Processing the actions took:  1057 milliseconds.
+
+ Test 8
+-----------------------------------------------------
+Initial number of accounts: 100
+Generate how many additional transactions: 100000
+Frequency of new Accounts (% of transactions): 1
+Frequency of closure (% of transactions): 50
+Descending
+Processing the actions took:  1054 milliseconds.
+
+ Test 9
+-----------------------------------------------------
+Initial number of accounts: 100
+Generate how many additional transactions: 100000
+Frequency of new Accounts (% of transactions): 1
+Frequency of closure (% of transactions): 50
+Random
+Processing the actions took:  1074 milliseconds.
+
+
+
+SortedArrayMap()
+======================================
+
+ Test 1
+-----------------------------------------------------
+Initial number of accounts: 500
+Generate how many additional transactions: 10,000
+Frequency of new Accounts (% of transactions): 5
+Frequency of closure (% of transactions): 30
+Ascending
+Processing the actions took: 122 milliseconds.
+
+ Test 2
+-----------------------------------------------------
+Initial number of accounts: 500
+Generate how many additional transactions: 10,000
+Frequency of new Accounts (% of transactions): 5
+Frequency of closure (% of transactions): 30
+Descending
+Processing the actions took: 162 milliseconds.
+
+ Test 3
+-----------------------------------------------------
+Initial number of accounts: 500
+Generate how many additional transactions: 10,000
+Frequency of new Accounts (% of transactions): 5
+Frequency of closure (% of transactions): 30
+Random
+Processing the actions took: 126 milliseconds.
+
+
+
+ 
+ 
+ Test 4
+-----------------------------------------------------
+Initial number of accounts: 10000
+Generate how many additional transactions: 100000
+Frequency of new Accounts (% of transactions): 5
+Frequency of closure (% of transactions): 30
+Ascending
+Processing the actions took: 1756 milliseconds.
+
+ Test 5
+-----------------------------------------------------
+Initial number of accounts: 10000
+Generate how many additional transactions: 100000
+Frequency of new Accounts (% of transactions): 5
+Frequency of closure (% of transactions): 30
+Descending
+Processing the actions took: 2475 milliseconds.
+
+ Test 6
+-----------------------------------------------------
+Initial number of accounts: 10000
+Generate how many additional transactions: 100000
+Frequency of new Accounts (% of transactions): 5
+Frequency of closure (% of transactions): 30
+Random
+Processing the actions took:  2278 milliseconds.
+
+
+ 
+ 
+ 
+ Test 7
+-----------------------------------------------------
+Initial number of accounts: 100
+Generate how many additional transactions: 100000
+Frequency of new Accounts (% of transactions): 1
+Frequency of closure (% of transactions): 50
+Ascending
+Processing the actions took:  1092 milliseconds.
+
+ Test 8
+-----------------------------------------------------
+Initial number of accounts: 100
+Generate how many additional transactions: 100000
+Frequency of new Accounts (% of transactions): 1
+Frequency of closure (% of transactions): 50
+Descending
+Processing the actions took:  1065 milliseconds.
+
+ Test 9
+-----------------------------------------------------
+Initial number of accounts: 100
+Generate how many additional transactions: 100000
+Frequency of new Accounts (% of transactions): 1
+Frequency of closure (% of transactions): 50
+Random
+Processing the actions took:  1054 milliseconds.
+
+
+
+Since these implementaions both use binary search, which has the Big-O notation asympttopic cost of O(lon(n)), from that
+you would expect them to take roughly the same time.  However just thay have the same Big-O cost doesn't nesasarily mean
+that they would take the same number of steps.  As O(n/2) goes to O(n), the costs may be different, but when transfering
+Big-O notation, we lose some minor details.  It would seem reasonable that the times are pretty much the same for the two
+implementations.
+
+Generally, the BSTMap inplementation is much slower that the SortedArrayMap (SAM) with large files.  For the
+first three tests (comparitevley small amounts of all parameters) the BSTMap was slightly faster than the SAM, but not
+really anything of any importance.  For the next set of tests, the BSTMap took almost 30 times longer for ascending, 
+but only 15 times longer for descending than the SAM.  However, the times for the random, are effectivley the same.  It is 
+very interesting to note that for the BSTMap(), the times for the ascending and descending are about 40 seconds, but only
+1 second for random.  This must be because of the unbalanced nature of the tree with ascending, but with random he tree is
+more even.  However, the time is so drastically different I am not quite sure what other reason there may be.  I re-checked 
+the time again just to make sure that I hadn't made a numerical error.  For the last test, the times were almost exactly 
+the same.
+
+As the first two tests are almost the same, but came up with drastically different times for the BSTMap, it means that the 
+time was drastically affected by the amount of additional transactions, as it couldn't be the other parameters as they 
+were constant.  The times of SAM were also larger than the other tests, but weren't so inflated.  In the last test, the 
+number of additional transactions was 10 times larger, but the times were smaller.  this is because it was offset by the 
+very small numbr of new accounts and large number of account closure.  So, evne though the transactions were multiplied 
+by 10, the times were about half for the SAM and about 40 times for ascending and descending when using the BSTMap.
+The last test would have taken longer if the closure rate wasn't so high, which means that there are less accounts to deal with.
+
+There is little difference between ascending, descending and random in SAM and BSTMap, with random only being faster 
+by a large amount int he second test.I would have thought that the random woud have been much faster in all tests in BSTMap.
+
+The SAM is probably the better of the two because it is less complex and achieves almost the same results.  There are times
+where the time of BSTMap is much much longer than the SAM, but for no real apparent reason.  This would be bad because
+when it is being used for a real-world application it would take 40 times longer than the SAM on the same set of data.  As it is
+un-reliable, this would not be good to use for a real application.  The SAM is easier to code and sometimes works faster then
+BSTMap.  As SAM is 'linear' and using an array, it makes the addition of objects very fast because it douesn't have to search
+along the line, it can just to the correct place.  It's time of addition is pretty constant compared with the number of entires.
+The tree on the other hand takes longer with more entries because it has to search down the long lenght to add it.
+
+The worst case when using the BSTMap ot SAM implementationis when there are a high number of transactions, but a 
+small number of closures.The best case is obviously the first in both implementations, when a small number of accounts, 
+and high proportion of closure.

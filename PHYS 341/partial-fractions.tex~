@@ -1,0 +1,12 @@
+\documentclass[a4paper,10pt]{report}
+
+\usepackage[left=3cm,right=3cm,top=2cm,bottom=3cm]{geometry}
+\usepackage{palatino}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\begin{eqnarray*}
+  V_{E} & = & \frac{1}{2} \times V_{CC} \\
+  {} & = & \frac{1}{2} \times 7.5V \\
+  {} & = & 3.75V
+\end{eqnarray*}

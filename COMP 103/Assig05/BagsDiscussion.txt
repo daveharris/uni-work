@@ -1,0 +1,243 @@
+Name: David Harris
+Usercode: harrisdavi3
+ID: 300069566
+
+NOTE: All time measurements were made in "java -client" mode.
+
+Bags Discussion
+----------------------------------------------------------
+
+*******************************************
+PART ONE - Testing the capacity of the OpenHashBag
+*******************************************
+
+Making list of 45000 random strings....
+Time to construct strings: 5 seconds
+
+
+Testing OpenHashBag for capacity fraction .5
+----------------------------------------------------------
+Size                 uS per                    uS per                     Total
+                       Add                       Search                     (mS)
+10000                0.8                        1.0                        18
+15000                0.4                        0.7                        14
+20000                0.3                        0.5                        12
+25000                0.6                        0.4                        19
+30000                0.5                        0.4                        21
+35000                0.5                        0.5                        23
+40000                0.4                        0.6                        25
+
+
+Testing OpenHashBag for capacity fraction .6
+----------------------------------------------------------
+Size                 uS per                    uS per                     Total
+                       Add                       Search                     (mS)
+10000                0.4                        0.3                        7
+15000                0.4                        0.3                        10
+20000                0.4                        0.4                        12
+25000                0.3                        0.6                        15
+30000                0.6                        0.5                        24
+35000                0.5                        0.5                        25
+40000                0.5                        0.6                        27
+
+
+Testing OpenHashBag for capacity fraction .65
+----------------------------------------------------------
+Size                 uS per                    uS per                     Total
+                       Add                       Search                     (mS)
+10000                0.5                        0.3                        8
+15000                0.2                        0.6                        10
+20000                0.4                        0.4                        13
+25000                0.4                        0.6                        16
+30000                0.4                        0.8                        21
+35000                0.6                        0.5                        27
+40000                0.5                        0.6                        27
+
+
+Testing OpenHashBag for capacity fraction .7
+----------------------------------------------------------
+Size                 uS per                    uS per                     Total
+                       Add                       Search                     (mS)
+10000                0.5                        0.3                        8
+15000                0.3                        0.6                        11
+20000                0.5                        0.4                        14
+25000                0.4                        0.6                        16
+30000                0.3                        0.9                        20
+35000                0.6                        0.5                        28
+40000                0.6                        0.6                        30
+
+
+Testing OpenHashBag for capacity fraction .75
+----------------------------------------------------------
+Size                 uS per                    uS per                     Total
+                       Add                       Search                     (mS)
+10000                0.4                        0.3                        7
+15000                0.3                        0.6                        11
+20000                0.5                        0.4                        15
+25000                0.5                        0.6                        19
+30000                0.4                        0.8                        21
+35000                0.4                        1.3                        28
+40000                0.6                        0.6                        30
+
+
+Testing OpenHashBag for capacity fraction .8
+----------------------------------------------------------
+Size                 uS per                    uS per                     Total
+                       Add                       Search                     (mS)
+10000                0.5                        0.3                        8
+15000                0.3                        0.6                        11
+20000                0.5                        0.4                        15
+25000                0.4                        0.6                        17
+30000                0.4                        0.8                        20
+35000                0.3                        1.3                        26
+40000                0.6                        0.5                        32
+
+
+Testing OpenHashBag for capacity fraction .85
+----------------------------------------------------------
+Size                 uS per                    uS per                      Total
+                       Add                       Search                      (mS)
+10000                0.3                        1.0                        13
+15000                0.4                        0.5                        11
+20000                0.3                        2.3                        29
+25000                0.5                        0.6                        19
+30000                0.4                        0.9                        22
+35000                0.4                        1.4                        28
+40000                0.3                        3.1                        46
+
+
+Testing OpenHashBag for capacity fraction .9
+----------------------------------------------------------
+Size                 uS per                    uS per                     Total
+                       Add                        Search                    (mS)
+10000                0.3                        1.1                        14
+15000                0.4                        0.6                        12
+20000                0.3                        2.3                        30
+25000                0.4                        0.6                        18
+30000                0.4                        0.9                        23
+35000                0.4                        1.3                        28
+40000                0.3                        3.2                        47
+
+
+Testing OpenHashBag for capacity fraction .95
+----------------------------------------------------------
+Size                 uS per                    uS per                     Total
+                       Add                       Search                     (mS)
+10000                1.0                        1.2                        15
+15000                0.4                        0.5                        12
+20000                0.3                        2.4                        31
+25000                0.5                        0.5                        19
+30000                0.5                        0.8                        23
+35000                0.4                        1.3                        29
+40000                0.5                        3.8                        60
+
+
+Testing OpenHashBag for capacity fraction 1
+---------------------------------------------------------
+Size                 uS per                   uS per                      Total
+                       Add                      Search                      (mS)
+10000                0.5                        1.9                        24
+15000                0.5                        0.6                        14
+20000                0.4                        2.3                        32
+25000                0.9                        0.5                        29
+30000                1.7                        0.7                        30
+35000                0.8                        1.3                        41
+40000                0.6                        3.2                        58
+
+
+Analysis
+--------------------
+For small amounts of data, the capacity fraction would be best around 0.6 or 0.7, as the times there are much less than
+when the fraction is higher.  0.95 is the worst fraction for small amounts of data.  If the data is medium-size, about
+20,000 lines for example, the capacity fraction would be best about the 0.7 or 0.8 mark also, as after that the time
+taken rises significantly.  For a fraction of 0.8, the time taken is 15ms, but for 0.85 thetime doubles to 29ms.  For a
+large amount of data, the capacity fraction would be best around 0.5 mark, but the time varies very little, until the
+capacity fraction rises to 1, where the time is more than double that of when the fraction was 0.5.  The worst value for
+the fraction would be 1.
+
+When using small capacity fractions, the time to search and add are about he same, but when the fraction is increased,
+the searching takes longer.The add takes roughly the same time for all capacity fractions.
+
+It is interesting to note that when the capacity fraction is 1, it takes longer to for 30,000 lines than it does for 35,000 lines.
+
+
+
+*******************************************
+PART TWO - OpenHashBag Vs BucketHashBag
+*******************************************
+Making list of 45000 random strings....
+Time to construct strings: 3 seconds
+
+Testing OpenHashBag 0.8
+Size                 uS per                    uS per                    Total
+                       Add                        Search                    (mS)
+10000                0.9                        0.8                       17
+15000                0.3                        0.6                       11
+20000                0.5                        0.4                       14
+25000                0.4                        0.5                       16
+30000                0.4                        0.7                       19
+35000                0.3                        1.2                       25
+40000                0.6                        0.6                       31
+
+Testing BucketHashBag 0.8
+Size                 uS per                    uS per                     Total
+                       Add                       Search                      (mS)
+10000                0.2                        9.6                         98
+15000                0.1                        27.9                       281
+20000                0.2                        49.4                       499
+25000                0.2                        71.5                       720
+30000                0.2                        89.1                       897
+35000                0.2                        110.1                     1108
+40000                0.2                        129.1                     1300
+
+
+
+*******************************************
+PART THREE - ArrayBag Vs SortedArrayBag
+*******************************************
+
+Making list of 45000 random strings....
+Time to construct strings: 3 seconds
+
+Testing ArrayBag
+Size                 uS per                   uS per                     Total
+                       Add                       Search                     (mS)
+10000                0.3                        320.7                    3210
+15000                0.0                        705.5                    7056
+20000                0.1                        992.2                    9924
+25000                0.0                        1270.3                  12705
+30000                0.0                        1552.5                   5527
+35000                0.0                        1817.6                  18178
+40000                0.0                        2095.9                  20962
+
+Testing SortedArrayBag
+Size                 uS per                     uS per                    Total
+                       Add                        Search                     (mS)
+10000                38.0                       2.2                         402
+15000                66.5                       2.5                         1023
+20000                110.3                      3.1                        2237
+25000                190.5                      3.2                        4795
+30000                287.0                      3.5                        8647
+35000                403.9                      3.7                        14176
+40000                528.3                      4.0                        21172
+
+
+
+Analysis
+--------------------
+The OpenHashBag (OHB) was much much faster that the BucketHashBag (BHB), even for small amounts of data,
+the OHB was almost 6 times faster than BHB on small amounts of data.  For medium size amounts of data, the BHB
+time increases by 500%, while the OHB barely increases it's time.  For large files, the OHB ends up being over 40 times
+faster than the BHB, only doubling it time from 10,000 to 40,000 lines.  The BHB on the other hand increased it's time by
+more than 13 times it original.  I would have thought that storing the values in buckets, rather than in one long 'string'
+would be faster, but obviously it is not!!  This is because the time taken to add the items was very short, and the time
+taken to search for them was very long.  Whereas with he OHB the time taken to add was a little longer, the searching
+was comparitavley very quick.
+
+
+The ArrayBag (AB) and SortedArrayBag (SAB) times were also quite different.  On a small amount of data, the SAB was about
+8 times faster than the AB.  The times for a medium amount of data was also different, but not such a big change.  The SAB took
+roughly 4 times shorter than the AB did to perform on 20,000 lines.  For large amounts of data, the SAB took almost the same
+time as AB.  Therefore, for best performance, it is best to use small to medium amount of data with the SAB.  The AB was much
+faster to search than the SAB, but it took longer to search.  The SAB on the other hand was much faster to search and longer to
+add, because all the items are in order.

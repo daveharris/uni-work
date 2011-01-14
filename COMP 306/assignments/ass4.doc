@@ -1,0 +1,144 @@
+{\rtf1\ansi\ansicpg1252\deff0
+{\fonttbl
+{\f0\fnil\fcharset0\fprq0\fttruetype Arial;}
+{\f1\fnil\fcharset0\fprq0\fttruetype Dingbats;}
+{\f2\fnil\fcharset0\fprq0\fttruetype Symbol;}
+{\f3\fnil\fcharset0\fprq0\fttruetype Times New Roman;}
+{\f4\fnil\fcharset0\fprq0\fttruetype Courier New;}}
+{\colortbl
+\red0\green0\blue0;
+\red255\green255\blue255;}
+{\stylesheet
+{\s1\fi-423\li720\sbasedon28\snext28 Contents 1;}
+{\s2\fi-423\li1440\sbasedon28\snext28 Contents 2;}
+{\s3\fi-423\li2160\sbasedon28\snext28 Contents 3;}
+{\s8\fi-423\li720\sbasedon28 Lower Roman List;}
+{\s5\tx431\sbasedon24\snext28 Numbered Heading 1;}
+{\s6\tx431\sbasedon25\snext28 Numbered Heading 2;}
+{\s7\fi-423\li720 Square List;}
+{\*\cs11\sbasedon28 Endnote Text;}
+{\s4\fi-423\li2880\sbasedon28\snext28 Contents 4;}
+{\s9\fi-423\li720 Diamond List;}
+{\s10\fi-423\li720 Numbered List;}
+{\*\cs12\fs20\super Endnote Reference;}
+{\s13\fi-423\li720 Triangle List;}
+{\s14\tx431\sbasedon26\snext28 Numbered Heading 3;}
+{\s15\fi-423\li720 Dashed List;}
+{\s16\fi-423\li720\sbasedon10 Upper Roman List;}
+{\s17\sb440\sa60\f0\fs24\b\sbasedon28\snext28 Heading 4;}
+{\s18\fi-423\li720 Heart List;}
+{\s34\fi-423\li720 Box List;}
+{\s20\fi-423\li720\sbasedon10 Upper Case List;}
+{\s21\fi-423\li720 Bullet List;}
+{\s22\fi-423\li720 Hand List;}
+{\*\cs23\fs20\sbasedon28 Footnote Text;}
+{\s24\sb440\sa60\f0\fs34\b\sbasedon28\snext28 Heading 1;}
+{\s25\sb440\sa60\f0\fs28\b\sbasedon28\snext28 Heading 2;}
+{\s19\qc\sb240\sa117\f0\fs32\b\sbasedon28\snext28 Contents Header;}
+{\s27\fi-423\li720 Tick List;}
+{\s26\sb440\sa60\f0\fs24\b\sbasedon28\snext28 Heading 3;}
+{\s29\fi-423\li720\sbasedon10 Lower Case List;}
+{\s30\li1440\ri1440\sa117\sbasedon28 Block Text;}
+{\s36\f4\sbasedon28 Plain Text;}
+{\s32\tx1584\sbasedon5\snext28 Section Heading;}
+{\s33\fi-423\li720 Implies List;}
+{\s28\f3\fs24\lang1033 Normal;}
+{\s35\fi-423\li720 Star List;}
+{\*\cs31\fs20\super Footnote Reference;}
+{\s37\tx1584\sbasedon5\snext28 Chapter Heading;}}
+{\*\listtable
+{\list\listtemplateid1340\listsimple{\listlevel\levelnfc0\levelstartat1\levelspace0\levelfollow0\fi-423\li720{\leveltext\'02\'00.;}{\levelnumbers\'01;}}\listid1003}}
+{\*\listoverridetable
+{\listoverride\listoverridecount0\listid1003\levelnfc0\levelstartat1\levelspace0\levelfollow0\fi-423\li720{\leveltext\'02\'00.;}{\levelnumbers\'01;}\ls1}}
+
+\kerning0\cf0\ftnbj\fet2\ftnstart1\ftnnar\aftnnar\ftnstart1\aftnstart1\aenddoc\facingp\titlepg\revprop3{\info}\deftab720\viewkind1\paperw12240\paperh15840\margl1440\margr1440\widowctl
+{\header\pard\plain
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs20\lang1033{\*\listtag0}\abinodiroverride\ltrch David Harris\tab \tab \tab \tab COMP306 - Assignment 2}{\f0\fs20\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\sl240\slmult1\itap0{\f0\fs20\lang1033{\*\listtag0}\abinodiroverride\ltrch 300069566}}
+\sectd\sbknone\colsx360\pgncont\ltrsect
+\pard\plain\ltrpar\ql\s28\sl240\slmult1\itap0{\s28\f0\fs24\b\ul\lang1033{\*\listtag0}Problem 8.1}{\s28\f0\fs24\b\ul\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\sl240\slmult1\itap0{\s28\f0\fs22\lang1033{\*\listtag0}\abinodiroverride\ltrch Using the mono-alphabetic cypher "This is an easy problem" encodes to "Vasi si mj cmiw lokngch".}{\s28\f0\fs22\b\ul\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\sl240\slmult1\itap0{\s28\f0\fs22\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\sl240\slmult1\itap0{\s28\f0\fs22\lang1033{\*\listtag0}\abinodiroverride\ltrch "rmij'u uamu xyj." decodes to "wasn't that fun."}{\s28\f0\fs22\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\sl240\slmult1\itap0{\s28\f0\fs22\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\sl240\slmult1\itap0{\s28\f0\fs24\b\ul\lang1033{\*\listtag0}\abinodiroverride\ltrch Problem 8.3}{\s28\f0\fs24\b\ul\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\sl240\slmult1\itap0{\s28\f0\fs22\lang1033{\*\listtag0}\abinodiroverride\ltrch Yes, because "The quick brown fox jumps over the lazy dog" has all the letters of the alphabet, and thus all mappings are known.}{\s28\f0\fs22\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\sl240\slmult1\itap0{\s28\f0\fs22\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\sl240\slmult1\itap0{\s28\f0\fs24\b\ul\lang1033{\*\listtag0}\abinodiroverride\ltrch Problem 8.4}{\s28\f0\fs24\b\ul\lang1033{\*\listtag0}\par}
+{\listtext\pard\fi-423\li720 1.	}\pard\plain{\ltrpar\ql\fi-423\li720\s28{\*\abilist\abilistid1003\abilistparentid0\abilistlevel1\abistartat1{\abifieldfont NULL}{\abilistdecimal .}{\abilistdelim %L.}{\abiliststyle Numbered List}}{\*\pn\pnql\pnstart1\pnlvlbody\pndec{\pntxtb }{\pntxta .}}\fn-423\li720\ls1\ilvl0\sl240\slmult1\itap0{\s28\f0\fs22\lang1033{\*\listtag0}\abinodiroverride\ltrch p=3, q=11}{\s28\f0\fs22\lang1033{\*\listtag1004}\par}
+}{\listtext\pard\fi-423\li720 2.	}\pard\plain{\ltrpar\ql\fi-423\li720\s28{\*\abilist\abilistid1003\abilistparentid0\abilistlevel1\abistartat1{\abifieldfont NULL}{\abilistdecimal .}{\abilistdelim %L.}{\abiliststyle Numbered List}}{\*\pn\pnql\pnstart1\pnlvlbody\pndec{\pntxtb }{\pntxta .}}\fn-423\li720\ls1\ilvl0\sl240\slmult1\itap0{\s28\f0\fs22\lang1033{\*\listtag0}\abinodiroverride\ltrch n=p*q=3*11=33\line z=(p-1)(q-1)=2*10=20}{\s28\f0\fs22\lang1033{\*\listtag1005}\par}
+}{\listtext\pard\fi-423\li720 3.	}\pard\plain{\ltrpar\ql\fi-423\li720\s28{\*\abilist\abilistid1003\abilistparentid0\abilistlevel1\abistartat1{\abifieldfont NULL}{\abilistdecimal .}{\abilistdelim %L.}{\abiliststyle Numbered List}}{\*\pn\pnql\pnstart1\pnlvlbody\pndec{\pntxtb }{\pntxta .}}\fn-423\li720\ls1\ilvl0\sl240\slmult1\itap0{\s28\f0\fs22\lang1033{\*\listtag0}\abinodiroverride\ltrch e=7}{\s28\f0\fs22\lang1033{\*\listtag1006}\par}
+}{\listtext\pard\fi-423\li720 4.	}\pard\plain{\ltrpar\ql\fi-423\li720\s28{\*\abilist\abilistid1003\abilistparentid0\abilistlevel1\abistartat1{\abifieldfont NULL}{\abilistdecimal .}{\abilistdelim %L.}{\abiliststyle Numbered List}}{\*\pn\pnql\pnstart1\pnlvlbody\pndec{\pntxtb }{\pntxta .}}\fn-423\li720\ls1\ilvl0\sl240\slmult1\itap0{\s28\f0\fs22\lang1033{\*\listtag0}\abinodiroverride\ltrch d=3}{\s28\f0\fs22\lang1033{\*\listtag1007}\par}
+}{\listtext\pard\fi-423\li720 5.	}\pard\plain{\ltrpar\ql\fi-423\li720\s28{\*\abilist\abilistid1003\abilistparentid0\abilistlevel1\abistartat1{\abifieldfont NULL}{\abilistdecimal .}{\abilistdelim %L.}{\abiliststyle Numbered List}}{\*\pn\pnql\pnstart1\pnlvlbody\pndec{\pntxtb }{\pntxta .}}\fn-423\li720\ls1\ilvl0\sl240\slmult1\itap0{\s28\f0\fs22\lang1033{\*\listtag0}\abinodiroverride\ltrch public key K}{\s28\f0\fs22\super\lang1033{\*\listtag0}+}{\s28\f0\fs22\lang1033{\*\listtag0}=(n,e)=(33,7)\line private key K}{\s28\f0\fs22\super\lang1033{\*\listtag0}-}{\s28\f0\fs22\lang1033{\*\listtag0}=(n,d)=(33,3)}{\s28\f0\fs22\lang1033{\*\listtag1008}\par}
+}\pard\plain\ltrpar\ql\s28\sl240\slmult1\itap0{\s28\f0\fs22\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\sl240\slmult1\itap0{\s28\f0\fs22\lang1033{\*\listtag0}\abinodiroverride\ltrch RSA Encryption:}{\*\abitableprops table-column-props:1.6250in/1.8750in/1.5625in/1.6875in/; table-sdh:8b7c540}\par{\*\abicellprops left-attach:0; right-attach:1; top-attach:0; bot-attach:1}{
+\trowd \itap1\trgaph36\trql\trrh0\trleft0\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx2376\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx5076\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx7326\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx9756
+\pard\plain\ltrpar\qc\s28\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}Plaintext letter}\cell{\*\abiendcell}{\*\abicellprops left-attach:1; right-attach:2; top-attach:0; bot-attach:1}
+\pard\plain\ltrpar\qc\s28\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}m: numeric representation}\cell{\*\abiendcell}{\*\abicellprops left-attach:2; right-attach:3; top-attach:0; bot-attach:1}
+\pard\plain\ltrpar\qc\s28\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}m}{\s28\f0\fs22\super\lang1033{\*\listtag0}e}\cell{\*\abiendcell}{\*\abicellprops left-attach:3; right-attach:4; top-attach:0; bot-attach:1}
+\pard\plain\ltrpar\qc\s28\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}cyphertext c=m}{\s28\f0\fs22\super\lang1033{\*\listtag0}e}{\s28\f0\fs22\lang1033{\*\listtag0}mod(n)}\cell{\*\abiendcell}{\*\abicellprops left-attach:0; right-attach:1; top-attach:1; bot-attach:2}\row
+\trowd \itap1\trgaph36\trql\trrh0\trleft0\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx2376\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx5076\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx7326\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx9756
+\pard\plain\ltrpar\qc\intbl\itap1{\f0\fs22\lang1033{\*\listtag0}h}\cell{\*\abiendcell}{\*\abicellprops left-attach:1; right-attach:2; top-attach:1; bot-attach:2}
+\pard\plain\ltrpar\qc\intbl\itap1{\f0\fs22\lang1033{\*\listtag0}8}\cell{\*\abiendcell}{\*\abicellprops left-attach:2; right-attach:3; top-attach:1; bot-attach:2}
+\pard\plain\ltrpar\qc\intbl\itap1{\f0\fs22\lang1033{\*\listtag0}2097152}\cell{\*\abiendcell}{\*\abicellprops left-attach:3; right-attach:4; top-attach:1; bot-attach:2}
+\pard\plain\ltrpar\qc\intbl\itap1{\f0\fs22\lang1033{\*\listtag0}2}\cell{\*\abiendcell}{\*\abicellprops left-attach:0; right-attach:1; top-attach:2; bot-attach:3}\row
+\trowd \itap1\trgaph36\trql\trrh0\trleft0\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx2376\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx5076\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx7326\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx9756
+\pard\plain\ltrpar\qc\s28\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}e}\cell{\*\abiendcell}{\*\abicellprops left-attach:1; right-attach:2; top-attach:2; bot-attach:3}
+\pard\plain\ltrpar\qc\s28\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}5}\cell{\*\abiendcell}{\*\abicellprops left-attach:2; right-attach:3; top-attach:2; bot-attach:3}
+\pard\plain\ltrpar\qc\s28\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}78125}\cell{\*\abiendcell}{\*\abicellprops left-attach:3; right-attach:4; top-attach:2; bot-attach:3}
+\pard\plain\ltrpar\qc\s28\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}14}\cell{\*\abiendcell}{\*\abicellprops left-attach:0; right-attach:1; top-attach:3; bot-attach:4}\row
+\trowd \itap1\trgaph36\trql\trrh0\trleft0\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx2376\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx5076\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx7326\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx9756
+\pard\plain\ltrpar\qc\intbl\itap1{\f0\fs22\lang1033{\*\listtag0}l}\cell{\*\abiendcell}{\*\abicellprops left-attach:1; right-attach:2; top-attach:3; bot-attach:4}
+\pard\plain\ltrpar\qc\intbl\itap1{\f0\fs22\lang1033{\*\listtag0}12}\cell{\*\abiendcell}{\*\abicellprops left-attach:2; right-attach:3; top-attach:3; bot-attach:4}
+\pard\plain\ltrpar\qc\intbl\itap1{\f0\fs22\lang1033{\*\listtag0}35831808}\cell{\*\abiendcell}{\*\abicellprops left-attach:3; right-attach:4; top-attach:3; bot-attach:4}
+\pard\plain\ltrpar\qc\intbl\itap1{\f0\fs22\lang1033{\*\listtag0}12}\cell{\*\abiendcell}{\*\abicellprops left-attach:0; right-attach:1; top-attach:4; bot-attach:5}\row
+\trowd \itap1\trgaph36\trql\trrh0\trleft0\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx2376\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx5076\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx7326\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx9756
+\pard\plain\ltrpar\qc\s28\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}l}\cell{\*\abiendcell}{\*\abicellprops left-attach:1; right-attach:2; top-attach:4; bot-attach:5}
+\pard\plain\ltrpar\qc\s28\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}12}\cell{\*\abiendcell}{\*\abicellprops left-attach:2; right-attach:3; top-attach:4; bot-attach:5}
+\pard\plain\ltrpar\qc\s28\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}35831808}\cell{\*\abiendcell}{\*\abicellprops left-attach:3; right-attach:4; top-attach:4; bot-attach:5}
+\pard\plain\ltrpar\qc\s28\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}12}\cell{\*\abiendcell}{\*\abicellprops left-attach:0; right-attach:1; top-attach:5; bot-attach:6}\row
+\trowd \itap1\trgaph36\trql\trrh0\trleft0\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx2376\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx5076\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx7326\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx9756
+\pard\plain\ltrpar\qc\s28\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}o}\cell{\*\abiendcell}{\*\abicellprops left-attach:1; right-attach:2; top-attach:5; bot-attach:6}
+\pard\plain\ltrpar\qc\s28\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}15}\cell{\*\abiendcell}{\*\abicellprops left-attach:2; right-attach:3; top-attach:5; bot-attach:6}
+\pard\plain\ltrpar\qc\s28\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}170859375}\cell{\*\abiendcell}{\*\abicellprops left-attach:3; right-attach:4; top-attach:5; bot-attach:6}
+\pard\plain\ltrpar\qc\s28\intbl\itap1{\s28\f0\fs24\lang1033{\*\listtag0}27}\cell{\*\abiendcell}\row}{\*\abiendtable}\par
+\pard\plain\ltrpar\ql\s28\sl240\slmult1\itap0{\s28\f0\fs22\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\sl240\slmult1\itap0{\s28\f0\fs22\lang1033{\*\listtag0}\abinodiroverride\ltrch RSA Decryption:}{\*\abitableprops table-column-props:1.6250in/1.8750in/1.5625in/1.6875in/; table-sdh:8d6c5c0}\par{\*\abicellprops left-attach:0; right-attach:1; top-attach:0; bot-attach:1}{
+\trowd \itap1\trgaph36\trql\trrh0\trleft0\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx2376\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx5076\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx7326\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx9756
+\pard\plain\ltrpar\qc\s28\sl240\slmult1\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}c}\cell{\*\abiendcell}{\*\abicellprops left-attach:1; right-attach:2; top-attach:0; bot-attach:1}
+\pard\plain\ltrpar\qc\s28\sl240\slmult1\intbl\itap1{\s28\f0\fs24\lang1033{\*\listtag0}c}{\s28\f0\fs24\super\lang1033{\*\listtag0}d}\cell{\*\abiendcell}{\*\abicellprops left-attach:2; right-attach:3; top-attach:0; bot-attach:1}
+\pard\plain\ltrpar\qc\s28\sl240\slmult1\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}m}\cell{\*\abiendcell}{\*\abicellprops left-attach:3; right-attach:4; top-attach:0; bot-attach:1}
+\pard\plain\ltrpar\qc\s28\sl240\slmult1\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}plaintext letter}\cell{\*\abiendcell}{\*\abicellprops left-attach:0; right-attach:1; top-attach:1; bot-attach:2}\row
+\trowd \itap1\trgaph36\trql\trrh0\trleft0\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx2376\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx5076\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx7326\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx9756
+\pard\plain\ltrpar\qc\sl240\slmult1\intbl\itap1{\f0\fs22\lang1033{\*\listtag0}2}\cell{\*\abiendcell}{\*\abicellprops left-attach:1; right-attach:2; top-attach:1; bot-attach:2}
+\pard\plain\ltrpar\qc\sl240\slmult1\intbl\itap1{\f0\fs22\lang1033{\*\listtag0}8}\cell{\*\abiendcell}{\*\abicellprops left-attach:2; right-attach:3; top-attach:1; bot-attach:2}
+\pard\plain\ltrpar\qc\sl240\slmult1\intbl\itap1{\f0\fs22\lang1033{\*\listtag0}8}\cell{\*\abiendcell}{\*\abicellprops left-attach:3; right-attach:4; top-attach:1; bot-attach:2}
+\pard\plain\ltrpar\qc\sl240\slmult1\intbl\itap1{\f0\fs22\lang1033{\*\listtag0}h}\cell{\*\abiendcell}{\*\abicellprops left-attach:0; right-attach:1; top-attach:2; bot-attach:3}\row
+\trowd \itap1\trgaph36\trql\trrh0\trleft0\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx2376\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx5076\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx7326\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx9756
+\pard\plain\ltrpar\qc\s28\sl240\slmult1\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}14}\cell{\*\abiendcell}{\*\abicellprops left-attach:1; right-attach:2; top-attach:2; bot-attach:3}
+\pard\plain\ltrpar\qc\s28\sl240\slmult1\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}2744}\cell{\*\abiendcell}{\*\abicellprops left-attach:2; right-attach:3; top-attach:2; bot-attach:3}
+\pard\plain\ltrpar\qc\s28\sl240\slmult1\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}5}\cell{\*\abiendcell}{\*\abicellprops left-attach:3; right-attach:4; top-attach:2; bot-attach:3}
+\pard\plain\ltrpar\qc\s28\sl240\slmult1\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}e}\cell{\*\abiendcell}{\*\abicellprops left-attach:0; right-attach:1; top-attach:3; bot-attach:4}\row
+\trowd \itap1\trgaph36\trql\trrh0\trleft0\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx2376\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx5076\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx7326\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx9756
+\pard\plain\ltrpar\qc\sl240\slmult1\intbl\itap1{\f0\fs22\lang1033{\*\listtag0}12}\cell{\*\abiendcell}{\*\abicellprops left-attach:1; right-attach:2; top-attach:3; bot-attach:4}
+\pard\plain\ltrpar\qc\sl240\slmult1\intbl\itap1{\f0\fs22\lang1033{\*\listtag0}1728}\cell{\*\abiendcell}{\*\abicellprops left-attach:2; right-attach:3; top-attach:3; bot-attach:4}
+\pard\plain\ltrpar\qc\sl240\slmult1\intbl\itap1{\f0\fs22\lang1033{\*\listtag0}12}\cell{\*\abiendcell}{\*\abicellprops left-attach:3; right-attach:4; top-attach:3; bot-attach:4}
+\pard\plain\ltrpar\qc\sl240\slmult1\intbl\itap1{\f0\fs22\lang1033{\*\listtag0}l}\cell{\*\abiendcell}{\*\abicellprops left-attach:0; right-attach:1; top-attach:4; bot-attach:5}\row
+\trowd \itap1\trgaph36\trql\trrh0\trleft0\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx2376\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx5076\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx7326\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx9756
+\pard\plain\ltrpar\qc\s28\sl240\slmult1\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}12}\cell{\*\abiendcell}{\*\abicellprops left-attach:1; right-attach:2; top-attach:4; bot-attach:5}
+\pard\plain\ltrpar\qc\s28\sl240\slmult1\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}1728}\cell{\*\abiendcell}{\*\abicellprops left-attach:2; right-attach:3; top-attach:4; bot-attach:5}
+\pard\plain\ltrpar\qc\s28\sl240\slmult1\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}12}\cell{\*\abiendcell}{\*\abicellprops left-attach:3; right-attach:4; top-attach:4; bot-attach:5}
+\pard\plain\ltrpar\qc\s28\sl240\slmult1\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}l}\cell{\*\abiendcell}{\*\abicellprops left-attach:0; right-attach:1; top-attach:5; bot-attach:6}\row
+\trowd \itap1\trgaph36\trql\trrh0\trleft0\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx2376\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx5076\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx7326\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cellx9756
+\pard\plain\ltrpar\qc\s28\sl240\slmult1\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}27}\cell{\*\abiendcell}{\*\abicellprops left-attach:1; right-attach:2; top-attach:5; bot-attach:6}
+\pard\plain\ltrpar\qc\s28\sl240\slmult1\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}19683}\cell{\*\abiendcell}{\*\abicellprops left-attach:2; right-attach:3; top-attach:5; bot-attach:6}
+\pard\plain\ltrpar\qc\s28\sl240\slmult1\intbl\itap1{\s28\f0\fs22\lang1033{\*\listtag0}15}\cell{\*\abiendcell}{\*\abicellprops left-attach:3; right-attach:4; top-attach:5; bot-attach:6}
+\pard\plain\ltrpar\qc\s28\sl240\slmult1\intbl\itap1{\s28\f0\fs24\lang1033{\*\listtag0}o}\cell{\*\abiendcell}\row}{\*\abiendtable}\par
+\pard\plain\ltrpar\ql\s28\sl240\slmult1\itap0{\s28\f0\fs22\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\sl240\slmult1\itap0{\s28\f0\fs24\b\ul\lang1033{\*\listtag0}\abinodiroverride\ltrch Problem 8.7}{\s28\f0\fs24\b\ul\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\sl240\slmult1\itap0{\s28\f0\fs22\lang1033{\*\listtag0}\abinodiroverride\ltrch MD5 is used because it is much quicker to create than public key encryption.  As most information that is sent over the internet is not of a sensitive nature, public key encryption is overkill.  Mostly, we want to make sure that the data is correct, not for encryption purposes.}{\s28\f0\fs22\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\sl240\slmult1\itap0{\s28\f0\fs22\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\sl240\slmult1\itap0{\s28\f0\fs24\b\ul\lang1033{\*\listtag0}\abinodiroverride\ltrch Problem 8.10}{\s28\f0\fs24\b\ul\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\sl240\slmult1\itap0{\s28\f0\fs22\lang1033{\*\listtag0}\abinodiroverride\ltrch No explicit authentication is needed because Bob can decrypt Alice's message with his key.  As only Alice has access to the key from the Key Distribution Centre, the authentication has already been done before sending messages to Bob.}{\s28\f0\fs22\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\sl240\slmult1\itap0{\s28\f0\fs22\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s28\sl240\slmult1\itap0{\s28\f0\fs22\lang1033{\*\listtag0}\abinodiroverride\ltrch Therefore, we don't need to authenticate again.}\par}

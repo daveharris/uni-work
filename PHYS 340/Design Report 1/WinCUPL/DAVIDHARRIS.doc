@@ -1,0 +1,103 @@
+
+*******************************************************************************
+                                    PHYS340
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          g16v8ms  Library DLIB-h-40-11
+Created         Thu May 05 16:35:56 2005
+Name            PHYS340 
+Partno          00 
+Revision        01 
+Date            5/05/2005 
+Designer        David Harris 
+Company         VUW 
+Assembly        None 
+Location        VUW 
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+Q0.d  =>
+    Q0 & !Q1 & !Q2 & !Q3
+  # !Q1 & !Q2 & Q3 & dir
+  # !Q1 & Q2 & !Q3 & !dir
+  # !Q0 & !Q2 & Q3 & dir & mode
+  # !Q0 & Q2 & !Q3 & !dir & mode
+
+Q1.d  =>
+    Q0 & Q1
+  # Q2 & Q3
+  # !Q0 & !Q3 & dir
+  # !Q0 & !Q2 & !dir
+  # Q2 & dir & mode
+  # Q3 & !dir & mode
+
+Q2.d  =>
+    !Q0 & !Q1 & Q2 & !Q3
+  # Q0 & !Q1 & !Q3 & dir
+  # !Q0 & Q1 & !Q3 & !dir
+  # Q0 & !Q1 & !Q2 & dir & mode
+  # !Q0 & Q1 & !Q2 & !dir & mode
+
+Q3.d  =>
+    Q0 & Q1
+  # Q2 & Q3
+  # !Q0 & !Q2 & dir
+  # !Q1 & !Q2 & !dir
+  # Q1 & dir & mode
+  # Q0 & !dir & mode
+
+count =>
+    Q3 , Q2 , Q1 , Q0
+
+downFull =>
+    !dir & mode
+
+downHalf =>
+    !dir & !mode
+
+state =>
+    mode , dir
+
+upFull =>
+    dir & mode
+
+upHalf =>
+    dir & !mode
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    Q0                          17       V        -       -       -     
+    Q0                  d       17       X        5       8       2     
+    Q1                          16       V        -       -       -     
+    Q1                  d       16       X        6       8       2     
+    Q2                          15       V        -       -       -     
+    Q2                  d       15       X        5       8       2     
+    Q3                          14       V        -       -       -     
+    Q3                  d       14       X        6       8       2     
+    clk                         1        V        -       -       -     
+    count                       0        F        -       -       -     
+    dir                         3        V        -       -       -     
+    downFull                    0        I        1       -       -     
+    downHalf                    0        I        1       -       -     
+    mode                        2        V        -       -       -     
+ !  oe                          11       V        -       -       -     
+    state                       0        F        -       -       -     
+    upFull                      0        I        1       -       -     
+    upHalf                      0        I        1       -       -     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+

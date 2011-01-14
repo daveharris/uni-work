@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+body {
+	background-color: #FFFFCC;
+}
+.style7 {color: #CC0000; font-weight: bold; }
+.style9 {color: #CC0000}
+-->
+</style>
+</head>
+<body>
+ <p align="center" class="style9"><strong>TECH102 - FOUNDATIONS OF DIGITAL TECHNOLOGY </strong></p>
+ <p align="center" class="style9"><strong>LECTURE NOTES </strong></p>
+ <p align="center" class="style9"><strong><font size="5">Data Compression</font></strong></p>
+ <p align="left" class="style9"> <strong>Data compression is a general problem, but particularly important with images since so much data is involved. &#13;</strong>&#13;</p>
+ <p align="left" class="style9"> <strong>The basic idea is to remove redundancy in the data and thus save space. </strong></p>
+ <p align="left" class="style9"> <strong>Recall the example with a 200 x 400 image of all one colour. &#13;</strong>&#13;<strong>In a simple bitmap format we are writing the same colour number 800,000 times! Really just need to specify 200 x 400 and the colour number. </strong></p>
+ <p align="left" class="style9">&nbsp;</p>
+ <p align="left" class="style9"><strong> <strong>INFORMED ABOUT INFORMATION</strong></strong></p>
+ <p align="left" class="style9"><strong> <strong>To progress, we need to think about what information really is. </strong>&#13;</strong></p>
+ <p align="left" class="style9"><strong> <strong>Consider three related terms: </strong>&#13;</strong></p>
+ <p align="left" class="style9"><strong> <strong>1. Message: what we are trying to convey. For example, “Technology is important.” &#13;</strong>&#13;</strong></p>
+ <p align="left" class="style9"><strong> <strong>2. Data: specific symbols used to convey the message. Could be letters in the English language or 1s and 0s representing those letters or whatever. &#13;</strong>&#13;</strong></p>
+ <p align="left" class="style9"><strong> <strong>3. Information: More difficult idea. &#13;</strong>&#13;</strong></p>
+ <ul class="style9">
+   <li><strong align="left"> <strong> Really the amount of surprise. &#13;</strong>&#13;</strong></li>
+   <li><strong align="left"> <strong>No information in “technology is important” because you already know that. &#13;</strong>&#13;</strong></li>
+   <li><strong align="left"> <strong>The statement “Technology will stop advancing in 2009” would have information. That's something you didn't know.</strong></strong></li>
+ </ul>
+ <p class="style7">The study of what constitutes information and quantification of how much info we have is called Information Theory. A Bit of History: &#13;Information theory began with two papers published by Claude Shanon in 1948.</p>
+ <p class="style9">&nbsp; </p>
+ <p class="style9"><strong>REDUNDANCY</strong>&#13;</p>
+ <p class="style9"> <strong>Basic idea behind the data compression techniques we want to discuss is to avoid telling you things twice and avoid telling you things you know. In other words we want to store and/or send pure information. </strong></p>
+ <p class="style7">&nbsp;</p>
+ <p class="style9"><strong>MATHS REVISION: PROBABILITIES</strong></p>
+ <p class="style9"> <strong>If you save an event has probability P=0, this means you don't believe the event will ever happen. &#13;P=1 means you believe the event will happen. &#13;&#13;</strong></p>
+ <p class="style7"> 0 &lt; P &lt; 1 means you're not sure the outcome of any particular trial, but expect the event to occur Px100% of the time on average. &#13;&#13;</p>
+ <p class="style7"> Example: probability of rolling heads = 0.5 means we expect heads about half the time if we conduct a large number of trials. </p>
+ <p class="style7">&#13;&#13;</p>
+ <p class="style7"> INDEPENDENT EVENTS</p>
+ <p class="style7"> Two events are independent if they don't affect each other. &#13;For example, toss coin. You will get either heads or tails. Now toss it again. The second result has nothing to do with the first toss. The tosses are independent events. &#13;&#13;Probabilities for independent events multiply. &#13;&#13;</p>
+ <p class="style7"> Foir example, the probability of getting heads twice is P = &frac12; * &frac12; = &frac14;. </p>
+ <p class="style7">&nbsp;</p>
+ <p class="style7"> EXAMPLE DATA COMPRESSION</p>
+ <p class="style7">We will do an example data compression making use of probabilities. </p>
+ <p class="style7"> Consider the customers at a Chemist's shop. &#13;&#13;The Home Office is doing marketing research and wants to know about the gender of its patrons including the detailed order in which they enter the store. The store assigns 0 to males, 1 to females, and sends a data stream to the home office. &#13;&#13;It turns out the Chemist's customers are 50% male and 50% female. &#13;&#13;It does no good to try to guess the gender of the next customer. 
+
+ 
+The gender of each new patron is a surprise. Thus there is one bit of info per bit of data. </p>
+ <p class="style7"> Now suppose the same marketing research is done at a men's shop. 80% of the patrons are male, so you would do well to guess the next patron is male. There's less surprise and less information if the patron is male. &#13;It seems like there should be a way to take advantage of that. &#13;Here's an approach: Group the patrons in twos. Assign the following codes to the possible combinations.&#13;&#13;</p>
+ <p class="style7"> M-M: 0&#13;M-F: 10&#13;F-M: 110&#13;F-F: 111 </p>
+ <p class="style7"> Seems like I don't gain. I have to send three bits instead of two if the data is F-M or F-F. &#13;&#13;But look at the probabilities: &#13;&#13;</p>
+ <p class="style7"> M-M: 0 0.64 &#13;M-F: 10 0.16&#13;F-M: 110 0.16&#13;F-F: 111 0.04 &#13;&#13;</p>
+ <p class="style7"> It's true that I sometimes have to send three bits to convey the genders of the pairs of patrons, but most of the time I send only one bit.</p>
+ <p class="style7"> On average I send how many bits? &#13;&#13;</p>
+ <p class="style7"> Number bits = 0.64*1 + 0.16*2 + 0.16*3 + 0.04*3 = 1.56 bits. &#13;&#13;</p>
+ <p class="style7"> But that's for two patrons. &#13;So I send only 0.78 bits per patron. &#13;I have achieved data compression. &#13;&#13;And it is lossless – I can recover the exact sequence of patron genders from the compressed data (make up some examples using this code to verify that the original data stream can be recovered). </p>
+ <p class="style7"><br>
+ BACK TO THE CHEMIST</p>
+ <p class="style7">The same data compression scheme will not work for the data from the chemist. Again, look at the probabilities:</p>
+ <p class="style7">M-M: 0 0.25 M-F: 10 0.25 F-M: 110 0.25 F-F: 111 0.25</p>
+ <p class="style7">On average I will send</p>
+ <p class="style7">Number bits = 0.25*1 + 0.25*2 + 0.25*3 + 0.25*3 = 2.25 bits for two patrons. I have actually made matters worse. </p>
+ <p class="style7">Be sure you can explain these results in terms of probabilities and the difference between data and information. </p>
+ <p class="style7">&nbsp;</p>
+ <p class="style7"> THEORY&#13;</p>
+ <p class="style7"> A detailed theoretical analysis of this kind of problem was carried out by Shanon. &#13;&#13;Shanon showed that, with 80% 0s and 20% 1s, the information content is 0.72 bits of info per bit of data. I should be able to make a compression routine to send only 0.72 times as many bits as I collect without losing anything. &#13;We didn't do quite that well with our compression, but we could approach the theoretical limit by just making larger groups of patrons and larger code sets. </p>
+ <p class="style7">&nbsp;</p>
+ <p class="style7"> SHANON'S IMPORTANT IDEA</p>
+ <p class="style7"> Lossless data compression now involves a lot of fancy algorithms, but it's all based on these same ideas: The &#13;difference between data and information &#13;&#13;and getting rid of redundancy in the data. &#13;&#13;</p>
+ <p class="style7"> We can expect this to work very well on images and movies. &#13;&#13;There is not much variation from one pixel to the next within an image or the image is just a jumble. &#13;In a movie, there is not much variation from one frame to the next or the motion is a jumble. &#13;&#13;Thus we can predict the value of the next pixel or frame mostly and record only the surprise (change). &#13;&#13;</p>
+ <p class="style7">&nbsp;</p>
+ <p class="style7"> LOSSY DATA COMPRESSION</p>
+ <p class="style7"> Lossless data compression applies to data of all sorts if there is redundancy. And the original data can be recovered completely. &#13;Images can be further compressed by reducing their quality slightly or maybe more than slightly.&#13;&#13;This lossy compression is not applicable to most data. For example, change one word in a contract and …. Well you see the point. &#13;&#13;Drop some of the colour or spatial resolution in an image and it looks the same, or at least very similar.&#13;&#13;</p>
+ <p class="style9">&#13;<strong>&#13;</strong>&#13;<strong><strong><strong><strong>&#13;</strong>&#13;</strong>&#13;&#13;</strong>&#13;&#13;&#13;
+ </strong></p>
+</body>
+</html>

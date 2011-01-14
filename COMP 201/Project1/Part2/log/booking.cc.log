@@ -1,0 +1,114 @@
+
+RCS file: /u/students/ramsayneil/comp201t11/COMP201/Project1/booking.cc,v
+Working file: booking.cc
+head: 1.24
+branch:
+locks: strict
+access list:
+symbolic names:
+	WORKING: 1.23
+keyword substitution: kv
+total revisions: 24;	selected revisions: 24
+description:
+----------------------------
+revision 1.24
+date: 2004/05/02 15:00:03;  author: keanedavi;  state: Exp;  lines: +10 -0
+Includes Big Comment at top of CC File
+----------------------------
+revision 1.23
+date: 2004/05/02 12:08:58;  author: harrisdavi3;  state: Exp;  lines: +12 -3
+Commented
+----------------------------
+revision 1.22
+date: 2004/05/02 11:31:37;  author: keanedavi;  state: Exp;  lines: +3 -5
+fixed menu printing, and removed deprecated print method
+----------------------------
+revision 1.21
+date: 2004/05/02 09:21:34;  author: keanedavi;  state: Exp;  lines: +6 -28
+Saving and loading now works
+----------------------------
+revision 1.20
+date: 2004/05/02 09:06:00;  author: harrisdavi3;  state: Exp;  lines: +1 -3
+now << calls contact's <<
+----------------------------
+revision 1.19
+date: 2004/05/02 05:52:11;  author: harrisdavi3;  state: Exp;  lines: +1 -1
+made the number of guests correct when it prints out
+----------------------------
+revision 1.18
+date: 2004/05/02 01:33:55;  author: harrisdavi3;  state: Exp;  lines: +19 -14
+Implemented the menu of booking, made it line up
+----------------------------
+revision 1.17
+date: 2004/05/02 00:29:05;  author: delwadvipu;  state: Exp;  lines: +20 -24
+general fixes
+----------------------------
+revision 1.16
+date: 2004/05/01 22:18:03;  author: delwadvipu;  state: Exp;  lines: +7 -3
+added method to booking class that returns a pointer to the guests object stored within the booking class
+added > to pair declaration within booking menu system
+----------------------------
+revision 1.15
+date: 2004/05/01 06:26:11;  author: harrisdavi3;  state: Exp;  lines: +27 -40
+added guests to list of deps
+----------------------------
+revision 1.14
+date: 2004/05/01 02:05:12;  author: harrisdavi3;  state: Exp;  lines: +59 -25
+completed << operator, simple tests show success
+----------------------------
+revision 1.13
+date: 2004/04/30 06:01:54;  author: harrisdavi3;  state: Exp;  lines: +35 -0
+implemented insertion operator, booking's incomplete
+----------------------------
+revision 1.12
+date: 2004/04/29 05:42:56;  author: delwadvipu;  state: Exp;  lines: +11 -11
+Fixed more bugs, loading of rooms now works but listing of rooms crashes the program
+----------------------------
+revision 1.11
+date: 2004/04/28 04:47:46;  author: delwadvipu;  state: Exp;  lines: +42 -32
+General bugfixes, compiles fine but still reading from file doesn't work for rooms. Makefile now has an option to compile only
+----------------------------
+revision 1.10
+date: 2004/04/26 00:45:39;  author: delwadvipu;  state: Exp;  lines: +10 -20
+maintenance, moved class menus to their respective classes, updated GROUP.xmi to match, fixed compile issues with other source files
+----------------------------
+revision 1.9
+date: 2004/04/21 11:44:49;  author: delwadvipu;  state: Exp;  lines: +3 -0
+more bugfixes, rooms aren't being loaded into the map however
+----------------------------
+revision 1.8
+date: 2004/04/21 08:02:24;  author: delwadvipu;  state: Exp;  lines: +21 -13
+Put in cout statements + added to hotel menu(s), still testing
+----------------------------
+revision 1.7
+date: 2004/04/19 04:08:05;  author: ramsayneil;  state: Exp;  lines: +5 -19
+removed <sstream> - no longer in use
+changed booking constructors to take &room instead of rate
+removed rate from read and write - can get rate from room directly
+----------------------------
+revision 1.6
+date: 2004/04/16 03:58:12;  author: ramsayneil;  state: Exp;  lines: +5 -3
+need to use stringstream to get int from string
+Booking::getCost() implemented
+----------------------------
+revision 1.5
+date: 2004/04/16 02:21:03;  author: ramsayneil;  state: Exp;  lines: +11 -1
+*** empty log message ***
+----------------------------
+revision 1.4
+date: 2004/04/16 01:44:13;  author: ramsayneil;  state: Exp;  lines: +6 -3
+save to file not cout
+add <guests></guests> tags
+----------------------------
+revision 1.3
+date: 2004/04/16 00:26:28;  author: ramsayneil;  state: Exp;  lines: +68 -14
+saves and reads from file
+----------------------------
+revision 1.2
+date: 2004/04/14 22:35:07;  author: ramsayneil;  state: Exp;  lines: +57 -0
+compiles - remember that a constructor initialises variables
+----------------------------
+revision 1.1
+date: 2004/04/13 02:44:18;  author: ramsayneil;  state: Exp;
+initial import
+=============================================================================

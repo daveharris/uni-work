@@ -1,0 +1,12 @@
+#!/bin/tcsh
+
+need java2
+need comp100tools
+
+cd /vol/courses/comp102/demos/.library/LibraryProgram
+
+if (! $?tty || $tty == "" ) then
+    konsole -T "Java System Output" -e java LibraryProgram
+else
+    java LibraryProgram
+endif

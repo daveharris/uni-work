@@ -1,0 +1,1064 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMI xmlns:UML="org.omg/standards/UML" verified="false" timestamp="" xmi.version="1.2" >
+ <XMI.header>
+  <XMI.documentation>
+   <XMI.exporter>umbrello uml modeller http://uml.sf.net</XMI.exporter>
+   <XMI.exporterVersion>1.2.0</XMI.exporterVersion>
+   <XMI.exporterEncoding>UnicodeUTF8</XMI.exporterEncoding>
+  </XMI.documentation>
+  <XMI.model xmi.name="GROUP" href="/u/students/ramsayneil/COMP201/Project1/docs/GROUP.xmi" />
+  <XMI.metamodel xmi.name="UML" href="UML.xml" xmi.version="1.3" />
+ </XMI.header>
+ <XMI.content>
+  <docsettings viewid="1" documentation="" uniqueid="1740" />
+  <UML:Model>
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="2" name="int" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="3" name="char" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="4" name="bool" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="5" name="float" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="6" name="double" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="7" name="long" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="8" name="short" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="9" name="string" />
+   <UML:Class stereotype="class" visibility="public" xmi.id="1584" name="Room" >
+    <UML:Operation visibility="public" xmi.id="173" type="" name="Room" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="int" name="ID" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="344" type="" name="Room" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="ifstream&amp;" name="handle" />
+     <UML:Parameter visibility="public" xmi.id="2" value="" type="const int" name="ID" />
+    </UML:Operation>
+    <UML:Operation visibility="private" xmi.id="374" type="" name="Room" />
+    <UML:Operation visibility="public" xmi.id="1162" type="" name="~Room" />
+    <UML:Operation visibility="public" xmi.id="1161" type="" name="Room" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="const Room&amp;" name="original" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="1163" type="Room&amp;" name="operator =" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="const Room&amp;" name="original" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="1226" type="ostream&amp;" name="operator &lt;&lt;" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="ostream&amp;" name="os" />
+     <UML:Parameter visibility="public" xmi.id="2" value="" type="const Room&amp;" name="right" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="29" type="void" name="setCategory" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="int" name="category" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="27" type="void" name="setName" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="string" name="name" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="33" type="void" name="setCapacity" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="int" name="capacity" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="28" type="void" name="setRate" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="double" name="rate" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="1637" type="void" name="setState" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="bool" name="state" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="174" type="int" name="getCategory" />
+    <UML:Operation visibility="public" xmi.id="30" type="string" name="getName" />
+    <UML:Operation visibility="public" xmi.id="32" type="int" name="getCapacity" />
+    <UML:Operation visibility="public" xmi.id="31" type="double" name="getRate" />
+    <UML:Operation visibility="public" xmi.id="1639" type="int" name="getID" />
+    <UML:Operation visibility="public" xmi.id="1640" type="bool" name="getState" />
+    <UML:Operation visibility="public" xmi.id="176" type="BookingSchedule*" name="getBookingSchedule" />
+    <UML:Operation visibility="public" xmi.id="243" type="void" name="saveToFile" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="ofstream&amp;" name="handle" />
+    </UML:Operation>
+    <UML:Attribute visibility="private" xmi.id="16" value="" type="const int" name="ID" />
+    <UML:Attribute visibility="private" xmi.id="17" value="" type="string" name="name" />
+    <UML:Attribute visibility="private" xmi.id="18" value="" type="int" name="capacity" />
+    <UML:Attribute visibility="private" xmi.id="19" value="" type="double" name="rate" />
+    <UML:Attribute visibility="private" xmi.id="64" value="" type="int" name="category" />
+    <UML:Attribute visibility="private" xmi.id="1638" value="" type="bool" name="state" />
+    <UML:Attribute visibility="private" xmi.id="175" value="" type="BookingSchedule*" name="bookingSchedule" />
+   </UML:Class>
+   <UML:Class stereotype="class" visibility="public" xmi.id="1585" name="BookingSchedule" >
+    <UML:Operation visibility="public" xmi.id="171" type="" name="BookingSchedule" />
+    <UML:Operation visibility="public" xmi.id="343" type="" name="BookingSchedule" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="ifstream&amp;" name="handle" />
+     <UML:Parameter visibility="public" xmi.id="2" value="" type="Room*" name="room" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="1037" type="" name="~BookingSchedule" />
+    <UML:Operation visibility="public" xmi.id="1038" type="" name="BookingSchedule" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="const BookingSchdule&amp;" name="original" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="1055" type="BookingSchedule&amp;" name="operator=" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="const BookingSchedule&amp;" name="original" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="137" type="Booking*" name="newBooking" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="Date&amp;" name="checkIn" />
+     <UML:Parameter visibility="public" xmi.id="2" value="" type="Date&amp;" name="checkOut" />
+     <UML:Parameter visibility="public" xmi.id="5" value="" type="Room*" name="room" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="1160" type="bool" name="isFree" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="Date&amp;" name="beginning" />
+     <UML:Parameter visibility="public" xmi.id="2" value="" type="Date&amp;" name="end" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="140" type="void" name="printSchedule" />
+    <UML:Operation visibility="public" xmi.id="141" type="Booking*" name="getBooking" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="const int" name="ID" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="142" type="void" name="deleteBooking" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="const int" name="ID" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="1740" type="double" name="getTakings" />
+    <UML:Operation visibility="public" xmi.id="242" type="void" name="saveToFile" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="ofstream&amp;" name="handle" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="1239" type="void" name="displayMenu" />
+    <UML:Operation visibility="public" xmi.id="1574" type="void" name="editMenu" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="int" name="ID" />
+    </UML:Operation>
+    <UML:Attribute visibility="private" xmi.id="23" value="" type="Map&lt;int, Booking*>" name="bookings" />
+    <UML:Attribute visibility="private" xmi.id="136" value="" type="int" name="counter" />
+   </UML:Class>
+   <UML:Class stereotype="class" visibility="public" xmi.id="1587" name="Booking" >
+    <UML:Operation visibility="private" xmi.id="341" type="" name="Booking" />
+    <UML:Operation visibility="public" xmi.id="144" type="" name="Booking" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="const int" name="ID" />
+     <UML:Parameter visibility="public" xmi.id="2" value="" type="Date&amp;" name="checkIn" />
+     <UML:Parameter visibility="public" xmi.id="3" value="" type="Date&amp;" name="checkOut" />
+     <UML:Parameter visibility="public" xmi.id="5" value="" type="Room&amp;" name="room" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="340" type="" name="Booking" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="ifstream&amp;" name="handle" />
+     <UML:Parameter visibility="public" xmi.id="2" value="" type="int" name="ID" />
+     <UML:Parameter visibility="public" xmi.id="3" value="" type="Room&amp;" name="room" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="1165" type="" name="~Booking" />
+    <UML:Operation visibility="public" xmi.id="1167" type="Booking&amp;" name="operator=" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="const Booking&amp;" name="original" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="1642" type="ostream&amp;" name="operator&lt;&lt;" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="ostream&amp;" name="os" />
+     <UML:Parameter visibility="public" xmi.id="2" value="" type="const Booking&amp;" name="right" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="1166" type="" name="Booking" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="const Booking&amp;" name="original" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="98" type="Date*" name="getCheckIn" />
+    <UML:Operation visibility="public" xmi.id="99" type="Date*" name="getCheckOut" />
+    <UML:Operation visibility="public" xmi.id="105" type="Contact*" name="getContact" />
+    <UML:Operation visibility="public" xmi.id="101" type="double" name="getCost" />
+    <UML:Operation visibility="public" xmi.id="1641" type="Guests*" name="getGuests" />
+    <UML:Operation visibility="public" xmi.id="102" type="void" name="setCheckIn" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="Date&amp;" name="checkIn" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="103" type="void" name="setCheckOut" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="Date&amp;" name="checkOut" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="412" type="void" name="print" />
+    <UML:Operation visibility="public" xmi.id="241" type="void" name="saveToFile" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="ofstream&amp;" name="handle" />
+    </UML:Operation>
+    <UML:Attribute visibility="private" xmi.id="40" value="" type="const int" name="ID" />
+    <UML:Attribute visibility="private" xmi.id="66" value="" type="Contact*" name="contactPerson" />
+    <UML:Attribute visibility="private" xmi.id="89" value="" type="Date" name="checkIn" />
+    <UML:Attribute visibility="private" xmi.id="91" value="" type="Date" name="checkOut" />
+    <UML:Attribute visibility="private" xmi.id="138" value="" type="Guests" name="guests" />
+    <UML:Attribute visibility="private" xmi.id="1006" value="" type="Room*" name="room" />
+   </UML:Class>
+   <UML:Class stereotype="class" visibility="public" xmi.id="1588" name="Contact" >
+    <UML:Operation visibility="public" xmi.id="95" type="" name="Contact" />
+    <UML:Operation visibility="public" xmi.id="337" type="" name="Contact" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="ifstream&amp;" name="handle" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="1647" type="ostream&amp;" name="operator&lt;&lt;" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="ostream&amp;" name="os" />
+     <UML:Parameter visibility="public" xmi.id="2" value="" type="const Contact&amp;" name="right" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="78" type="string" name="getAddress" />
+    <UML:Operation visibility="public" xmi.id="76" type="string" name="getName" />
+    <UML:Operation visibility="public" xmi.id="79" type="string" name="getNumber" />
+    <UML:Operation visibility="public" xmi.id="84" type="void" name="setAddress" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="string" name="address" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="87" type="void" name="setName" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="string" name="name" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="88" type="void" name="setNumber" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="string" name="number" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="240" type="void" name="saveToFile" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="ofstream&amp;" name="handle" />
+    </UML:Operation>
+    <UML:Attribute visibility="private" xmi.id="67" value="" type="string" name="name" />
+    <UML:Attribute visibility="private" xmi.id="69" value="" type="string" name="address" />
+    <UML:Attribute visibility="private" xmi.id="70" value="" type="string" name="number" />
+   </UML:Class>
+   <UML:Class stereotype="class" visibility="public" xmi.id="1478" name="Hotel" >
+    <UML:Operation visibility="public" xmi.id="213" type="void" name="main" />
+    <UML:Operation visibility="public" xmi.id="1633" type="" name="Hotel" />
+    <UML:Operation visibility="public" xmi.id="214" type="void" name="saveToFile" />
+    <UML:Operation visibility="public" xmi.id="314" type="void" name="readFromFile" />
+    <UML:Operation visibility="public" xmi.id="1041" type="void" name="displayMenu" />
+    <UML:Attribute visibility="private" xmi.id="378" value="" type="Rooms*" name="rooms" />
+    <UML:Attribute visibility="private" xmi.id="729" value="" type="Date*" name="currentDate" />
+   </UML:Class>
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="22" name="const int" />
+   <UML:Class stereotype="class" visibility="public" xmi.id="47" name="Category" >
+    <UML:Operation visibility="public" xmi.id="188" type="" name="Category" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="int" name="ID" />
+     <UML:Parameter visibility="public" xmi.id="2" value="" type="string" name="name" />
+    </UML:Operation>
+    <UML:Operation visibility="private" xmi.id="373" type="" name="Category" />
+    <UML:Attribute visibility="public" xmi.id="49" value="" type="string" name="name" />
+    <UML:Attribute visibility="public" xmi.id="65" value="" type="const int" name="ID" />
+   </UML:Class>
+   <UML:Class stereotype="class" visibility="public" xmi.id="1575" name="Categories" >
+    <UML:Operation visibility="private" xmi.id="180" type="" name="Categories" />
+    <UML:Operation visibility="public" xmi.id="194" type="int" name="newCategory" ownerScope="classifier" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="string" name="name" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="195" type="string" name="getCategory" ownerScope="classifier" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="const int" name="ID" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="945" type="void" name="printCategories" ownerScope="classifier" />
+    <UML:Operation visibility="public" xmi.id="1090" type="void" name="renameCategory" ownerScope="classifier" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="const int" name="ID" />
+     <UML:Parameter visibility="public" xmi.id="2" value="" type="string" name="name" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="196" type="void" name="deleteCategory" ownerScope="classifier" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="const int" name="ID" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="313" type="void" name="loadFromFile" ownerScope="classifier" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="ifstream&amp;" name="handle" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="239" type="void" name="saveToFile" ownerScope="classifier" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="ofstream&amp;" name="handle" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="1240" type="void" name="displayMenu" ownerScope="classifier" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="char*" name="border" />
+    </UML:Operation>
+    <UML:Attribute visibility="private" xmi.id="177" value="" type="Map&lt;int, string>" name="categories" ownerScope="classifier" />
+    <UML:Attribute visibility="private" xmi.id="179" value="" type="int" name="counter" ownerScope="classifier" />
+   </UML:Class>
+   <UML:Class stereotype="class" visibility="public" xmi.id="1581" name="Rooms" >
+    <UML:Operation visibility="public" xmi.id="201" type="" name="Rooms" />
+    <UML:Operation visibility="public" xmi.id="342" type="" name="Rooms" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="ifstream&amp;" name="handle" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="1039" type="" name="~Rooms" />
+    <UML:Operation visibility="public" xmi.id="1040" type="" name="Rooms" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="const Rooms&amp;" name="original" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="1054" type="Rooms&amp;" name="operator=" >
+     <UML:Parameter visibility="public" xmi.id="2" value="" type="const Rooms&amp;" name="original" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="203" type="Room*" name="newRoom" />
+    <UML:Operation visibility="public" xmi.id="204" type="Room*" name="getRoom" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="const int" name="ID" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="1634" type="int" name="getRoomID" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="string" name="name" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="408" type="bool" name="locateRooms" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="int" name="capacity" />
+     <UML:Parameter visibility="public" xmi.id="2" value="" type="int" name="category" />
+     <UML:Parameter visibility="public" xmi.id="3" value="" type="Date&amp;" name="checkIn" />
+     <UML:Parameter visibility="public" xmi.id="4" value="" type="Date&amp;" name="checkOut" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="409" type="void" name="listRooms" />
+    <UML:Operation visibility="public" xmi.id="410" type="void" name="printSummary" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="const int" name="ID" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="205" type="void" name="deleteRoom" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="const int" name="ID" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="237" type="void" name="saveToFile" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="ofstream&amp;" name="handle" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="1238" type="void" name="displayMenu" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="char*" name="border" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="1636" type="void" name="editMenu" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="int" name="ID" />
+    </UML:Operation>
+    <UML:Attribute visibility="private" xmi.id="197" value="" type="Map&lt;int, Room*>" name="rooms" />
+    <UML:Attribute visibility="private" xmi.id="199" value="" type="int" name="count" />
+   </UML:Class>
+   <UML:Class stereotype="class" visibility="public" xmi.id="61" name="User" >
+    <UML:Operation visibility="public" xmi.id="209" type="" name="User" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="string" name="name" />
+     <UML:Parameter visibility="public" xmi.id="2" value="" type="string" name="password" />
+     <UML:Parameter visibility="public" xmi.id="3" value="" type="bool" name="admin" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="312" type="" name="User" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="ifstream" name="handle" />
+    </UML:Operation>
+    <UML:Operation visibility="private" xmi.id="372" type="" name="User" />
+    <UML:Operation visibility="public" xmi.id="210" type="bool" name="isAdmin" />
+    <UML:Operation visibility="public" xmi.id="211" type="bool" name="isPassword" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="string" name="password" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="212" type="bool" name="setPassword" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="string" name="origional" />
+     <UML:Parameter visibility="public" xmi.id="2" value="" type="string" name="new" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="238" type="void" name="saveToFile" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="ofstream" name="handle" />
+    </UML:Operation>
+    <UML:Attribute visibility="private" xmi.id="206" value="" type="string" name="username" />
+    <UML:Attribute visibility="private" xmi.id="207" value="" type="string" name="password" />
+    <UML:Attribute visibility="private" xmi.id="208" value="" type="bool" name="administrative" />
+   </UML:Class>
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="90" name="date" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="139" name="string[]" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="143" name="Booking[]" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="178" name="Category[]" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="198" name="Room[]" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="376" name="User[]" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="406" name="Vector Category" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="580" name="String[]" />
+   <UML:Class stereotype="class" visibility="public" xmi.id="1577" name="Date" >
+    <UML:Operation visibility="private" xmi.id="842" type="" name="Date" />
+    <UML:Operation visibility="public" xmi.id="723" type="" name="Date" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="int" name="day" />
+     <UML:Parameter visibility="public" xmi.id="2" value="" type="int" name="month" />
+     <UML:Parameter visibility="public" xmi.id="3" value="" type="int" name="year" />
+     <UML:Parameter visibility="public" xmi.id="4" value="" type="int" name="time" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="1578" type="void" name="Date" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="int" name="yyyymmdd" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="844" type="" name="Date" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="ifstream&amp;" name="handle" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="1021" type="int" name="difference" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="Date&amp;" name="secondDate" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="725" type="int" name="getTime" />
+    <UML:Operation visibility="public" xmi.id="726" type="int" name="getDate" />
+    <UML:Operation visibility="public" xmi.id="727" type="void" name="setTime" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="int" name="time" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="728" type="void" name="setDate" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="int" name="yyyy_mm_dd" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="845" type="void" name="saveToFile" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="ofstream&amp;" name="handle" />
+    </UML:Operation>
+    <UML:Attribute visibility="private" xmi.id="718" value="" type="int" name="day" />
+    <UML:Attribute visibility="private" xmi.id="719" value="" type="int" name="month" />
+    <UML:Attribute visibility="private" xmi.id="720" value="" type="int" name="year" />
+    <UML:Attribute visibility="private" xmi.id="722" value="" type="int" name="time" />
+   </UML:Class>
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="869" name="Room*" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="870" name="Booking Schedule*" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="871" name="BookingSchedule*" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="872" name="Categories*" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="873" name="Rooms*" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="874" name="Contact*" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="875" name="Date*" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="979" name="Vector&lt;string>" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="980" name="Vector&lt;room>" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="981" name="Vector&lt;Room>" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="993" name="Vector&lt;Booking>" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="994" name="string>" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="1019" name="Vector&lt;Room*>" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="1020" name="Vector&lt;Booking*>" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="1022" name="Map&lt;Booking*>" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="1023" name="Map\&lt;Room*>" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="1024" name="Map&lt;Room*>" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="1036" name="Map&lt;string>" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="1146" name="Map&lt;int, string>" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="1147" name="Map&lt;int, Room*>" />
+   <UML:DataType stereotype="datatype" visibility="public" xmi.id="1148" name="Map&lt;int, Booking*>" />
+   <UML:Class stereotype="class" visibility="public" xmi.id="1589" name="Guests" >
+    <UML:Operation visibility="public" xmi.id="1264" type="" name="Guests" />
+    <UML:Operation visibility="public" xmi.id="1644" type="" name="Guest" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="ifstream&amp;" name="handle" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="1645" type="ostream&amp;" name="operator&lt;&lt;" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="ostream&amp;" name="os" />
+     <UML:Parameter visibility="public" xmi.id="2" value="" type="const Guest&amp;" name="right" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="1263" type="void" name="newGuest" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="string" name="name" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="1258" type="void" name="editGuest" />
+    <UML:Operation visibility="public" xmi.id="1260" type="pair&lt;map&lt;int,string>::const_iterator,map&lt;int,string>::const_iterator>" name="getIterator" />
+    <UML:Operation visibility="public" xmi.id="1259" type="void" name="removeGuest" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="int" name="ID" />
+    </UML:Operation>
+    <UML:Operation visibility="public" xmi.id="1646" type="void" name="saveToFile" >
+     <UML:Parameter visibility="public" xmi.id="1" value="" type="ofstream&amp;" name="handle" />
+    </UML:Operation>
+    <UML:Attribute visibility="private" xmi.id="1253" value="" type="Map&lt;int, string>" name="guests" />
+    <UML:Attribute visibility="private" xmi.id="1254" value="" type="int" name="counter" />
+   </UML:Class>
+   <UML:Actor visibility="public" xmi.id="1277" name="user" />
+   <UML:UseCase visibility="public" xmi.id="1279" name="Enter booking menu" />
+   <UML:UseCase visibility="public" xmi.id="1280" name="List rooms" />
+   <UML:UseCase visibility="public" xmi.id="1281" name="Enter room number" />
+   <UML:UseCase visibility="public" xmi.id="1282" name="Select option 'b'" />
+   <UML:UseCase visibility="public" xmi.id="1283" name="Select option 'a'" />
+   <UML:UseCase visibility="public" xmi.id="1284" name="Enter checkin date (yyyymmdd)" />
+   <UML:UseCase visibility="public" xmi.id="1285" name="Enter checkout date (yyyymmdd)" />
+   <UML:UseCase visibility="public" xmi.id="1286" name="Enter guests" />
+   <UML:UseCase visibility="public" xmi.id="1287" name="Enter contact information" />
+   <UML:UseCase visibility="public" xmi.id="1329" name="Select option 'r'" />
+   <UML:UseCase visibility="public" xmi.id="1330" name="Enter room information" />
+   <UML:UseCase visibility="public" xmi.id="1348" name="Select option 'c'" />
+   <UML:UseCase visibility="public" xmi.id="1349" name="Enter category information" />
+   <UML:UseCase visibility="public" xmi.id="1354" name="Select option 'e'" />
+   <UML:UseCase visibility="public" xmi.id="1355" name="Select booking number" />
+   <UML:UseCase visibility="public" xmi.id="1357" name="List bookings" />
+   <UML:UseCase visibility="public" xmi.id="1358" name="Select attribute to update" />
+   <UML:Association visibility="public" xmi.id="54" >
+    <UML:Association.connection>
+     <UML:AssociationEndRole visibility="public" aggregation="composite" type="1584" multiplicity="1" />
+     <UML:AssociationEndRole visibility="public" type="1585" multiplicity="1" />
+    </UML:Association.connection>
+   </UML:Association>
+   <UML:Association visibility="public" xmi.id="55" >
+    <UML:Association.connection>
+     <UML:AssociationEndRole visibility="public" aggregation="composite" type="1585" multiplicity="1" />
+     <UML:AssociationEndRole visibility="public" type="1587" multiplicity="n" />
+    </UML:Association.connection>
+   </UML:Association>
+   <UML:Association visibility="public" xmi.id="56" >
+    <UML:Association.connection>
+     <UML:AssociationEndRole visibility="public" aggregation="composite" type="1587" multiplicity="1" />
+     <UML:AssociationEndRole visibility="public" type="1588" multiplicity="1" />
+    </UML:Association.connection>
+   </UML:Association>
+   <UML:Association visibility="public" xmi.id="60" >
+    <UML:Association.connection>
+     <UML:AssociationEndRole visibility="public" aggregation="composite" type="1581" multiplicity="1" />
+     <UML:AssociationEndRole visibility="public" type="1584" multiplicity="n" />
+    </UML:Association.connection>
+   </UML:Association>
+   <UML:Association visibility="public" xmi.id="158" >
+    <UML:Association.connection>
+     <UML:AssociationEndRole visibility="public" aggregation="composite" type="47" />
+     <UML:AssociationEndRole visibility="public" type="1584" />
+    </UML:Association.connection>
+   </UML:Association>
+   <UML:Association visibility="public" xmi.id="1262" >
+    <UML:Association.connection>
+     <UML:AssociationEndRole visibility="public" aggregation="composite" type="1587" multiplicity="1" />
+     <UML:AssociationEndRole visibility="public" type="1589" multiplicity="n" />
+    </UML:Association.connection>
+   </UML:Association>
+  </UML:Model>
+  <diagrams>
+   <diagram snapgrid="0" showattsig="1" fillcolor="#ffffc0" zoom="100" showgrid="1" showopsig="1" usefillcolor="1" snapx="10" canvaswidth="1634" snapy="10" showatts="1" xmi.id="1" documentation="" type="402" showops="1" showpackage="0" name="class diagram" localid="30000" showstereotype="0" showscope="1" snapcsgrid="0" font="Helvetica,12,-1,5,25,0,0,0,0,0" linecolor="#ff0000" canvasheight="1743" >
+    <widgets>
+     <UML:ClassWidget usesdiagramfillcolour="0" width="474" showattsigs="601" usesdiagramusefillcolour="0" x="1156" linecolour="#ff0000" y="0" showopsigs="601" instancename="" usesdiagramlinecolour="0" fillcolour="#ffffc0" height="560" usefillcolor="1" showattributes="1" isinstance="0" xmi.id="1584" showoperations="1" showpackage="0" showscope="1" showstereotype="0" font="Helvetica,12,-1,5,75,0,0,0,0,0" />
+     <UML:ClassWidget usesdiagramfillcolour="0" width="587" showattsigs="601" usesdiagramusefillcolour="0" x="782" linecolour="#ff0000" y="1055" showopsigs="601" instancename="" usesdiagramlinecolour="0" fillcolour="#ffffc0" height="340" usefillcolor="1" showattributes="1" isinstance="0" xmi.id="1585" showoperations="1" showpackage="0" showscope="1" showstereotype="0" font="Helvetica,12,-1,5,75,0,0,0,0,0" />
+     <UML:ClassWidget usesdiagramfillcolour="0" width="581" showattsigs="601" usesdiagramusefillcolour="0" x="49" linecolour="#ff0000" y="995" showopsigs="601" instancename="" usesdiagramlinecolour="0" fillcolour="#ffffc0" height="460" usefillcolor="1" showattributes="1" isinstance="0" xmi.id="1587" showoperations="1" showpackage="0" showscope="1" showstereotype="0" font="Helvetica,12,-1,5,75,0,0,0,0,0" />
+     <UML:ClassWidget usesdiagramfillcolour="0" width="484" showattsigs="601" usesdiagramusefillcolour="0" x="0" linecolour="#ff0000" y="0" showopsigs="601" instancename="" usesdiagramlinecolour="0" fillcolour="#ffffc0" height="280" usefillcolor="1" showattributes="1" isinstance="0" xmi.id="1588" showoperations="1" showpackage="0" showscope="1" showstereotype="0" font="Helvetica,12,-1,5,75,0,0,0,0,0" />
+     <UML:ClassWidget usesdiagramfillcolour="0" width="180" showattsigs="601" usesdiagramusefillcolour="0" x="346" linecolour="#ff0000" y="327" showopsigs="601" instancename="" usesdiagramlinecolour="0" fillcolour="#ffffc0" height="160" usefillcolor="1" showattributes="1" isinstance="0" xmi.id="1478" showoperations="1" showpackage="0" showscope="1" showstereotype="0" font="Helvetica,12,-1,5,75,0,0,0,0,0" />
+     <UML:ClassWidget usesdiagramfillcolour="0" width="408" showattsigs="601" usesdiagramusefillcolour="0" x="592" linecolour="#ff0000" y="0" showopsigs="601" instancename="" usesdiagramlinecolour="0" fillcolour="#ffffc0" height="240" usefillcolor="1" showattributes="1" isinstance="0" xmi.id="1575" showoperations="1" showpackage="0" showscope="1" showstereotype="0" font="Helvetica,12,-1,5,75,0,0,0,0,0" />
+     <UML:ClassWidget usesdiagramfillcolour="0" width="653" showattsigs="601" usesdiagramusefillcolour="0" x="635" linecolour="#ff0000" y="619" showopsigs="601" instancename="" usesdiagramlinecolour="0" fillcolour="#ffffc0" height="360" usefillcolor="1" showattributes="1" isinstance="0" xmi.id="1581" showoperations="1" showpackage="0" showscope="1" showstereotype="0" font="Helvetica,12,-1,5,75,0,0,0,0,0" />
+     <UML:ClassWidget usesdiagramfillcolour="0" width="362" showattsigs="601" usesdiagramusefillcolour="0" x="255" linecolour="#ff0000" y="546" showopsigs="601" instancename="" usesdiagramlinecolour="0" fillcolour="#ffffc0" height="300" usefillcolor="1" showattributes="1" isinstance="0" xmi.id="1577" showoperations="1" showpackage="0" showscope="1" showstereotype="0" font="Helvetica,12,-1,5,75,0,0,0,0,0" />
+     <UML:ClassWidget usesdiagramfillcolour="0" width="643" showattsigs="601" usesdiagramusefillcolour="0" x="18" linecolour="#ff0000" y="1519" showopsigs="601" instancename="" usesdiagramlinecolour="0" fillcolour="#ffffc0" height="220" usefillcolor="1" showattributes="1" isinstance="0" xmi.id="1589" showoperations="1" showpackage="0" showscope="1" showstereotype="0" font="Helvetica,12,-1,5,75,0,0,0,0,0" />
+    </widgets>
+    <messages/>
+    <associations>
+     <UML:AssocWidget totalcounta="2" indexa="1" totalcountb="2" indexb="1" widgetbid="1585" widgetaid="1584" xmi.id="54" >
+      <linepath>
+       <startpoint startx="1393" starty="560" />
+       <endpoint endx="1369" endy="1225" />
+       <point x="1393" y="1225" />
+      </linepath>
+      <UML:FloatingTextWidget usesdiagramfillcolour="1" width="17" usesdiagramusefillcolour="1" x="1395" linecolour="none" y="562" instancename="" posttext="" usesdiagramlinecolour="1" role="701" fillcolour="none" height="24" usefillcolor="1" pretext="" isinstance="0" xmi.id="54" text="1" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+      <UML:FloatingTextWidget usesdiagramfillcolour="1" width="17" usesdiagramusefillcolour="1" x="1371" linecolour="none" y="1199" instancename="" posttext="" usesdiagramlinecolour="1" role="702" fillcolour="none" height="24" usefillcolor="1" pretext="" isinstance="0" xmi.id="54" text="1" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     </UML:AssocWidget>
+     <UML:AssocWidget totalcounta="2" indexa="1" totalcountb="2" indexb="1" widgetbid="1587" widgetaid="1585" xmi.id="55" >
+      <linepath>
+       <startpoint startx="782" starty="1225" />
+       <endpoint endx="630" endy="1225" />
+      </linepath>
+      <UML:FloatingTextWidget usesdiagramfillcolour="1" width="17" usesdiagramusefillcolour="1" x="763" linecolour="none" y="1199" instancename="" posttext="" usesdiagramlinecolour="1" role="701" fillcolour="none" height="24" usefillcolor="1" pretext="" isinstance="0" xmi.id="55" text="1" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+      <UML:FloatingTextWidget usesdiagramfillcolour="1" width="17" usesdiagramusefillcolour="1" x="632" linecolour="none" y="1199" instancename="" posttext="" usesdiagramlinecolour="1" role="702" fillcolour="none" height="24" usefillcolor="1" pretext="" isinstance="0" xmi.id="55" text="n" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     </UML:AssocWidget>
+     <UML:AssocWidget totalcounta="3" indexa="1" totalcountb="2" indexb="1" widgetbid="1588" widgetaid="1587" xmi.id="56" >
+      <linepath>
+       <startpoint startx="242" starty="995" />
+       <endpoint endx="242" endy="280" />
+      </linepath>
+      <UML:FloatingTextWidget usesdiagramfillcolour="1" width="17" usesdiagramusefillcolour="1" x="341" linecolour="none" y="969" instancename="" posttext="" usesdiagramlinecolour="1" role="701" fillcolour="none" height="24" usefillcolor="1" pretext="" isinstance="0" xmi.id="56" text="1" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+      <UML:FloatingTextWidget usesdiagramfillcolour="1" width="17" usesdiagramusefillcolour="1" x="227" linecolour="none" y="282" instancename="" posttext="" usesdiagramlinecolour="1" role="702" fillcolour="none" height="24" usefillcolor="1" pretext="" isinstance="0" xmi.id="56" text="1" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     </UML:AssocWidget>
+     <UML:AssocWidget totalcounta="3" indexa="2" totalcountb="2" indexb="1" widgetbid="1584" widgetaid="1581" xmi.id="60" >
+      <linepath>
+       <startpoint startx="1070" starty="619" />
+       <endpoint endx="1156" endy="280" />
+       <point x="1070" y="280" />
+      </linepath>
+      <UML:FloatingTextWidget usesdiagramfillcolour="1" width="17" usesdiagramusefillcolour="1" x="1072" linecolour="none" y="593" instancename="" posttext="" usesdiagramlinecolour="1" role="701" fillcolour="none" height="24" usefillcolor="1" pretext="" isinstance="0" xmi.id="60" text="1" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+      <UML:FloatingTextWidget usesdiagramfillcolour="1" width="17" usesdiagramusefillcolour="1" x="1141" linecolour="none" y="254" instancename="" posttext="" usesdiagramlinecolour="1" role="702" fillcolour="none" height="24" usefillcolor="1" pretext="" isinstance="0" xmi.id="60" text="n" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     </UML:AssocWidget>
+     <UML:AssocWidget totalcounta="3" indexa="1" visibilityB="200" totalcountb="2" indexb="1" widgetbid="1478" widgetaid="1581" roleBdoc="" roleAdoc="" type="503" changeabilityA="900" changeabilityB="900" visibilityA="200" >
+      <linepath>
+       <startpoint startx="852" starty="619" />
+       <endpoint endx="526" endy="407" />
+       <point x="852" y="407" />
+      </linepath>
+      <UML:FloatingTextWidget usesdiagramfillcolour="1" width="17" usesdiagramusefillcolour="1" x="963" linecolour="none" y="593" instancename="" posttext="" usesdiagramlinecolour="1" role="701" fillcolour="none" height="24" usefillcolor="1" pretext="" isinstance="0" xmi.id="1699" text="1" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+      <UML:FloatingTextWidget usesdiagramfillcolour="1" width="17" usesdiagramusefillcolour="1" x="528" linecolour="none" y="381" instancename="" posttext="" usesdiagramlinecolour="1" role="702" fillcolour="none" height="24" usefillcolor="1" pretext="" isinstance="0" xmi.id="1700" text="1" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     </UML:AssocWidget>
+     <UML:AssocWidget totalcounta="3" indexa="2" visibilityB="200" totalcountb="2" indexb="1" widgetbid="1577" widgetaid="1587" roleBdoc="" roleAdoc="" type="503" changeabilityA="900" changeabilityB="900" visibilityA="200" >
+      <linepath>
+       <startpoint startx="436" starty="995" />
+       <endpoint endx="436" endy="846" />
+       <point x="436" y="857" />
+      </linepath>
+      <UML:FloatingTextWidget usesdiagramfillcolour="1" width="17" usesdiagramusefillcolour="1" x="438" linecolour="none" y="969" instancename="" posttext="" usesdiagramlinecolour="1" role="701" fillcolour="none" height="24" usefillcolor="1" pretext="" isinstance="0" xmi.id="1701" text="1" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+      <UML:FloatingTextWidget usesdiagramfillcolour="1" width="17" usesdiagramusefillcolour="1" x="438" linecolour="none" y="848" instancename="" posttext="" usesdiagramlinecolour="1" role="702" fillcolour="none" height="24" usefillcolor="1" pretext="" isinstance="0" xmi.id="1702" text="2" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     </UML:AssocWidget>
+     <UML:AssocWidget totalcounta="2" indexa="1" visibilityB="200" totalcountb="2" indexb="1" widgetbid="1478" widgetaid="1577" roleBdoc="" roleAdoc="" type="503" changeabilityA="900" changeabilityB="900" visibilityA="200" >
+      <linepath>
+       <startpoint startx="436" starty="546" />
+       <endpoint endx="436" endy="487" />
+       <point x="436" y="512" />
+      </linepath>
+      <UML:FloatingTextWidget usesdiagramfillcolour="1" width="17" usesdiagramusefillcolour="1" x="438" linecolour="none" y="520" instancename="" posttext="" usesdiagramlinecolour="1" role="701" fillcolour="none" height="24" usefillcolor="1" pretext="" isinstance="0" xmi.id="1703" text="1" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+      <UML:FloatingTextWidget usesdiagramfillcolour="1" width="17" usesdiagramusefillcolour="1" x="438" linecolour="none" y="489" instancename="" posttext="" usesdiagramlinecolour="1" role="702" fillcolour="none" height="24" usefillcolor="1" pretext="" isinstance="0" xmi.id="1704" text="1" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     </UML:AssocWidget>
+     <UML:AssocWidget totalcounta="2" indexa="1" totalcountb="2" indexb="1" widgetbid="1589" widgetaid="1587" xmi.id="1262" >
+      <linepath>
+       <startpoint startx="339" starty="1455" />
+       <endpoint endx="339" endy="1519" />
+      </linepath>
+      <UML:FloatingTextWidget usesdiagramfillcolour="1" width="17" usesdiagramusefillcolour="1" x="341" linecolour="none" y="1457" instancename="" posttext="" usesdiagramlinecolour="1" role="701" fillcolour="none" height="24" usefillcolor="1" pretext="" isinstance="0" xmi.id="1262" text="1" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+      <UML:FloatingTextWidget usesdiagramfillcolour="1" width="17" usesdiagramusefillcolour="1" x="341" linecolour="none" y="1493" instancename="" posttext="" usesdiagramlinecolour="1" role="702" fillcolour="none" height="24" usefillcolor="1" pretext="" isinstance="0" xmi.id="1262" text="n" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     </UML:AssocWidget>
+    </associations>
+   </diagram>
+   <diagram snapgrid="0" showattsig="1" fillcolor="#ffffc0" zoom="100" showgrid="0" showopsig="1" usefillcolor="1" snapx="10" canvaswidth="1064" snapy="10" showatts="1" xmi.id="696" documentation="" type="400" showops="1" showpackage="0" name="Add Booking" localid="30000" showstereotype="0" showscope="1" snapcsgrid="0" font="Helvetica,12,-1,5,25,0,0,0,0,0" linecolor="#ff0000" canvasheight="860" >
+    <widgets>
+     <UML:ActorWidget usesdiagramfillcolour="1" width="41" usesdiagramusefillcolour="1" x="69" linecolour="none" y="299" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="65" usefillcolor="1" isinstance="0" xmi.id="1277" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:FloatingTextWidget usesdiagramfillcolour="1" width="110" usesdiagramusefillcolour="1" x="342" linecolour="none" y="5" instancename="" posttext="" usesdiagramlinecolour="1" role="700" fillcolour="none" height="24" usefillcolor="1" pretext="" isinstance="0" xmi.id="1278" text="Make Booking" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:UseCaseWidget usesdiagramfillcolour="1" width="83" usesdiagramusefillcolour="1" x="358" linecolour="none" y="147" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="55" usefillcolor="1" isinstance="0" xmi.id="1280" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:UseCaseWidget usesdiagramfillcolour="1" width="146" usesdiagramusefillcolour="1" x="328" linecolour="none" y="223" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="55" usefillcolor="1" isinstance="0" xmi.id="1281" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:UseCaseWidget usesdiagramfillcolour="1" width="122" usesdiagramusefillcolour="1" x="338" linecolour="none" y="62" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="55" usefillcolor="1" isinstance="0" xmi.id="1282" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:UseCaseWidget usesdiagramfillcolour="1" width="122" usesdiagramusefillcolour="1" x="339" linecolour="none" y="300" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="55" usefillcolor="1" isinstance="0" xmi.id="1283" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:UseCaseWidget usesdiagramfillcolour="1" width="232" usesdiagramusefillcolour="1" x="286" linecolour="none" y="377" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="55" usefillcolor="1" isinstance="0" xmi.id="1284" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:UseCaseWidget usesdiagramfillcolour="1" width="241" usesdiagramusefillcolour="1" x="281" linecolour="none" y="458" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="55" usefillcolor="1" isinstance="0" xmi.id="1285" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:UseCaseWidget usesdiagramfillcolour="1" width="99" usesdiagramusefillcolour="1" x="350" linecolour="none" y="617" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="55" usefillcolor="1" isinstance="0" xmi.id="1286" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:UseCaseWidget usesdiagramfillcolour="1" width="186" usesdiagramusefillcolour="1" x="307" linecolour="none" y="537" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="55" usefillcolor="1" isinstance="0" xmi.id="1287" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <boxwidget usesdiagramfillcolour="1" width="344" usesdiagramusefillcolour="1" x="235" linecolour="none" y="0" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="715" usefillcolor="1" isinstance="0" xmi.id="1299" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+    </widgets>
+    <messages/>
+    <associations>
+     <UML:AssocWidget totalcounta="2" indexa="1" visibilityB="200" totalcountb="9" indexb="2" widgetbid="1277" widgetaid="1280" roleBdoc="" roleAdoc="" type="503" changeabilityA="900" changeabilityB="900" visibilityA="200" >
+      <linepath>
+       <startpoint startx="358" starty="174" />
+       <endpoint endx="110" endy="313" />
+      </linepath>
+     </UML:AssocWidget>
+     <UML:AssocWidget totalcounta="2" indexa="1" visibilityB="200" totalcountb="9" indexb="4" widgetbid="1277" widgetaid="1283" roleBdoc="" roleAdoc="" type="503" changeabilityA="900" changeabilityB="900" visibilityA="200" >
+      <linepath>
+       <startpoint startx="339" starty="327" />
+       <endpoint endx="110" endy="327" />
+      </linepath>
+     </UML:AssocWidget>
+     <UML:AssocWidget totalcounta="2" indexa="1" visibilityB="200" totalcountb="9" indexb="3" widgetbid="1277" widgetaid="1281" roleBdoc="" roleAdoc="" type="503" changeabilityA="900" changeabilityB="900" visibilityA="200" >
+      <linepath>
+       <startpoint startx="328" starty="250" />
+       <endpoint endx="110" endy="320" />
+      </linepath>
+     </UML:AssocWidget>
+     <UML:AssocWidget totalcounta="2" indexa="1" visibilityB="200" totalcountb="9" indexb="1" widgetbid="1277" widgetaid="1282" roleBdoc="" roleAdoc="" type="503" changeabilityA="900" changeabilityB="900" visibilityA="200" >
+      <linepath>
+       <startpoint startx="399" starty="117" />
+       <endpoint endx="110" endy="306" />
+      </linepath>
+      <UML:FloatingTextWidget usesdiagramfillcolour="1" width="8" usesdiagramusefillcolour="1" x="254" linecolour="none" y="241" instancename="" posttext="" usesdiagramlinecolour="1" role="703" fillcolour="none" height="24" usefillcolor="1" pretext="" isinstance="0" xmi.id="1707" text="" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+      <UML:FloatingTextWidget usesdiagramfillcolour="1" width="17" usesdiagramusefillcolour="1" x="380" linecolour="none" y="119" instancename="" posttext="" usesdiagramlinecolour="1" role="709" fillcolour="none" height="24" usefillcolor="1" pretext="+" isinstance="0" xmi.id="1708" text="" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+      <UML:FloatingTextWidget usesdiagramfillcolour="1" width="17" usesdiagramusefillcolour="1" x="112" linecolour="none" y="340" instancename="" posttext="" usesdiagramlinecolour="1" role="710" fillcolour="none" height="24" usefillcolor="1" pretext="+" isinstance="0" xmi.id="1709" text="" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     </UML:AssocWidget>
+     <UML:AssocWidget totalcounta="2" indexa="1" visibilityB="200" totalcountb="9" indexb="5" widgetbid="1277" widgetaid="1284" roleBdoc="" roleAdoc="" type="503" changeabilityA="900" changeabilityB="900" visibilityA="200" >
+      <linepath>
+       <startpoint startx="402" starty="377" />
+       <endpoint endx="110" endy="335" />
+      </linepath>
+     </UML:AssocWidget>
+     <UML:AssocWidget totalcounta="2" indexa="1" visibilityB="200" totalcountb="9" indexb="6" widgetbid="1277" widgetaid="1285" roleBdoc="" roleAdoc="" type="503" changeabilityA="900" changeabilityB="900" visibilityA="200" >
+      <linepath>
+       <startpoint startx="401" starty="458" />
+       <endpoint endx="110" endy="342" />
+      </linepath>
+     </UML:AssocWidget>
+     <UML:AssocWidget totalcounta="2" indexa="1" visibilityB="200" totalcountb="9" indexb="8" widgetbid="1277" widgetaid="1286" roleBdoc="" roleAdoc="" type="503" changeabilityA="900" changeabilityB="900" visibilityA="200" >
+      <linepath>
+       <startpoint startx="399" starty="617" />
+       <endpoint endx="110" endy="356" />
+      </linepath>
+     </UML:AssocWidget>
+     <UML:AssocWidget totalcounta="2" indexa="1" visibilityB="200" totalcountb="9" indexb="7" widgetbid="1277" widgetaid="1287" roleBdoc="" roleAdoc="" type="503" changeabilityA="900" changeabilityB="900" visibilityA="200" >
+      <linepath>
+       <startpoint startx="400" starty="537" />
+       <endpoint endx="110" endy="349" />
+      </linepath>
+     </UML:AssocWidget>
+    </associations>
+   </diagram>
+   <diagram snapgrid="0" showattsig="1" fillcolor="#ffffc0" zoom="100" showgrid="0" showopsig="1" usefillcolor="1" snapx="10" canvaswidth="1064" snapy="10" showatts="1" xmi.id="1328" documentation="" type="400" showops="1" showpackage="0" name="Add Room" localid="30000" showstereotype="0" showscope="1" snapcsgrid="0" font="Helvetica,12,-1,5,25,0,0,0,0,0" linecolor="#ff0000" canvasheight="860" >
+    <widgets>
+     <UML:ActorWidget usesdiagramfillcolour="1" width="41" usesdiagramusefillcolour="1" x="124" linecolour="none" y="129" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="65" usefillcolor="1" isinstance="0" xmi.id="1277" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:UseCaseWidget usesdiagramfillcolour="1" width="118" usesdiagramusefillcolour="1" x="329" linecolour="none" y="52" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="55" usefillcolor="1" isinstance="0" xmi.id="1329" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:UseCaseWidget usesdiagramfillcolour="1" width="122" usesdiagramusefillcolour="1" x="332" linecolour="none" y="134" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="55" usefillcolor="1" isinstance="0" xmi.id="1283" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:UseCaseWidget usesdiagramfillcolour="1" width="171" usesdiagramusefillcolour="1" x="311" linecolour="none" y="217" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="55" usefillcolor="1" isinstance="0" xmi.id="1330" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:FloatingTextWidget usesdiagramfillcolour="1" width="94" usesdiagramusefillcolour="1" x="341" linecolour="none" y="5" instancename="" posttext="" usesdiagramlinecolour="1" role="700" fillcolour="none" height="24" usefillcolor="1" pretext="" isinstance="0" xmi.id="1331" text="Make Room" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <boxwidget usesdiagramfillcolour="1" width="262" usesdiagramusefillcolour="1" x="260" linecolour="none" y="0" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="316" usefillcolor="1" isinstance="0" xmi.id="1332" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+    </widgets>
+    <messages/>
+    <associations>
+     <UML:AssocWidget totalcounta="4" indexa="1" visibilityB="200" totalcountb="2" indexb="1" widgetbid="1329" widgetaid="1277" roleBdoc="" roleAdoc="" type="503" changeabilityA="900" changeabilityB="900" visibilityA="200" >
+      <linepath>
+       <startpoint startx="165" starty="145" />
+       <endpoint endx="329" endy="79" />
+      </linepath>
+     </UML:AssocWidget>
+     <UML:AssocWidget totalcounta="4" indexa="2" visibilityB="200" totalcountb="2" indexb="1" widgetbid="1283" widgetaid="1277" roleBdoc="" roleAdoc="" type="503" changeabilityA="900" changeabilityB="900" visibilityA="200" >
+      <linepath>
+       <startpoint startx="165" starty="161" />
+       <endpoint endx="332" endy="161" />
+      </linepath>
+     </UML:AssocWidget>
+     <UML:AssocWidget totalcounta="4" indexa="3" visibilityB="200" totalcountb="2" indexb="1" widgetbid="1330" widgetaid="1277" roleBdoc="" roleAdoc="" type="503" changeabilityA="900" changeabilityB="900" visibilityA="200" >
+      <linepath>
+       <startpoint startx="165" starty="177" />
+       <endpoint endx="396" endy="217" />
+      </linepath>
+     </UML:AssocWidget>
+    </associations>
+   </diagram>
+   <diagram snapgrid="0" showattsig="1" fillcolor="#ffffc0" zoom="100" showgrid="0" showopsig="1" usefillcolor="1" snapx="10" canvaswidth="1064" snapy="10" showatts="1" xmi.id="1347" documentation="" type="400" showops="1" showpackage="0" name="Add Category" localid="30000" showstereotype="0" showscope="1" snapcsgrid="0" font="Helvetica,12,-1,5,25,0,0,0,0,0" linecolor="#ff0000" canvasheight="860" >
+    <widgets>
+     <UML:ActorWidget usesdiagramfillcolour="1" width="41" usesdiagramusefillcolour="1" x="106" linecolour="none" y="159" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="65" usefillcolor="1" isinstance="0" xmi.id="1277" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:UseCaseWidget usesdiagramfillcolour="1" width="118" usesdiagramusefillcolour="1" x="340" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="55" usefillcolor="1" isinstance="0" xmi.id="1329" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:UseCaseWidget usesdiagramfillcolour="1" width="121" usesdiagramusefillcolour="1" x="330" linecolour="none" y="125" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="55" usefillcolor="1" isinstance="0" xmi.id="1348" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:UseCaseWidget usesdiagramfillcolour="1" width="122" usesdiagramusefillcolour="1" x="341" linecolour="none" y="204" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="55" usefillcolor="1" isinstance="0" xmi.id="1283" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:UseCaseWidget usesdiagramfillcolour="1" width="196" usesdiagramusefillcolour="1" x="306" linecolour="none" y="290" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="55" usefillcolor="1" isinstance="0" xmi.id="1349" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:FloatingTextWidget usesdiagramfillcolour="1" width="116" usesdiagramusefillcolour="1" x="342" linecolour="none" y="8" instancename="" posttext="" usesdiagramlinecolour="1" role="700" fillcolour="none" height="24" usefillcolor="1" pretext="" isinstance="0" xmi.id="1350" text="Make Category" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <boxwidget usesdiagramfillcolour="1" width="314" usesdiagramusefillcolour="1" x="250" linecolour="none" y="0" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="388" usefillcolor="1" isinstance="0" xmi.id="1351" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+    </widgets>
+    <messages/>
+    <associations>
+     <UML:AssocWidget totalcounta="2" indexa="1" visibilityB="200" totalcountb="5" indexb="4" widgetbid="1277" widgetaid="1349" roleBdoc="" roleAdoc="" type="503" changeabilityA="900" changeabilityB="900" visibilityA="200" >
+      <linepath>
+       <startpoint startx="404" starty="290" />
+       <endpoint endx="147" endy="211" />
+      </linepath>
+     </UML:AssocWidget>
+     <UML:AssocWidget totalcounta="2" indexa="1" visibilityB="200" totalcountb="5" indexb="3" widgetbid="1277" widgetaid="1283" roleBdoc="" roleAdoc="" type="503" changeabilityA="900" changeabilityB="900" visibilityA="200" >
+      <linepath>
+       <startpoint startx="341" starty="231" />
+       <endpoint endx="147" endy="198" />
+      </linepath>
+     </UML:AssocWidget>
+     <UML:AssocWidget totalcounta="2" indexa="1" visibilityB="200" totalcountb="5" indexb="2" widgetbid="1277" widgetaid="1348" roleBdoc="" roleAdoc="" type="503" changeabilityA="900" changeabilityB="900" visibilityA="200" >
+      <linepath>
+       <startpoint startx="330" starty="152" />
+       <endpoint endx="147" endy="185" />
+      </linepath>
+     </UML:AssocWidget>
+     <UML:AssocWidget totalcounta="2" indexa="1" visibilityB="200" totalcountb="5" indexb="1" widgetbid="1277" widgetaid="1329" roleBdoc="" roleAdoc="" type="503" changeabilityA="900" changeabilityB="900" visibilityA="200" >
+      <linepath>
+       <startpoint startx="340" starty="77" />
+       <endpoint endx="147" endy="172" />
+      </linepath>
+     </UML:AssocWidget>
+    </associations>
+   </diagram>
+   <diagram snapgrid="0" showattsig="1" fillcolor="#ffffc0" zoom="100" showgrid="0" showopsig="1" usefillcolor="1" snapx="10" canvaswidth="1064" snapy="10" showatts="1" xmi.id="1353" documentation="" type="400" showops="1" showpackage="0" name="Edit Booking" localid="30000" showstereotype="0" showscope="1" snapcsgrid="0" font="Helvetica,12,-1,5,25,0,0,0,0,0" linecolor="#ff0000" canvasheight="860" >
+    <widgets>
+     <UML:ActorWidget usesdiagramfillcolour="1" width="41" usesdiagramusefillcolour="1" x="86" linecolour="none" y="292" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="65" usefillcolor="1" isinstance="0" xmi.id="1277" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:UseCaseWidget usesdiagramfillcolour="1" width="122" usesdiagramusefillcolour="1" x="334" linecolour="none" y="51" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="55" usefillcolor="1" isinstance="0" xmi.id="1282" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:UseCaseWidget usesdiagramfillcolour="1" width="83" usesdiagramusefillcolour="1" x="353" linecolour="none" y="138" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="55" usefillcolor="1" isinstance="0" xmi.id="1280" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:UseCaseWidget usesdiagramfillcolour="1" width="146" usesdiagramusefillcolour="1" x="320" linecolour="none" y="219" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="55" usefillcolor="1" isinstance="0" xmi.id="1281" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:UseCaseWidget usesdiagramfillcolour="1" width="122" usesdiagramusefillcolour="1" x="329" linecolour="none" y="297" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="55" usefillcolor="1" isinstance="0" xmi.id="1354" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:UseCaseWidget usesdiagramfillcolour="1" width="174" usesdiagramusefillcolour="1" x="299" linecolour="none" y="462" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="55" usefillcolor="1" isinstance="0" xmi.id="1355" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:UseCaseWidget usesdiagramfillcolour="1" width="104" usesdiagramusefillcolour="1" x="337" linecolour="none" y="376" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="55" usefillcolor="1" isinstance="0" xmi.id="1357" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:UseCaseWidget usesdiagramfillcolour="1" width="186" usesdiagramusefillcolour="1" x="292" linecolour="none" y="552" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="55" usefillcolor="1" isinstance="0" xmi.id="1358" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <UML:FloatingTextWidget usesdiagramfillcolour="1" width="99" usesdiagramusefillcolour="1" x="347" linecolour="none" y="8" instancename="" posttext="" usesdiagramlinecolour="1" role="700" fillcolour="none" height="24" usefillcolor="1" pretext="" isinstance="0" xmi.id="1359" text="Edit Booking" font="Helvetica,12,-1,5,50,0,0,0,0,0" />
+     <boxwidget usesdiagramfillcolour="1" width="247" usesdiagramusefillcolour="1" x="264" linecolour="none" y="31" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="607" usefillcolor="1" isinstance="0" xmi.id="1360" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+    </widgets>
+    <messages/>
+    <associations>
+     <UML:AssocWidget totalcounta="2" indexa="1" visibilityB="200" totalcountb="8" indexb="7" widgetbid="1277" widgetaid="1358" roleBdoc="" roleAdoc="" type="503" changeabilityA="900" changeabilityB="900" visibilityA="200" >
+      <linepath>
+       <startpoint startx="385" starty="552" />
+       <endpoint endx="127" endy="348" />
+      </linepath>
+     </UML:AssocWidget>
+     <UML:AssocWidget totalcounta="2" indexa="1" visibilityB="200" totalcountb="8" indexb="6" widgetbid="1277" widgetaid="1355" roleBdoc="" roleAdoc="" type="503" changeabilityA="900" changeabilityB="900" visibilityA="200" >
+      <linepath>
+       <startpoint startx="386" starty="462" />
+       <endpoint endx="127" endy="340" />
+      </linepath>
+     </UML:AssocWidget>
+     <UML:AssocWidget totalcounta="2" indexa="1" visibilityB="200" totalcountb="8" indexb="5" widgetbid="1277" widgetaid="1357" roleBdoc="" roleAdoc="" type="503" changeabilityA="900" changeabilityB="900" visibilityA="200" >
+      <linepath>
+       <startpoint startx="337" starty="403" />
+       <endpoint endx="127" endy="332" />
+      </linepath>
+     </UML:AssocWidget>
+     <UML:AssocWidget totalcounta="2" indexa="1" visibilityB="200" totalcountb="8" indexb="4" widgetbid="1277" widgetaid="1354" roleBdoc="" roleAdoc="" type="503" changeabilityA="900" changeabilityB="900" visibilityA="200" >
+      <linepath>
+       <startpoint startx="329" starty="324" />
+       <endpoint endx="127" endy="324" />
+      </linepath>
+     </UML:AssocWidget>
+     <UML:AssocWidget totalcounta="2" indexa="1" visibilityB="200" totalcountb="8" indexb="3" widgetbid="1277" widgetaid="1281" roleBdoc="" roleAdoc="" type="503" changeabilityA="900" changeabilityB="900" visibilityA="200" >
+      <linepath>
+       <startpoint startx="320" starty="246" />
+       <endpoint endx="127" endy="316" />
+      </linepath>
+     </UML:AssocWidget>
+     <UML:AssocWidget totalcounta="2" indexa="1" visibilityB="200" totalcountb="8" indexb="2" widgetbid="1277" widgetaid="1280" roleBdoc="" roleAdoc="" type="503" changeabilityA="900" changeabilityB="900" visibilityA="200" >
+      <linepath>
+       <startpoint startx="353" starty="165" />
+       <endpoint endx="127" endy="308" />
+      </linepath>
+     </UML:AssocWidget>
+     <UML:AssocWidget totalcounta="2" indexa="1" visibilityB="200" totalcountb="8" indexb="1" widgetbid="1277" widgetaid="1282" roleBdoc="" roleAdoc="" type="503" changeabilityA="900" changeabilityB="900" visibilityA="200" >
+      <linepath>
+       <startpoint startx="395" starty="106" />
+       <endpoint endx="127" endy="300" />
+      </linepath>
+     </UML:AssocWidget>
+    </associations>
+   </diagram>
+   <diagram snapgrid="0" showattsig="1" fillcolor="#ffffc0" zoom="81" showgrid="0" showopsig="1" usefillcolor="1" snapx="10" canvaswidth="1314" snapy="10" showatts="1" xmi.id="1361" documentation="" type="403" showops="1" showpackage="0" name="Add Booking" localid="29989" showstereotype="0" showscope="1" snapcsgrid="0" font="Helvetica,12,-1,5,25,0,0,0,0,0" linecolor="#ff0000" canvasheight="1062" >
+    <widgets>
+     <UML:ObjectWidget usesdiagramfillcolour="1" width="72" usesdiagramusefillcolour="1" x="101" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="30" usefillcolor="1" isinstance="0" xmi.id="1589" decon="0" localid="29999" multipleinstance="0" drawasactor="0" font="Helvetica,12,-1,5,50,0,1,0,0,0" />
+     <UML:ObjectWidget usesdiagramfillcolour="1" width="81" usesdiagramusefillcolour="1" x="352" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="30" usefillcolor="1" isinstance="0" xmi.id="1587" decon="0" localid="29998" multipleinstance="0" drawasactor="0" font="Helvetica,12,-1,5,50,0,1,0,0,0" />
+     <UML:ObjectWidget usesdiagramfillcolour="1" width="100" usesdiagramusefillcolour="1" x="591" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="30" usefillcolor="1" isinstance="0" xmi.id="1575" decon="0" localid="29996" multipleinstance="0" drawasactor="0" font="Helvetica,12,-1,5,50,0,1,0,0,0" />
+     <UML:ObjectWidget usesdiagramfillcolour="1" width="77" usesdiagramusefillcolour="1" x="245" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="30" usefillcolor="1" isinstance="0" xmi.id="1588" decon="0" localid="29994" multipleinstance="0" drawasactor="0" font="Helvetica,12,-1,5,50,0,1,0,0,0" />
+     <UML:ObjectWidget usesdiagramfillcolour="1" width="56" usesdiagramusefillcolour="1" x="476" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="30" usefillcolor="1" isinstance="0" xmi.id="1577" decon="0" localid="29993" multipleinstance="0" drawasactor="0" font="Helvetica,12,-1,5,50,0,1,0,0,0" />
+     <UML:ObjectWidget usesdiagramfillcolour="1" width="60" usesdiagramusefillcolour="1" x="1143" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="30" usefillcolor="1" isinstance="0" xmi.id="1478" decon="0" localid="29992" multipleinstance="0" drawasactor="0" font="Helvetica,12,-1,5,50,0,1,0,0,0" />
+     <UML:ObjectWidget usesdiagramfillcolour="1" width="65" usesdiagramusefillcolour="1" x="874" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="30" usefillcolor="1" isinstance="0" xmi.id="1584" decon="0" localid="29991" multipleinstance="0" drawasactor="0" font="Helvetica,12,-1,5,50,0,1,0,0,0" />
+     <UML:ObjectWidget usesdiagramfillcolour="1" width="73" usesdiagramusefillcolour="1" x="984" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="30" usefillcolor="1" isinstance="0" xmi.id="1581" decon="0" localid="29990" multipleinstance="0" drawasactor="0" font="Helvetica,12,-1,5,50,0,1,0,0,0" />
+     <UML:ObjectWidget usesdiagramfillcolour="1" width="149" usesdiagramusefillcolour="1" x="714" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="30" usefillcolor="1" isinstance="0" xmi.id="1585" decon="0" localid="29989" multipleinstance="0" drawasactor="0" font="Helvetica,12,-1,5,50,0,1,0,0,0" />
+    </widgets>
+    <messages>
+     <UML:MessageWidget usesdiagramfillcolour="1" width="540" usesdiagramusefillcolour="1" x="633" linecolour="none" y="113" operation="printCategories() : void" instancename="" widgetbid="29996" usesdiagramlinecolour="1" fillcolour="none" height="32" usefillcolor="1" seqnum="1" widgetaid="29992" isinstance="0" xmi.id="1575" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+     <UML:MessageWidget usesdiagramfillcolour="1" width="677" usesdiagramusefillcolour="1" x="496" linecolour="none" y="173" operation="Date(yyyymmdd : int) : void" instancename="" widgetbid="29993" usesdiagramlinecolour="1" fillcolour="none" height="32" usefillcolor="1" seqnum="2" widgetaid="29992" isinstance="0" xmi.id="1576" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+     <UML:MessageWidget usesdiagramfillcolour="1" width="677" usesdiagramusefillcolour="1" x="496" linecolour="none" y="235" operation="Date(yyyymmdd : int) : void" instancename="" widgetbid="29993" usesdiagramlinecolour="1" fillcolour="none" height="32" usefillcolor="1" seqnum="3" widgetaid="29992" isinstance="0" xmi.id="1577" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+     <UML:MessageWidget usesdiagramfillcolour="1" width="161" usesdiagramusefillcolour="1" x="1012" linecolour="none" y="305" operation="getRoom(ID : const int) : Room*" instancename="" widgetbid="29990" usesdiagramlinecolour="1" fillcolour="none" height="32" usefillcolor="1" seqnum="4" widgetaid="29992" isinstance="0" xmi.id="1579" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+     <UML:MessageWidget usesdiagramfillcolour="1" width="275" usesdiagramusefillcolour="1" x="898" linecolour="none" y="372" operation="getBookingSchedule() : BookingSchedule*" instancename="" widgetbid="29991" usesdiagramlinecolour="1" fillcolour="none" height="32" usefillcolor="1" seqnum="5" widgetaid="29992" isinstance="0" xmi.id="1584" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+     <UML:MessageWidget usesdiagramfillcolour="1" width="393" usesdiagramusefillcolour="1" x="780" linecolour="none" y="441" operation="newBooking(checkIn : Date&amp;, checkOut : Date&amp;, room : Room*) : Booking*" instancename="" widgetbid="29989" usesdiagramlinecolour="1" fillcolour="none" height="260" usefillcolor="1" seqnum="6" widgetaid="29992" isinstance="0" xmi.id="1585" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+     <UML:MessageWidget usesdiagramfillcolour="1" width="404" usesdiagramusefillcolour="1" x="384" linecolour="none" y="509" operation="Booking(ID : const int, checkIn : Date&amp;, checkOut : Date&amp;, room : Room&amp;)" instancename="" widgetbid="29998" usesdiagramlinecolour="1" fillcolour="none" height="169" usefillcolor="1" seqnum="7" widgetaid="29989" isinstance="0" xmi.id="1587" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+     <UML:MessageWidget usesdiagramfillcolour="1" width="117" usesdiagramusefillcolour="1" x="275" linecolour="none" y="561" operation="Contact()" instancename="" widgetbid="29994" usesdiagramlinecolour="1" fillcolour="none" height="32" usefillcolor="1" seqnum="8" widgetaid="29998" isinstance="0" xmi.id="1588" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+     <UML:MessageWidget usesdiagramfillcolour="1" width="263" usesdiagramusefillcolour="1" x="129" linecolour="none" y="627" operation="newGuest(name : string) : void" instancename="" widgetbid="29999" usesdiagramlinecolour="1" fillcolour="none" height="32" usefillcolor="1" seqnum="9" widgetaid="29998" isinstance="0" xmi.id="1589" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+    </messages>
+    <associations/>
+   </diagram>
+   <diagram snapgrid="0" showattsig="1" fillcolor="#ffffc0" zoom="100" showgrid="0" showopsig="1" usefillcolor="1" snapx="10" canvaswidth="1064" snapy="10" showatts="1" xmi.id="1396" documentation="" type="403" showops="1" showpackage="0" name="Add Category" localid="29993" showstereotype="0" showscope="1" snapcsgrid="0" font="Helvetica,12,-1,5,25,0,0,0,0,0" linecolor="#ff0000" canvasheight="1059" >
+    <widgets>
+     <UML:ObjectWidget usesdiagramfillcolour="1" width="60" usesdiagramusefillcolour="1" x="943" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="30" usefillcolor="1" isinstance="0" xmi.id="1478" decon="0" localid="29999" multipleinstance="0" drawasactor="0" font="Helvetica,12,-1,5,50,0,1,0,0,0" />
+     <UML:ObjectWidget usesdiagramfillcolour="1" width="81" usesdiagramusefillcolour="1" x="184" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="30" usefillcolor="1" isinstance="0" xmi.id="1587" decon="0" localid="29998" multipleinstance="0" drawasactor="0" font="Helvetica,12,-1,5,50,0,1,0,0,0" />
+     <UML:ObjectWidget usesdiagramfillcolour="1" width="73" usesdiagramusefillcolour="1" x="781" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="30" usefillcolor="1" isinstance="0" xmi.id="1581" decon="0" localid="29997" multipleinstance="0" drawasactor="0" font="Helvetica,12,-1,5,50,0,1,0,0,0" />
+     <UML:ObjectWidget usesdiagramfillcolour="1" width="149" usesdiagramusefillcolour="1" x="435" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="30" usefillcolor="1" isinstance="0" xmi.id="1585" decon="0" localid="29996" multipleinstance="0" drawasactor="0" font="Helvetica,12,-1,5,50,0,1,0,0,0" />
+     <UML:ObjectWidget usesdiagramfillcolour="1" width="56" usesdiagramusefillcolour="1" x="300" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="30" usefillcolor="1" isinstance="0" xmi.id="1577" decon="0" localid="29995" multipleinstance="0" drawasactor="0" font="Helvetica,12,-1,5,50,0,1,0,0,0" />
+     <UML:ObjectWidget usesdiagramfillcolour="1" width="77" usesdiagramusefillcolour="1" x="94" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="30" usefillcolor="1" isinstance="0" xmi.id="1588" decon="0" localid="29994" multipleinstance="0" drawasactor="0" font="Helvetica,12,-1,5,50,0,1,0,0,0" />
+     <UML:ObjectWidget usesdiagramfillcolour="1" width="72" usesdiagramusefillcolour="1" x="3" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="30" usefillcolor="1" isinstance="0" xmi.id="1589" decon="0" localid="29993" multipleinstance="0" drawasactor="0" font="Helvetica,12,-1,5,50,0,1,0,0,0" />
+    </widgets>
+    <messages>
+     <UML:MessageWidget usesdiagramfillcolour="1" width="164" usesdiagramusefillcolour="1" x="809" linecolour="none" y="101" operation="getRoom(ID : const int) : Room*" instancename="" widgetbid="29997" usesdiagramlinecolour="1" fillcolour="none" height="604" usefillcolor="1" seqnum="1" widgetaid="29999" isinstance="0" xmi.id="1403" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+     <UML:MessageWidget usesdiagramfillcolour="1" width="316" usesdiagramusefillcolour="1" x="501" linecolour="none" y="130" operation="displayMenu() : void" instancename="" widgetbid="29996" usesdiagramlinecolour="1" fillcolour="none" height="556" usefillcolor="1" seqnum="2" widgetaid="29997" isinstance="0" xmi.id="1405" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+     <UML:MessageWidget usesdiagramfillcolour="1" width="189" usesdiagramusefillcolour="1" x="320" linecolour="none" y="210" operation="Date(day : int, month : int, year : int, time : int)" instancename="" widgetbid="29995" usesdiagramlinecolour="1" fillcolour="none" height="32" usefillcolor="1" seqnum="3" widgetaid="29996" isinstance="0" xmi.id="1406" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+     <UML:MessageWidget usesdiagramfillcolour="1" width="189" usesdiagramusefillcolour="1" x="320" linecolour="none" y="268" operation="Date(day : int, month : int, year : int, time : int)" instancename="" widgetbid="29995" usesdiagramlinecolour="1" fillcolour="none" height="32" usefillcolor="1" seqnum="4" widgetaid="29996" isinstance="0" xmi.id="1408" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+     <UML:MessageWidget usesdiagramfillcolour="1" width="50" usesdiagramusefillcolour="1" x="507" linecolour="none" y="328" operation="newBooking(checkIn : Date&amp;, checkOut : Date&amp;, room : Room*) : Booking*" instancename="" widgetbid="29996" usesdiagramlinecolour="1" fillcolour="none" height="345" usefillcolor="1" seqnum="5" widgetaid="29996" isinstance="0" xmi.id="1410" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+     <UML:MessageWidget usesdiagramfillcolour="1" width="293" usesdiagramusefillcolour="1" x="216" linecolour="none" y="366" operation="Booking(ID : const int, checkIn : Date&amp;, checkOut : Date&amp;, room : Room&amp;)" instancename="" widgetbid="29998" usesdiagramlinecolour="1" fillcolour="none" height="283" usefillcolor="1" seqnum="6" widgetaid="29996" isinstance="0" xmi.id="1411" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+     <UML:MessageWidget usesdiagramfillcolour="1" width="100" usesdiagramusefillcolour="1" x="124" linecolour="none" y="409" operation="Contact()" instancename="" widgetbid="29994" usesdiagramlinecolour="1" fillcolour="none" height="32" usefillcolor="1" seqnum="7" widgetaid="29998" isinstance="0" xmi.id="1412" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+     <UML:MessageWidget usesdiagramfillcolour="1" width="193" usesdiagramusefillcolour="1" x="31" linecolour="none" y="488" operation="newGuest(name : string) : void" instancename="" widgetbid="29993" usesdiagramlinecolour="1" fillcolour="none" height="32" usefillcolor="1" seqnum="8" widgetaid="29998" isinstance="0" xmi.id="1413" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+    </messages>
+    <associations/>
+   </diagram>
+   <diagram snapgrid="0" showattsig="1" fillcolor="#ffffc0" zoom="100" showgrid="0" showopsig="1" usefillcolor="1" snapx="10" canvaswidth="1064" snapy="10" showatts="1" xmi.id="1397" documentation="" type="403" showops="1" showpackage="0" name="Add Room" localid="29995" showstereotype="0" showscope="1" snapcsgrid="0" font="Helvetica,12,-1,5,25,0,0,0,0,0" linecolor="#ff0000" canvasheight="860" >
+    <widgets>
+     <UML:ObjectWidget usesdiagramfillcolour="1" width="60" usesdiagramusefillcolour="1" x="903" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="30" usefillcolor="1" isinstance="0" xmi.id="1478" decon="0" localid="29999" multipleinstance="0" drawasactor="0" font="Helvetica,12,-1,5,50,0,1,0,0,0" />
+     <UML:ObjectWidget usesdiagramfillcolour="1" width="73" usesdiagramusefillcolour="1" x="744" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="30" usefillcolor="1" isinstance="0" xmi.id="1581" decon="0" localid="29998" multipleinstance="0" drawasactor="0" font="Helvetica,12,-1,5,50,0,1,0,0,0" />
+     <UML:ObjectWidget usesdiagramfillcolour="1" width="65" usesdiagramusefillcolour="1" x="598" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="30" usefillcolor="1" isinstance="0" xmi.id="1584" decon="0" localid="29997" multipleinstance="0" drawasactor="0" font="Helvetica,12,-1,5,50,0,1,0,0,0" />
+     <UML:ObjectWidget usesdiagramfillcolour="1" width="149" usesdiagramusefillcolour="1" x="417" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="30" usefillcolor="1" isinstance="0" xmi.id="1585" decon="0" localid="29996" multipleinstance="0" drawasactor="0" font="Helvetica,12,-1,5,50,0,1,0,0,0" />
+     <UML:ObjectWidget usesdiagramfillcolour="1" width="100" usesdiagramusefillcolour="1" x="302" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="30" usefillcolor="1" isinstance="0" xmi.id="1575" decon="0" localid="29995" multipleinstance="0" drawasactor="0" font="Helvetica,12,-1,5,50,0,1,0,0,0" />
+    </widgets>
+    <messages>
+     <UML:MessageWidget usesdiagramfillcolour="1" width="161" usesdiagramusefillcolour="1" x="772" linecolour="none" y="106" operation="displayMenu() : void" instancename="" widgetbid="29998" usesdiagramlinecolour="1" fillcolour="none" height="339" usefillcolor="1" seqnum="1" widgetaid="29999" isinstance="0" xmi.id="1479" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+     <UML:MessageWidget usesdiagramfillcolour="1" width="50" usesdiagramusefillcolour="1" x="778" linecolour="none" y="167" operation="newRoom() : Room*" instancename="" widgetbid="29998" usesdiagramlinecolour="1" fillcolour="none" height="246" usefillcolor="1" seqnum="2" widgetaid="29998" isinstance="0" xmi.id="1481" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+     <UML:MessageWidget usesdiagramfillcolour="1" width="158" usesdiagramusefillcolour="1" x="622" linecolour="none" y="219" operation="Room(ID : int)" instancename="" widgetbid="29997" usesdiagramlinecolour="1" fillcolour="none" height="174" usefillcolor="1" seqnum="3" widgetaid="29998" isinstance="0" xmi.id="1482" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+     <UML:MessageWidget usesdiagramfillcolour="1" width="147" usesdiagramusefillcolour="1" x="483" linecolour="none" y="276" operation="BookingSchedule()" instancename="" widgetbid="29996" usesdiagramlinecolour="1" fillcolour="none" height="32" usefillcolor="1" seqnum="4" widgetaid="29997" isinstance="0" xmi.id="1483" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+     <UML:MessageWidget usesdiagramfillcolour="1" width="286" usesdiagramusefillcolour="1" x="344" linecolour="none" y="340" operation="printCategories() : void" instancename="" widgetbid="29995" usesdiagramlinecolour="1" fillcolour="none" height="32" usefillcolor="1" seqnum="5" widgetaid="29997" isinstance="0" xmi.id="1484" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+    </messages>
+    <associations/>
+   </diagram>
+   <diagram snapgrid="0" showattsig="1" fillcolor="#ffffc0" zoom="100" showgrid="0" showopsig="1" usefillcolor="1" snapx="10" canvaswidth="1064" snapy="10" showatts="1" xmi.id="1398" documentation="" type="403" showops="1" showpackage="0" name="Edit Booking" localid="29996" showstereotype="0" showscope="1" snapcsgrid="0" font="Helvetica,12,-1,5,25,0,0,0,0,0" linecolor="#ff0000" canvasheight="860" >
+    <widgets>
+     <UML:ObjectWidget usesdiagramfillcolour="1" width="60" usesdiagramusefillcolour="1" x="969" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="30" usefillcolor="1" isinstance="0" xmi.id="1478" decon="0" localid="29999" multipleinstance="0" drawasactor="0" font="Helvetica,12,-1,5,50,0,1,0,0,0" />
+     <UML:ObjectWidget usesdiagramfillcolour="1" width="73" usesdiagramusefillcolour="1" x="876" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="30" usefillcolor="1" isinstance="0" xmi.id="1581" decon="0" localid="29998" multipleinstance="0" drawasactor="0" font="Helvetica,12,-1,5,50,0,1,0,0,0" />
+     <UML:ObjectWidget usesdiagramfillcolour="1" width="149" usesdiagramusefillcolour="1" x="716" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="30" usefillcolor="1" isinstance="0" xmi.id="1585" decon="0" localid="29997" multipleinstance="0" drawasactor="0" font="Helvetica,12,-1,5,50,0,1,0,0,0" />
+     <UML:ObjectWidget usesdiagramfillcolour="1" width="81" usesdiagramusefillcolour="1" x="602" linecolour="none" y="50" instancename="" usesdiagramlinecolour="1" fillcolour="none" height="30" usefillcolor="1" isinstance="0" xmi.id="1587" decon="0" localid="29996" multipleinstance="0" drawasactor="0" font="Helvetica,12,-1,5,50,0,1,0,0,0" />
+    </widgets>
+    <messages>
+     <UML:MessageWidget usesdiagramfillcolour="1" width="95" usesdiagramusefillcolour="1" x="904" linecolour="none" y="113" operation="listRooms() : void" instancename="" widgetbid="29998" usesdiagramlinecolour="1" fillcolour="none" height="32" usefillcolor="1" seqnum="1" widgetaid="29999" isinstance="0" xmi.id="1522" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+     <UML:MessageWidget usesdiagramfillcolour="1" width="95" usesdiagramusefillcolour="1" x="904" linecolour="none" y="171" operation="getRoom(ID : const int) : Room*" instancename="" widgetbid="29998" usesdiagramlinecolour="1" fillcolour="none" height="32" usefillcolor="1" seqnum="2" widgetaid="29999" isinstance="0" xmi.id="1523" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+     <UML:MessageWidget usesdiagramfillcolour="1" width="217" usesdiagramusefillcolour="1" x="782" linecolour="none" y="226" operation="displayMenu() : void" instancename="" widgetbid="29997" usesdiagramlinecolour="1" fillcolour="none" height="32" usefillcolor="1" seqnum="3" widgetaid="29999" isinstance="0" xmi.id="1524" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+     <UML:MessageWidget usesdiagramfillcolour="1" width="50" usesdiagramusefillcolour="1" x="788" linecolour="none" y="286" operation="printSchedule() : void" instancename="" widgetbid="29997" usesdiagramlinecolour="1" fillcolour="none" height="32" usefillcolor="1" seqnum="4" widgetaid="29997" isinstance="0" xmi.id="1525" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+     <UML:MessageWidget usesdiagramfillcolour="1" width="50" usesdiagramusefillcolour="1" x="788" linecolour="none" y="348" operation="editMenu(ID : int) : void" instancename="" widgetbid="29997" usesdiagramlinecolour="1" fillcolour="none" height="32" usefillcolor="1" seqnum="5" widgetaid="29997" isinstance="0" xmi.id="1526" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+     <UML:MessageWidget usesdiagramfillcolour="1" width="50" usesdiagramusefillcolour="1" x="788" linecolour="none" y="405" operation="getBooking(ID : const int) : Booking*" instancename="" widgetbid="29997" usesdiagramlinecolour="1" fillcolour="none" height="32" usefillcolor="1" seqnum="6" widgetaid="29997" isinstance="0" xmi.id="1528" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+     <UML:MessageWidget usesdiagramfillcolour="1" width="156" usesdiagramusefillcolour="1" x="634" linecolour="none" y="451" operation="Modify Booking" instancename="" widgetbid="29996" usesdiagramlinecolour="1" fillcolour="none" height="32" usefillcolor="1" seqnum="7" widgetaid="29997" isinstance="0" xmi.id="1529" sequencemessagetype="1000" font="Helvetica,12,-1,5,25,0,0,0,0,0" />
+    </messages>
+    <associations/>
+   </diagram>
+  </diagrams>
+  <listview>
+   <listitem open="1" type="800" id="-1" label="Views" >
+    <listitem open="1" type="801" id="-1" label="Logical View" >
+     <listitem open="0" type="807" id="1" label="class diagram" />
+     <listitem open="0" type="810" id="1361" label="Add Booking" />
+     <listitem open="0" type="810" id="1396" label="Add Category" />
+     <listitem open="0" type="810" id="1397" label="Add Room" />
+     <listitem open="0" type="810" id="1398" label="Edit Booking" />
+     <listitem open="1" type="813" id="1587" label="Booking" >
+      <listitem open="0" type="814" id="40" label="ID" />
+      <listitem open="0" type="814" id="89" label="checkIn" />
+      <listitem open="0" type="814" id="91" label="checkOut" />
+      <listitem open="0" type="814" id="66" label="contactPerson" />
+      <listitem open="0" type="814" id="138" label="guests" />
+      <listitem open="0" type="814" id="1006" label="room" />
+      <listitem open="0" type="815" id="340" label="Booking" />
+      <listitem open="0" type="815" id="341" label="Booking" />
+      <listitem open="0" type="815" id="144" label="Booking" />
+      <listitem open="0" type="815" id="1166" label="Booking" />
+      <listitem open="0" type="815" id="98" label="getCheckIn" />
+      <listitem open="0" type="815" id="99" label="getCheckOut" />
+      <listitem open="0" type="815" id="105" label="getContact" />
+      <listitem open="0" type="815" id="101" label="getCost" />
+      <listitem open="0" type="815" id="1641" label="getGuests" />
+      <listitem open="0" type="815" id="1642" label="operator&lt;&lt;" />
+      <listitem open="0" type="815" id="1167" label="operator=" />
+      <listitem open="0" type="815" id="412" label="print" />
+      <listitem open="0" type="815" id="241" label="saveToFile" />
+      <listitem open="0" type="815" id="102" label="setCheckIn" />
+      <listitem open="0" type="815" id="103" label="setCheckOut" />
+      <listitem open="0" type="815" id="1165" label="~Booking" />
+     </listitem>
+     <listitem open="1" type="813" id="1585" label="BookingSchedule" >
+      <listitem open="0" type="814" id="23" label="bookings" />
+      <listitem open="0" type="814" id="136" label="counter" />
+      <listitem open="0" type="815" id="343" label="BookingSchedule" />
+      <listitem open="0" type="815" id="1038" label="BookingSchedule" />
+      <listitem open="0" type="815" id="171" label="BookingSchedule" />
+      <listitem open="0" type="815" id="142" label="deleteBooking" />
+      <listitem open="0" type="815" id="1239" label="displayMenu" />
+      <listitem open="0" type="815" id="1574" label="editMenu" />
+      <listitem open="0" type="815" id="141" label="getBooking" />
+      <listitem open="0" type="815" id="1740" label="getTakings" />
+      <listitem open="0" type="815" id="1160" label="isFree" />
+      <listitem open="0" type="815" id="137" label="newBooking" />
+      <listitem open="0" type="815" id="1055" label="operator=" />
+      <listitem open="0" type="815" id="140" label="printSchedule" />
+      <listitem open="0" type="815" id="242" label="saveToFile" />
+      <listitem open="0" type="815" id="1037" label="~BookingSchedule" />
+     </listitem>
+     <listitem open="0" type="813" id="1575" label="Categories" >
+      <listitem open="0" type="814" id="177" label="categories" />
+      <listitem open="0" type="814" id="179" label="counter" />
+      <listitem open="0" type="815" id="180" label="Categories" />
+      <listitem open="0" type="815" id="196" label="deleteCategory" />
+      <listitem open="0" type="815" id="1240" label="displayMenu" />
+      <listitem open="0" type="815" id="195" label="getCategory" />
+      <listitem open="0" type="815" id="313" label="loadFromFile" />
+      <listitem open="0" type="815" id="194" label="newCategory" />
+      <listitem open="0" type="815" id="945" label="printCategories" />
+      <listitem open="0" type="815" id="1090" label="renameCategory" />
+      <listitem open="0" type="815" id="239" label="saveToFile" />
+     </listitem>
+     <listitem open="0" type="813" id="47" label="Category" >
+      <listitem open="0" type="814" id="65" label="ID" />
+      <listitem open="0" type="814" id="49" label="name" />
+      <listitem open="0" type="815" id="188" label="Category" />
+      <listitem open="0" type="815" id="373" label="Category" />
+     </listitem>
+     <listitem open="1" type="813" id="1588" label="Contact" >
+      <listitem open="0" type="814" id="69" label="address" />
+      <listitem open="0" type="814" id="67" label="name" />
+      <listitem open="0" type="814" id="70" label="number" />
+      <listitem open="0" type="815" id="95" label="Contact" />
+      <listitem open="0" type="815" id="337" label="Contact" />
+      <listitem open="0" type="815" id="78" label="getAddress" />
+      <listitem open="0" type="815" id="76" label="getName" />
+      <listitem open="0" type="815" id="79" label="getNumber" />
+      <listitem open="0" type="815" id="1647" label="operator&lt;&lt;" />
+      <listitem open="0" type="815" id="240" label="saveToFile" />
+      <listitem open="0" type="815" id="84" label="setAddress" />
+      <listitem open="0" type="815" id="87" label="setName" />
+      <listitem open="0" type="815" id="88" label="setNumber" />
+     </listitem>
+     <listitem open="0" type="813" id="1577" label="Date" >
+      <listitem open="0" type="814" id="718" label="day" />
+      <listitem open="0" type="814" id="719" label="month" />
+      <listitem open="0" type="814" id="722" label="time" />
+      <listitem open="0" type="814" id="720" label="year" />
+      <listitem open="0" type="815" id="842" label="Date" />
+      <listitem open="0" type="815" id="844" label="Date" />
+      <listitem open="0" type="815" id="723" label="Date" />
+      <listitem open="0" type="815" id="1578" label="Date" />
+      <listitem open="0" type="815" id="1021" label="difference" />
+      <listitem open="0" type="815" id="726" label="getDate" />
+      <listitem open="0" type="815" id="725" label="getTime" />
+      <listitem open="0" type="815" id="845" label="saveToFile" />
+      <listitem open="0" type="815" id="728" label="setDate" />
+      <listitem open="0" type="815" id="727" label="setTime" />
+     </listitem>
+     <listitem open="1" type="813" id="1589" label="Guests" >
+      <listitem open="0" type="814" id="1254" label="counter" />
+      <listitem open="0" type="814" id="1253" label="guests" />
+      <listitem open="0" type="815" id="1644" label="Guest" />
+      <listitem open="0" type="815" id="1264" label="Guests" />
+      <listitem open="0" type="815" id="1258" label="editGuest" />
+      <listitem open="0" type="815" id="1260" label="getIterator" />
+      <listitem open="0" type="815" id="1263" label="newGuest" />
+      <listitem open="0" type="815" id="1645" label="operator&lt;&lt;" />
+      <listitem open="0" type="815" id="1259" label="removeGuest" />
+      <listitem open="0" type="815" id="1646" label="saveToFile" />
+     </listitem>
+     <listitem open="1" type="813" id="1478" label="Hotel" >
+      <listitem open="0" type="814" id="729" label="currentDate" />
+      <listitem open="0" type="814" id="378" label="rooms" />
+      <listitem open="0" type="815" id="1633" label="Hotel" />
+      <listitem open="0" type="815" id="1041" label="displayMenu" />
+      <listitem open="0" type="815" id="213" label="main" />
+      <listitem open="0" type="815" id="314" label="readFromFile" />
+      <listitem open="0" type="815" id="214" label="saveToFile" />
+     </listitem>
+     <listitem open="1" type="813" id="1584" label="Room" >
+      <listitem open="0" type="814" id="16" label="ID" />
+      <listitem open="0" type="814" id="175" label="bookingSchedule" />
+      <listitem open="0" type="814" id="18" label="capacity" />
+      <listitem open="0" type="814" id="64" label="category" />
+      <listitem open="0" type="814" id="17" label="name" />
+      <listitem open="0" type="814" id="19" label="rate" />
+      <listitem open="0" type="814" id="1638" label="state" />
+      <listitem open="0" type="815" id="1161" label="Room" />
+      <listitem open="0" type="815" id="374" label="Room" />
+      <listitem open="0" type="815" id="173" label="Room" />
+      <listitem open="0" type="815" id="344" label="Room" />
+      <listitem open="0" type="815" id="176" label="getBookingSchedule" />
+      <listitem open="0" type="815" id="32" label="getCapacity" />
+      <listitem open="0" type="815" id="174" label="getCategory" />
+      <listitem open="0" type="815" id="1639" label="getID" />
+      <listitem open="0" type="815" id="30" label="getName" />
+      <listitem open="0" type="815" id="31" label="getRate" />
+      <listitem open="0" type="815" id="1640" label="getState" />
+      <listitem open="0" type="815" id="1226" label="operator &lt;&lt;" />
+      <listitem open="0" type="815" id="1163" label="operator =" />
+      <listitem open="0" type="815" id="243" label="saveToFile" />
+      <listitem open="0" type="815" id="33" label="setCapacity" />
+      <listitem open="0" type="815" id="29" label="setCategory" />
+      <listitem open="0" type="815" id="27" label="setName" />
+      <listitem open="0" type="815" id="28" label="setRate" />
+      <listitem open="0" type="815" id="1637" label="setState" />
+      <listitem open="0" type="815" id="1162" label="~Room" />
+     </listitem>
+     <listitem open="1" type="813" id="1581" label="Rooms" >
+      <listitem open="0" type="814" id="199" label="count" />
+      <listitem open="0" type="814" id="197" label="rooms" />
+      <listitem open="0" type="815" id="201" label="Rooms" />
+      <listitem open="0" type="815" id="1040" label="Rooms" />
+      <listitem open="0" type="815" id="342" label="Rooms" />
+      <listitem open="0" type="815" id="205" label="deleteRoom" />
+      <listitem open="0" type="815" id="1238" label="displayMenu" />
+      <listitem open="0" type="815" id="1636" label="editMenu" />
+      <listitem open="0" type="815" id="204" label="getRoom" />
+      <listitem open="0" type="815" id="1634" label="getRoomID" />
+      <listitem open="0" type="815" id="409" label="listRooms" />
+      <listitem open="0" type="815" id="408" label="locateRooms" />
+      <listitem open="0" type="815" id="203" label="newRoom" />
+      <listitem open="0" type="815" id="1054" label="operator=" />
+      <listitem open="0" type="815" id="410" label="printSummary" />
+      <listitem open="0" type="815" id="237" label="saveToFile" />
+      <listitem open="0" type="815" id="1039" label="~Rooms" />
+     </listitem>
+     <listitem open="0" type="813" id="61" label="User" >
+      <listitem open="0" type="814" id="208" label="administrative" />
+      <listitem open="0" type="814" id="207" label="password" />
+      <listitem open="0" type="814" id="206" label="username" />
+      <listitem open="0" type="815" id="312" label="User" />
+      <listitem open="0" type="815" id="209" label="User" />
+      <listitem open="0" type="815" id="372" label="User" />
+      <listitem open="0" type="815" id="210" label="isAdmin" />
+      <listitem open="0" type="815" id="211" label="isPassword" />
+      <listitem open="0" type="815" id="238" label="saveToFile" />
+      <listitem open="0" type="815" id="212" label="setPassword" />
+     </listitem>
+     <listitem open="0" type="830" id="-1" label="Datatypes" >
+      <listitem open="1" type="829" id="870" label="Booking Schedule*" />
+      <listitem open="1" type="829" id="871" label="BookingSchedule*" />
+      <listitem open="1" type="829" id="143" label="Booking[]" />
+      <listitem open="1" type="829" id="872" label="Categories*" />
+      <listitem open="1" type="829" id="178" label="Category[]" />
+      <listitem open="1" type="829" id="874" label="Contact*" />
+      <listitem open="1" type="829" id="875" label="Date*" />
+      <listitem open="1" type="829" id="1022" label="Map&lt;Booking*>" />
+      <listitem open="1" type="829" id="1024" label="Map&lt;Room*>" />
+      <listitem open="1" type="829" id="1148" label="Map&lt;int, Booking*>" />
+      <listitem open="1" type="829" id="1147" label="Map&lt;int, Room*>" />
+      <listitem open="1" type="829" id="1146" label="Map&lt;int, string>" />
+      <listitem open="1" type="829" id="1036" label="Map&lt;string>" />
+      <listitem open="1" type="829" id="1023" label="Map\&lt;Room*>" />
+      <listitem open="1" type="829" id="869" label="Room*" />
+      <listitem open="1" type="829" id="198" label="Room[]" />
+      <listitem open="1" type="829" id="873" label="Rooms*" />
+      <listitem open="1" type="829" id="580" label="String[]" />
+      <listitem open="1" type="829" id="376" label="User[]" />
+      <listitem open="1" type="829" id="406" label="Vector Category" />
+      <listitem open="1" type="829" id="1020" label="Vector&lt;Booking*>" />
+      <listitem open="1" type="829" id="993" label="Vector&lt;Booking>" />
+      <listitem open="1" type="829" id="1019" label="Vector&lt;Room*>" />
+      <listitem open="1" type="829" id="981" label="Vector&lt;Room>" />
+      <listitem open="1" type="829" id="980" label="Vector&lt;room>" />
+      <listitem open="1" type="829" id="979" label="Vector&lt;string>" />
+      <listitem open="1" type="829" id="4" label="bool" />
+      <listitem open="1" type="829" id="3" label="char" />
+      <listitem open="1" type="829" id="22" label="const int" />
+      <listitem open="1" type="829" id="90" label="date" />
+      <listitem open="1" type="829" id="6" label="double" />
+      <listitem open="1" type="829" id="5" label="float" />
+      <listitem open="1" type="829" id="2" label="int" />
+      <listitem open="1" type="829" id="7" label="long" />
+      <listitem open="1" type="829" id="8" label="short" />
+      <listitem open="1" type="829" id="9" label="string" />
+      <listitem open="1" type="829" id="994" label="string>" />
+      <listitem open="1" type="829" id="139" label="string[]" />
+     </listitem>
+    </listitem>
+    <listitem open="1" type="802" id="-1" label="Use Case View" >
+     <listitem open="0" type="805" id="696" label="Add Booking" />
+     <listitem open="0" type="805" id="1347" label="Add Category" />
+     <listitem open="0" type="805" id="1328" label="Add Room" />
+     <listitem open="0" type="805" id="1353" label="Edit Booking" />
+     <listitem open="1" type="811" id="1277" label="user" />
+     <listitem open="1" type="812" id="1279" label="Enter booking menu" />
+     <listitem open="1" type="812" id="1349" label="Enter category information" />
+     <listitem open="1" type="812" id="1284" label="Enter checkin date (yyyymmdd)" />
+     <listitem open="1" type="812" id="1285" label="Enter checkout date (yyyymmdd)" />
+     <listitem open="1" type="812" id="1287" label="Enter contact information" />
+     <listitem open="1" type="812" id="1286" label="Enter guests" />
+     <listitem open="1" type="812" id="1330" label="Enter room information" />
+     <listitem open="1" type="812" id="1281" label="Enter room number" />
+     <listitem open="1" type="812" id="1357" label="List bookings" />
+     <listitem open="1" type="812" id="1280" label="List rooms" />
+     <listitem open="1" type="812" id="1358" label="Select attribute to update" />
+     <listitem open="1" type="812" id="1355" label="Select booking number" />
+     <listitem open="1" type="812" id="1283" label="Select option 'a'" />
+     <listitem open="1" type="812" id="1282" label="Select option 'b'" />
+     <listitem open="1" type="812" id="1348" label="Select option 'c'" />
+     <listitem open="1" type="812" id="1354" label="Select option 'e'" />
+     <listitem open="1" type="812" id="1329" label="Select option 'r'" />
+    </listitem>
+    <listitem open="1" type="821" id="-1" label="Component View" />
+    <listitem open="1" type="827" id="-1" label="Deployment View" />
+   </listitem>
+  </listview>
+  <codegeneration/>
+ </XMI.content>
+</XMI>

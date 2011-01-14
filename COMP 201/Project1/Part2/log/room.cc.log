@@ -1,0 +1,113 @@
+
+RCS file: /u/students/ramsayneil/comp201t11/COMP201/Project1/room.cc,v
+Working file: room.cc
+head: 1.25
+branch:
+locks: strict
+access list:
+symbolic names:
+	WORKING: 1.24
+keyword substitution: kv
+total revisions: 25;	selected revisions: 25
+description:
+----------------------------
+revision 1.25
+date: 2004/05/02 15:00:03;  author: keanedavi;  state: Exp;  lines: +9 -0
+Includes Big Comment at top of CC File
+----------------------------
+revision 1.24
+date: 2004/05/02 13:20:26;  author: ramsayneil;  state: Exp;  lines: +11 -6
+commenting
+----------------------------
+revision 1.23
+date: 2004/05/02 09:44:35;  author: delwadvipu;  state: Exp;  lines: +4 -41
+tidied up loading from file output
+----------------------------
+revision 1.22
+date: 2004/05/02 03:26:27;  author: harrisdavi3;  state: Exp;  lines: +5 -4
+Added the takings for the rooom
+----------------------------
+revision 1.21
+date: 2004/05/01 06:34:29;  author: delwadvipu;  state: Exp;  lines: +5 -1
+removed endl from << operator to align output correctly
+----------------------------
+revision 1.20
+date: 2004/05/01 02:07:53;  author: harrisdavi3;  state: Exp;  lines: +1 -1
+added setfill(' ') to << operator to ensure correct output
+----------------------------
+revision 1.19
+date: 2004/04/30 06:01:55;  author: harrisdavi3;  state: Exp;  lines: +4 -0
+implemented insertion operator, booking's incomplete
+----------------------------
+revision 1.18
+date: 2004/04/30 04:45:46;  author: harrisdavi3;  state: Exp;  lines: +31 -12
+fixed output of room to cout, changed hotel.xml so that it actually works
+----------------------------
+revision 1.17
+date: 2004/04/29 05:42:56;  author: delwadvipu;  state: Exp;  lines: +4 -3
+Fixed more bugs, loading of rooms now works but listing of rooms crashes the program
+----------------------------
+revision 1.16
+date: 2004/04/28 04:47:46;  author: delwadvipu;  state: Exp;  lines: +1 -0
+General bugfixes, compiles fine but still reading from file doesn't work for rooms. Makefile now has an option to compile only
+----------------------------
+revision 1.15
+date: 2004/04/23 00:58:06;  author: delwadvipu;  state: Exp;  lines: +2 -2
+implemented categoriesMenu in hotel.cc, added renameCategory to categories.cc, modified rooms' printSummary to take the ID as a parameter, cosmetic changes to room.cc & room.h, updated uml diagram to have room class overloaded << operator
+----------------------------
+revision 1.14
+date: 2004/04/21 11:44:49;  author: delwadvipu;  state: Exp;  lines: +35 -7
+more bugfixes, rooms aren't being loaded into the map however
+----------------------------
+revision 1.13
+date: 2004/04/21 08:02:24;  author: delwadvipu;  state: Exp;  lines: +25 -12
+Put in cout statements + added to hotel menu(s), still testing
+----------------------------
+revision 1.12
+date: 2004/04/21 01:12:49;  author: delwadvipu;  state: Exp;  lines: +9 -1
+implemented extraction operator for room class
+----------------------------
+revision 1.11
+date: 2004/04/20 22:40:58;  author: ramsayneil;  state: Exp;  lines: +1 -1
+fixed assignment operator - argument needs to be const
+----------------------------
+revision 1.10
+date: 2004/04/20 01:32:56;  author: ramsayneil;  state: Exp;  lines: +32 -0
+corrected assignment operator - should be same as copy constructor
+----------------------------
+revision 1.9
+date: 2004/04/19 05:06:34;  author: delwadvipu;  state: Exp;  lines: +7 -5
+made compilable, hotel.cc i.e. "test" actually runs! holy sh*t!!!
+----------------------------
+revision 1.8
+date: 2004/04/19 03:37:47;  author: delwadvipu;  state: Exp;  lines: +5 -5
+added voids in parameters of methods
+----------------------------
+revision 1.7
+date: 2004/04/16 04:18:31;  author: delwadvipu;  state: Exp;  lines: +18 -12
+finished saveToFile method
+----------------------------
+revision 1.6
+date: 2004/04/16 03:33:36;  author: delwadvipu;  state: Exp;  lines: +52 -5
+completed loadFromFile
+----------------------------
+revision 1.5
+date: 2004/04/16 02:13:29;  author: delwadvipu;  state: Exp;  lines: +1 -2
+committing so Dave can use it
+----------------------------
+revision 1.4
+date: 2004/04/16 01:18:23;  author: delwadvipu;  state: Exp;  lines: +3 -1
+Removed category parameter from file constructor
+----------------------------
+revision 1.3
+date: 2004/04/15 01:39:53;  author: delwadvipu;  state: Exp;  lines: +17 -9
+almost completed, only file related stuff remains
+----------------------------
+revision 1.2
+date: 2004/04/14 03:49:07;  author: delwadvipu;  state: Exp;  lines: +60 -0
+general touchups
+----------------------------
+revision 1.1
+date: 2004/04/13 02:44:19;  author: ramsayneil;  state: Exp;
+initial import
+=============================================================================

@@ -1,0 +1,98 @@
+
+INSERT INTO customer VALUES (0, 'Default        ', 'Customer           ', NULL);
+INSERT INTO customer VALUES (1, 'Jacson         ', 'Kirk           ', 'Wellington     ');
+INSERT INTO customer VALUES (2, 'Leow           ', 'May-N          ', 'Wellington     ');
+INSERT INTO customer VALUES (3, 'Andreae        ', 'Peter          ', 'Lower Hutt     ');
+INSERT INTO customer VALUES (4, 'Noble          ', 'James          ', 'Upper Hutt     ');
+INSERT INTO customer VALUES (5, 'Tempero        ', 'Ewan           ', 'Upper Hutt     ');
+INSERT INTO customer VALUES (6, 'Anderson       ', 'Svend          ', 'Lower Hutt     ');
+INSERT INTO customer VALUES (7, 'Nickson        ', 'Ray            ', 'Upper Hutt     ');
+INSERT INTO customer VALUES (8, 'Dobbie         ', 'Gill           ', 'Upper Hutt     ');
+INSERT INTO customer VALUES (9, 'Martin         ', 'Paul           ', 'Wellington     ');
+INSERT INTO customer VALUES (10, 'Barmouta      ', 'Alex           ', 'Upper Hutt     ');
+INSERT INTO customer VALUES (11, 'Xu            ', 'Gang           ', 'Lower Hutt     ');
+INSERT INTO customer VALUES (12, 'McMurray      ', 'Linda          ', 'Wellington     ');
+INSERT INTO customer VALUES (13, 'Somerfield    ', 'Nigel          ', 'Wellington     ');
+INSERT INTO customer VALUES (14, 'Anslow        ', 'Craig          ', 'Wellington     ');
+INSERT INTO customer VALUES (15, 'Gandhi        ', 'Amit           ', 'Upper Hutt     ');
+INSERT INTO customer VALUES (16, 'Yi            ', 'Shusen         ', 'Lower Hutt     ');
+INSERT INTO customer VALUES (17, 'Zhou          ', 'Daisy          ', 'Lower Hutt     ');
+INSERT INTO customer VALUES (18, 'Chui          ', 'Chang          ', 'Wellington     ');
+INSERT INTO customer VALUES (19, 'Dolman        ', 'Jerome         ', 'Wellington     ');
+INSERT INTO customer VALUES (20, 'Wojnar        ', 'Maciej         ', 'Upper Hutt     ');
+
+
+INSERT INTO book(isbn, title, edition_no) VALUES (0, 'Default Book Name                                           ', NULL);
+INSERT INTO book VALUES (7777, 'Readings in Database Systems                                ', 1);
+INSERT INTO book VALUES (9009, 'Problem solving with Java                                   ', 2);
+INSERT INTO book VALUES (1928, 'Database Management Systems                                 ', 3);
+INSERT INTO book VALUES (1010, 'Data Models                                                 ', 1);
+INSERT INTO book VALUES (2222, 'Database Principles                                         ', 1);
+INSERT INTO book VALUES (3333, 'Principles of Database and Knoledge-Base Systems            ', 1);
+INSERT INTO book VALUES (8888, 'Building the Data Warehouse                                 ', 1);
+INSERT INTO book VALUES (1001, 'Database Modeling & Design                                  ', 1);
+INSERT INTO book VALUES (1111, 'Fundamentals of Database Systems                            ', 3);
+INSERT INTO book VALUES (4444, 'Principles of Database Systems                              ', 2);
+INSERT INTO book VALUES (9999, 'Principles of Database Design                               ', 1);
+INSERT INTO book VALUES (5555, 'Object_Relational DBMSs: The Next Great Wave                ', 1);
+
+
+
+INSERT INTO author VALUES (0, 'Default Name   ', 'Default Surname');
+INSERT INTO author VALUES (2, 'Pavle          ', 'Mogin          ');
+INSERT INTO author VALUES (3, 'Ramez          ', 'Elmasri        ');
+INSERT INTO author VALUES (4, 'Shamkant       ', 'Navathe        ');
+INSERT INTO author VALUES (5, 'Ivan           ', 'Lukovic        ');
+INSERT INTO author VALUES (6, 'Miro           ', 'Govedarica     ');
+INSERT INTO author VALUES (7, 'Michael        ', 'Stonebraker    ');
+INSERT INTO author VALUES (8, 'Donald         ', 'Moore          ');
+INSERT INTO author VALUES (9, 'William        ', 'Inmon          ');
+INSERT INTO author VALUES (1, 'Toby           ', 'Teorey         ');
+INSERT INTO author VALUES (22, 'Peter         ', 'Andreae         ');
+INSERT INTO author VALUES (10, 'Donald         ', 'Ullman         ');
+INSERT INTO author VALUES (11, 'Elliot         ', 'Koffman        ');
+INSERT INTO author VALUES (12, 'Ursula         ', 'Woltz          ');
+INSERT INTO author VALUES (13, 'Raghu          ', 'Ramakrishnan   ');
+INSERT INTO author VALUES (14, 'Johannes       ', 'Gehrke         ');
+
+
+
+
+INSERT INTO book_author VALUES (2222, 5, 2);
+INSERT INTO book_author VALUES (1111, 4, 2);
+INSERT INTO book_author VALUES (1111, 3, 1);
+INSERT INTO book_author VALUES (2222, 2, 1);
+
+INSERT INTO book_author VALUES (5555, 8, 2);
+INSERT INTO book_author VALUES (5555, 7, 1);
+INSERT INTO book_author VALUES (7777, 7, 1);
+INSERT INTO book_author VALUES (8888, 9, 1);
+INSERT INTO book_author VALUES (9999, 5, 2);
+INSERT INTO book_author VALUES (9999, 6, 3);
+INSERT INTO book_author VALUES (1001, 1, 1);
+INSERT INTO book_author VALUES (9009, 11, 1);
+INSERT INTO book_author VALUES (9009, 12, 2);
+INSERT INTO book_author VALUES (3333, 10, 1);
+INSERT INTO book_author VALUES (4444, 10, 1);
+INSERT INTO book_author VALUES (9999, 2, 1);
+INSERT INTO book_author VALUES (1928, 14, 2);
+INSERT INTO book_author VALUES (1928, 13, 1);
+
+
+INSERT INTO loaned_book VALUES (1, '2005-03-25', 1928);
+INSERT INTO loaned_book VALUES (2, '2005-03-25', 1928);
+INSERT INTO loaned_book VALUES (3, '2005-03-25', 1928);
+INSERT INTO loaned_book VALUES (4, '2005-03-25', 1928);
+INSERT INTO loaned_book VALUES (5, '2005-03-25', 1928);
+INSERT INTO loaned_book VALUES (3, '2005-03-25', 9999);
+INSERT INTO loaned_book VALUES (2, '2005-03-25', 9999);
+INSERT INTO loaned_book VALUES (2, '2005-03-25', 5555);
+INSERT INTO loaned_book VALUES (16, '2005-03-25', 1928);
+INSERT INTO loaned_book VALUES (17, '2005-03-25', 9999);
+INSERT INTO loaned_book VALUES (18, '2005-03-25', 9999);
+INSERT INTO loaned_book VALUES (19, '2005-03-25', 9999);
+INSERT INTO loaned_book VALUES (1, '2005-03-25', 9999);
+INSERT INTO loaned_book VALUES (1, '2005-03-25', 8888);
+INSERT INTO loaned_book VALUES (1, '2005-03-25', 1111);
+
+

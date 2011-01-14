@@ -1,0 +1,99 @@
+
+RCS file: /u/students/ramsayneil/comp201t11/COMP201/Project1/date.cc,v
+Working file: date.cc
+head: 1.21
+branch:
+locks: strict
+access list:
+symbolic names:
+	WORKING: 1.20
+keyword substitution: kv
+total revisions: 21;	selected revisions: 21
+description:
+----------------------------
+revision 1.21
+date: 2004/05/02 15:00:03;  author: keanedavi;  state: Exp;  lines: +9 -0
+Includes Big Comment at top of CC File
+----------------------------
+revision 1.20
+date: 2004/05/02 13:30:33;  author: ramsayneil;  state: Exp;  lines: +16 -2
+commented
+----------------------------
+revision 1.19
+date: 2004/05/02 11:41:03;  author: keanedavi;  state: Exp;  lines: +22 -0
+fixed fileIO, and created default construtor to return todays date
+----------------------------
+revision 1.18
+date: 2004/05/02 09:41:55;  author: keanedavi;  state: Exp;  lines: +4 -17
+removed stringstreams
+----------------------------
+revision 1.17
+date: 2004/05/02 09:34:17;  author: keanedavi;  state: Exp;  lines: +0 -18
+removed printing to cout during load
+----------------------------
+revision 1.16
+date: 2004/05/02 09:23:53;  author: keanedavi;  state: Exp;  lines: +4 -4
+fixed saveToFile
+----------------------------
+revision 1.15
+date: 2004/05/01 02:07:01;  author: harrisdavi3;  state: Exp;  lines: +1 -1
+changed getDate method to be const to allow it to be used on const booking objects
+----------------------------
+revision 1.14
+date: 2004/04/30 04:43:11;  author: keanedavi;  state: Exp;  lines: +6 -0
+Date now supports a single yyyymmdd int as a construction aregument
+----------------------------
+revision 1.13
+date: 2004/04/28 04:47:46;  author: delwadvipu;  state: Exp;  lines: +16 -4
+General bugfixes, compiles fine but still reading from file doesn't work for rooms. Makefile now has an option to compile only
+----------------------------
+revision 1.12
+date: 2004/04/21 11:44:49;  author: delwadvipu;  state: Exp;  lines: +18 -12
+more bugfixes, rooms aren't being loaded into the map however
+----------------------------
+revision 1.11
+date: 2004/04/21 08:02:24;  author: delwadvipu;  state: Exp;  lines: +39 -41
+Put in cout statements + added to hotel menu(s), still testing
+----------------------------
+revision 1.10
+date: 2004/04/19 10:40:31;  author: keanedavi;  state: Exp;  lines: +13 -13
+Write and Read from File work correctly
+----------------------------
+revision 1.9
+date: 2004/04/19 03:21:26;  author: keanedavi;  state: Exp;  lines: +32 -4
+Input from file is now implemented
+----------------------------
+revision 1.8
+date: 2004/04/16 23:20:28;  author: ramsayneil;  state: Exp;  lines: +4 -4
+tm structs need initialising
+tm_year in structs need -1900
+tested
+----------------------------
+revision 1.7
+date: 2004/04/16 03:49:55;  author: ramsayneil;  state: Exp;  lines: +29 -0
+difference two dates
+----------------------------
+revision 1.6
+date: 2004/04/15 23:45:55;  author: keanedavi;  state: Exp;  lines: +7 -7
+save to file goes to handle rather than stdout
+----------------------------
+revision 1.5
+date: 2004/04/15 04:02:29;  author: ramsayneil;  state: Exp;  lines: +1 -1
+passed file handle by reference
+----------------------------
+revision 1.4
+date: 2004/04/15 03:58:39;  author: keanedavi;  state: Exp;  lines: +1 -1
+saveToFile method ofstream argument now passed by reference
+----------------------------
+revision 1.3
+date: 2004/04/15 03:51:01;  author: keanedavi;  state: Exp;  lines: +5 -0
+implemented XML Output, however XML input is not yet functional
+----------------------------
+revision 1.2
+date: 2004/04/14 02:41:01;  author: ramsayneil;  state: Exp;  lines: +42 -0
+*** empty log message ***
+----------------------------
+revision 1.1
+date: 2004/04/14 01:10:53;  author: ramsayneil;  state: Exp;
+initial import
+=============================================================================

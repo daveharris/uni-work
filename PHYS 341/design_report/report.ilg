@@ -1,0 +1,7 @@
+This is C:\Program Files\MiKTeX\MiKTeX\bin\makeindex.exe, version 2.14 [02-Oct-2002] (with Thai support).
+Scanning input file D:\work\phys341\design_report\report...
+!! Input index error (file = D:\work\phys341\design_report\report, line = 1):
+   -- Missing arguments -- need two (premature LFD).
+done (0 entries accepted, 1 rejected).
+Nothing written in D:\work\phys341\design_report\report.ind.
+Transcript written in D:\work\phys341\design_report\report.ilg.

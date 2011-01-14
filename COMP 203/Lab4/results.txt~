@@ -1,0 +1,113 @@
+Results
+=========================
+
+With sieve size set to 49,152 (size = 0xc000 in the program), data cache turned on and its size set to:
+
+i) 0
+2881073
+
+0 lines; 32 bytes/line
+
+Load hits:         0
+     misses:       96506
+     page hits:    96089
+     page misses:  417
+
+Store hits:        95970
+      misses:      16377
+      page hits:   112339
+      page misses: 8
+ 
+ii) 32 Bytes
+1661251
+
+1 lines; 32 bytes/line
+
+Load hits:         87128
+     misses:       9378
+     page hits:    8963
+     page misses:  415
+
+Store hits:        95970
+      misses:      16377
+      page hits:   112339
+      page misses: 8
+
+
+iii) 2 Kbytes
+1661251
+
+64 lines; 32 bytes/line
+
+Load hits:         87128
+     misses:       9378
+     page hits:    8963
+     page misses:  415
+
+Store hits:        95970
+      misses:      16377
+      page hits:   112339
+      page misses: 8
+
+ 
+iv) 4Kbytes
+1620035
+
+128 lines; 32 bytes/line
+
+Load hits:         90072
+     misses:       6434
+     page hits:    6019
+     page misses:  415
+
+Store hits:        95970
+      misses:      16377
+      page hits:   112339
+      page misses: 8
+
+
+v) 8Kbytes
+1537687
+
+256 lines; 32 bytes/line
+
+Load hits:         95930
+     misses:       576
+     page hits:    209
+     page misses:  367
+
+Store hits:        95970
+      misses:      16377
+      page hits:   112323
+      page misses: 24
+
+
+
+vi)16Kbytes
+1537687
+
+512 lines; 32 bytes/line
+
+Load hits:         95930
+     misses:       576
+     page hits:    209
+     page misses:  367
+
+Store hits:        95970
+      misses:      16377
+      page hits:   112323
+      page misses: 24
+	  
+	  
+	  
+Analysis
+============================
+load hits increases
+load misses same for 32B & 2KB, and 8kB & 16KB, decreases
+load page hits for same 32B & 2KB not overwriting, decreases, overwriting
+load page misses same for 32B & 2KB & 4KB, and 8KB & 16KB, decreases
+
+store hits same
+store misses are the same
+store page hits are the same
+store page misses same for 0 & 32B, and same for rest

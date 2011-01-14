@@ -1,0 +1,50 @@
+#WAVEFORM
+#H Name     PHYS340;
+#H PartNo   00;
+#H Date     5/05/2005;
+#H Revision 01;
+#H Designer David Harris;
+#H Company  VUW;
+#H Assembly None;
+#H Location VUW;
+#H Device   G16V8A;
+#H 
+#H /* *************** INPUT PINS *********************/
+#H /* Counter clock*/
+#H /* Mode, fullstep or halfstep*/
+#H /* Direction, clockwise or anti-clockwise*/
+#H /* Output enable*/
+#H /* *************** OUTPUT PINS *********************/
+#H /* Define state control field*/
+#H /*define upFull*/
+#H /*define downFull*/
+#H /*define upHalf*/
+#H /*define downhalf*/
+#H 
+#F count = [Q3,Q2,Q1,Q0];
+#F state = [mode,dir];
+
+#H ORDER: Q0, Q1, Q2, Q3, clk, dir, mode, !oe; 
+#H 
+#H 
+#V 0001 LHLHC000
+#V 0002 LHLLC000
+#V 0003 LHHLC000
+#V 0004 LLHLC000
+#V 0005 HLHLC010
+#V 0006 HLLHC010
+#V 0007 LHLHC010
+#V 0008 LHHLC010
+#V 0009 LLHLC000
+#V 0010 HLHLC000
+#V 0011 LLHLC100
+#V 0012 LHHLC100
+#V 0013 LHLLC100
+#V 0014 LHLHC100
+#V 0015 LLLHC100
+#V 0016 LHLHC000
+#V 0017 LHLLC000
+#V 0018 LHHLC000
+#V 0019 LLHLC000
+#V 0020 HLHLC000
+#V 0021 HLLLC000

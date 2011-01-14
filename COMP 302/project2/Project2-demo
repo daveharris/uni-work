@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# echo
+# echo "-------------------------------------------------------------"
+# echo "THIS DOESNT WORK YET - There is a nasty interaction with java"
+# echo "In the meantime, look at the file Project2-modeloutput.txt"
+# echo "-------------------------------------------------------------"
+# echo
+
+demo comp302 project2
+# /vol/courses/comp302/demo/project2
+
+# head -10 /vol/courses/comp302/Project2-modeloutput.txt

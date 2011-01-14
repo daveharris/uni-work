@@ -1,0 +1,98 @@
+Name     PHYS340 ;
+PartNo   00 ;
+Date     5/05/2005 ;
+Revision 01 ;
+Designer David Harris ;
+Company  VUW ;
+Assembly None ;
+Location VUW ;
+Device   G16V8A ;
+
+/* *************** INPUT PINS *********************/
+PIN 1 =  clk;    /* Counter clock*/ 
+PIN 2 =  mode;   /* Mode, fullstep or halfstep*/ 
+PIN 3 =  dir;    /* Direction, clockwise or anti-clockwise*/ 
+PIN 11 = !oe;    /* Output enable*/ 
+
+/* *************** OUTPUT PINS *********************/
+PIN [14..17] = [Q3..0];
+
+field count = [Q3..0];
+$define S0 'b'1010
+$define S1 'b'1000
+$define S2 'b'1001
+$define S3 'b'0001
+$define S4 'b'0101
+$define S5 'b'0100
+$define S6 'b'0110
+$define S7 'b'0010
+
+$define S8 'b'0000
+$define S9 'b'0011
+$define S10 'b'0111
+$define S11 'b'1011
+$define S12 'b'1100
+$define S13 'b'1101
+$define S14 'b'1110
+$define S15 'b'1111                                                                                     
+
+field state = [mode, dir];  /* Define state control field*/
+upFull = state:3;  /*define upFull*/
+downFull = state:2;  /*define downFull*/
+upHalf = state:1;  /*define upHalf*/
+downHalf = state:0;  /*define downhalf*/
+
+Sequenced count {
+
+
+present S0     if upFull		next S2;
+		if downFull		next S6;
+		if upHalf		next S1;
+		if downHalf		next S7;
+
+present S1     if upFull		next S2;
+		if downFull		next S0;
+		if upHalf		next S2;
+		if downHalf		next S0;
+
+present S2     if upFull		next S4;
+		if downFull		next S0;
+		if upHalf		next S3;
+		if downHalf		next S1;
+
+present S3     if upFull		next S4;
+		if downFull		next S2;
+		if upHalf		next S4;
+		if downHalf		next S2;
+
+present S4     if upFull		next S6;
+		if downFull		next S2;
+		if upHalf		next S5;
+		if downHalf		next S3;
+
+present S5     if upFull		next S6;
+		if downFull		next S4;
+		if upHalf		next S6;
+		if downHalf		next S4;
+
+present S6     if upFull		next S0;
+		if downFull		next S4;
+		if upHalf		next S7;
+		if downHalf		next S5;
+
+present S7     if upFull		next S0;
+		if downFull		next S6;
+		if upHalf		next S0;
+		if downHalf		next S6;
+
+present S8    next S0;
+present S9    next S0;
+present S10   next S0;
+present S11   next S0;
+present S12   next S0;
+present S13   next S0;
+present S14   next S0;
+present S15   next S0;
+
+
+}

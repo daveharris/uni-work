@@ -1,0 +1,104 @@
+import java.io.*;
+import jds.Bag;
+import jds.collection.Vector;
+import java.util.Enumeration;
+import java.util.Random;
+
+public class MeasureBag{
+		
+	public static void main(String[] args){
+		Vector randomItems = makeItems(40000+5000);
+
+		/*System.out.println("\nTesting OpenHashBag 0.8");
+		System.out.println("Size\tuS per\tuS per\tTotal\n\tAdd\tSearch\t(mS)");
+		for (int size=10000; size<=40000; size+=5000)
+			timeABag(new OpenHashBag(47, 0.8), size, randomItems);
+
+		System.out.println("\nTesting BucketHashBag 0.8");
+		System.out.println("Size\tuS per\tuS per\tTotal\n\tAdd\tSearch\t(mS)");
+		for (int size=10000; size<=40000; size+=5000)
+			timeABag(new BucketHashBag(47), size, randomItems);*/
+
+		System.out.println("\nTesting ArrayBag");
+		System.out.println("Size\tuS per\tuS per\tTotal\n\tAdd\tSearch\t(mS)");
+		for (int size=10000; size<=40000; size+=5000)
+			timeABag(new ArrayBag(), size, randomItems);
+
+		System.out.println("\nTesting SortedArrayBag");
+		System.out.println("Size\tuS per\tuS per\tTotal\n\tAdd\tSearch\t(mS)");
+		for (int size=10000; size<=40000; size+=5000)
+			timeABag(new SortedArrayBag(), size, randomItems);
+
+		System.exit(0);
+	}
+
+	
+
+	public static void timeABag(Bag bag, int numItems, Vector randomItems){
+		if (!bag.isEmpty()) throw new RuntimeException("Bag must be empty when timing starts");
+		if (numItems<5000)	throw new RuntimeException("Must have test on at least 5000 items");
+		numItems=Math.min(numItems, randomItems.size()-5000);
+		System.gc();	// so the garbage collection doesn't mess up the timing
+
+		long start = System.currentTimeMillis();
+
+		//Add numItems items to the bag
+		for (int i=0; i<numItems; i++){
+			bag.addElement(randomItems.elementAt(i));
+		}
+		long mid = System.currentTimeMillis();
+
+		//search for 5000 items that are in the bag and 5000 items not in the bag
+		int additm=0;
+		int srchitm=numItems;
+		int step = numItems/5000;
+		for (int i=0; i<5000; i++){
+			bag.containsElement(randomItems.elementAt(additm));
+			bag.containsElement(randomItems.elementAt(srchitm));
+			additm+=step;
+			srchitm++;
+		}
+		long stop = System.currentTimeMillis();
+		double addTime = ((mid-start)*10000/numItems/10.0);		//time in microseconds per addition
+		double searchTime = (stop-mid)/10.0;								//time in microseconds per search
+		System.out.println(numItems+"\t"+addTime+"\t"+searchTime+"\t"+(stop-start));
+	}
+
+
+	// Make up a large number of (different) random strings, before we start the timing.
+	private static Vector makeItems(int n){
+		long mid = System.currentTimeMillis();
+		System.out.println("Making list of " +n+" random strings....");
+		BucketHashBag items = new BucketHashBag(n/10);
+		Random r = new Random();
+
+		int tries=0;
+		int loop = 0;
+		while (items.size()<n){
+
+			char[] chars = new char[5];
+			for (int i=0; i<5; i++)
+	chars[i] = (char)('A'+(char)r.nextInt(26));
+			String val = new String(chars);
+
+			if (!items.containsElement(val))
+	items.addElement(val);
+			loop++;tries++;
+			if (loop>=5000) {
+	System.out.println("..."+tries);
+	loop=0;
+			}
+		}
+		Vector ans= new Vector();
+		ans.setSize(n);
+		int i=0;
+		for (Enumeration e = items.elements(); e.hasMoreElements(); ){
+			ans.setElementAt(e.nextElement(), i++);
+		}
+		System.out.println("Time to construct strings: "+ ((System.currentTimeMillis()-mid)/1000) + " seconds");
+		return ans;
+
+	}
+
+
+}

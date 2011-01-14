@@ -1,0 +1,250 @@
++----------------------------------------------+
+| SAAHBS - SAAHBS Ain't A Hotel Booking System |
+| Version 0.5                                  |
+| N Ramsay, V Delwadia, D Harris, D Keane      |
++----------------------------------------------+
++----------------------------------------------+
+| Main Menu                                    |
++----------------------------------------------+
+|  (L)oad File                                 |
+|  (S)ave File                                 |
+|  (R)oom Menu                                 |
+|  (B)ooking Menu                              |
+|  (D)isplay this Menu                         |
+|  E(X)it                                      |
++----------------------------------------------+
+Enter Command (LSRBNMX): L
+Load (B)ackup or (L)ast Saved (BL): L
+File Loaded
+Enter Command (LSRBNMX): S
+Do you want to create a Backup? (YN): Y
+File Backed Up
+File Saved
+Enter Command (LSRBNMX): D
++----------------------------------------------+
+| Main Menu                                    |
++----------------------------------------------+
+|  (L)oad File                                 |
+|  (S)ave File                                 |
+|  (R)ooms Menu                                |
+|  (B)ookings Menu                             |
+|  Display this (M)enu                         |
+|  E(X)it                                      |
++----------------------------------------------+
+Enter Command (LSRBNMX): R
++----------------------------------------------+
+| Rooms Menu                                   |
++----------------------------------------------+
+|  List (R)ooms                                |
+|  List (C)ategories                           |
+|  (A)dd Room                                  |
+|  (D)elete Room                               |
+|  (E)dit Room                                 |
+|  (V)iew Room                                 |
+|  Display this (M)enu                         |
+|  E(X)it to Main Menu                         |
++----------------------------------------------+
+Enter Command (RCADEMX): R
++-------------------------+
+| Room List               |
++-------------------------+
+| 1 Honeymoon Deluxe 400  |
+| 2 Closet Standard 10    |
++-------------------------+
+Enter Command (RCADEMX): C
++-------------------------+
+| Category List           |
++-------------------------+
+| 1 Standard              |
+| 2 Deluxe                |
+| 3 Club                  |
++-------------------------+
+Enter Command (RCADEMX): A
+Room Name: Cellar
+Room Capacity: 4000
+Room Rate per Night: 100 
+Room Category: 3
++-------------------------+
+| Room Listing            |
++-------------------------+
+| ID: 3                   |
+| Name : Cellar           |
+| Capacity : 4000         |
+| Rate: 100               |
+| Category: Club          |
++-------------------------+
+Enter Command (RCADEMX): D
+Delete which room (by ID): 2
+Room 2 : Closet Deleted
+Enter Command (RCADEMX): R
++-------------------------+
+| Room List               |
++-------------------------+
+| 1 Honeymoon Deluxe 400  |
+| 3 Cellar Club 100       |
++-------------------------+
+Enter Command (RCADEMX): E
+Edit which Room (by ID): 1
++-------------------------+
+| Room Listing            |
++-------------------------+
+| ID: 1                   |
+| Name : Honeymoon        |
+| Capacity : 2            |
+| Rate: 400               |
+| Category: Deluxe        |
++-------------------------+
+| Edit (N)ame             |
+| Edit (C)apacity         |
+| Edit (R)ate             |
+| Edit C(A)tegory         |
+| (F)inish Editing        |
++-------------------------+
+Enter Command (NCRAF): F
++----------------------------------------------+
+| Rooms Menu                                   |
++----------------------------------------------+
+|  List (R)ooms                                |
+|  List (C)ategories                           |
+|  (A)dd Room                                  |
+|  (D)elete Room                               |
+|  (E)dit Room                                 |
+|  (V)iew Room                                 |
+|  Display this (M)enu                         |
+|  E(X)it to Main Menu                         |
++----------------------------------------------+
+Enter Command (RCADEMX): V
+View which Room (by ID): 3
++-------------------------+
+| Room Listing            |
++-------------------------+
+| ID: 3                   |
+| Name : Cellar           |
+| Capacity : 4000         |
+| Rate: 100               |
+| Category: Club          |
++-------------------------+
+Enter Command (RCADEMX): X
++----------------------------------------------+
+| Main Menu                                    |
++----------------------------------------------+
+|  (L)oad File                                 |
+|  (S)ave File                                 |
+|  (R)oom Menu                                 |
+|  (B)ooking Menu                              |
+|  (D)isplay this Menu                         |
+|  E(X)it                                      |
++----------------------------------------------+
+Enter Command (LSRBNMX): B
+Bookings for which Room (by ID): 1
++----------------------------------------------+
+| Bookings Menu                                |
++----------------------------------------------+
+|  List (B)ookings                             |
+|  (A)dd Booking                               |
+|  (R)emove Booking                            |
+|  (E)dit Booking                              |
+|  (V)iew Booking                              |
+|  (D)isplay this Menu                         |
+|  E(X)it                                      |
++----------------------------------------------+
+Enter Command (BAREVDX): B
++---------------------------------+
+| Bookings for Room 1 : Honeymoon |
++---------------------------------+
+| 1 20040727 20040729 Bob Guest   |
++---------------------------------+
+Enter Command (BAREVDX):V
+View which Booking (by ID):1
++---------------------------------+
+| Room 1 :Honeymoon Booking 1     |
++---------------------------------+
+| ID: 1                           |
+| CheckIn: 20040727               |
+| CheckOut: 20040729              |
+| Contact Name: Bob Guest         |
+| Contact Address: 123 Bob St     |
+| Contact Phone: 5678910          |
+| Guests: Joan Guest              |
+| Number of Guests: 2             |
++---------------------------------+
+Enter Command (BAREVDX):A
+New Booking
+Check In Date (yyyymmdd): 20040730
+Check Out Date (yyyymmdd): 20040731
+Contact Name: Jimmy Jones
+Contact Address: 124 Bob St
+Contact Phone: 5678911
+Guests: Jill Jones
+
++---------------------------------+
+| Room 1 :Honeymoon Booking 2     |
++---------------------------------+
+| ID: 2                           |
+| CheckIn: 20040730               |
+| CheckOut: 20040731              |
+| Contact Name: Jimmy Jones       |
+| Contact Address: 124 Bob St     |
+| Contact Phone: 5678911          |
+| Guests: Jill Jones              |
+| Number of Guests: 2             |
++---------------------------------+
+Enter Command (BAREVDX): R
+Remove which Booking (by ID): 1
+Booking 1 (Bob Guest) Removed
+Enter Command (BAREVDX): E
+Edit which Booking(by ID): 2
++---------------------------------+
+| Room 1 :Honeymoon Booking 2     |
++---------------------------------+
+| ID: 2                           |
+| CheckIn: 20040730               |
+| CheckOut: 20040731              |
+| Contact Name: Jimmy Jones       |
+| Contact Address: 124 Bob St     |
+| Contact Phone: 5678911          |
+| Guests: Jill Jones              |
+| Number of Guests: 2             |
++---------------------------------+
+| Edit Check(I)n                  |
+| Edit Check(O)ut                 |
+| Edit (C)ontact                  |
+| Edit (G)uests                   |
+| (F)inish Editing                |
++---------------------------------+
+Enter Command (IOCGF): F
++----------------------------------------------+
+| Bookings Menu                                |
++----------------------------------------------+
+|  List (B)ookings                             |
+|  (A)dd Booking                               |
+|  (R)emove Booking                            |
+|  (E)dit Booking                              |
+|  (V)iew Booking                              |
+|  (D)isplay this Menu                         |
+|  E(X)it                                      |
++----------------------------------------------+
+Enter Command (BAREVDX): X
++----------------------------------------------+
+| Main Menu                                    |
++----------------------------------------------+
+|  (L)oad File                                 |
+|  (S)ave File                                 |
+|  (R)oom Menu                                 |
+|  (B)ooking Menu                              |
+|  (D)isplay this Menu                         |
+|  E(X)it                                      |
++----------------------------------------------+
+Enter Command (LSRBNMX): X
+Do you wish to Save? (YN): N
+Are You Sure (YN): Y
+Are You Really Sure (YN): Y
+I'm Saving Anyway, You Idiot.
+Do you want to Create a Backup? (YN): N
+Are You Sure (YN): Y
+Are You Really Sure (YN): Y
+I'm Backing Up Anyway, You Idiot.
+File Backed Up
+File Saved
+
+Thank you for using SAAHBS. Have a Nice Day, and don't die.

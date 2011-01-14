@@ -1,0 +1,60 @@
+%SIGNAL
+PIN  17 =  Q0 
+PIN  16 =  Q1 
+PIN  15 =  Q2 
+PIN  14 =  Q3 
+PIN   1 =  clk 
+PIN   3 =  dir 
+PIN   2 =  mode 
+PIN  11 = !oe 
+%END
+
+%FIELD
+FIELD count = Q3,Q2,Q1,Q0
+FIELD state = mode,dir
+%END
+
+%EQUATION
+Q0.d  =>
+    Q0 & !Q1 & !Q2 & !Q3
+  # !Q1 & !Q2 & Q3 & dir
+  # !Q1 & Q2 & !Q3 & !dir
+  # !Q0 & !Q2 & Q3 & dir & mode
+  # !Q0 & Q2 & !Q3 & !dir & mode
+
+Q1.d  =>
+    Q0 & Q1
+  # Q2 & Q3
+  # !Q0 & !Q3 & dir
+  # !Q0 & !Q2 & !dir
+  # Q2 & dir & mode
+  # Q3 & !dir & mode
+
+Q2.d  =>
+    !Q0 & !Q1 & Q2 & !Q3
+  # Q0 & !Q1 & !Q3 & dir
+  # !Q0 & Q1 & !Q3 & !dir
+  # Q0 & !Q1 & !Q2 & dir & mode
+  # !Q0 & Q1 & !Q2 & !dir & mode
+
+Q3.d  =>
+    Q0 & Q1
+  # Q2 & Q3
+  # !Q0 & !Q2 & dir
+  # !Q1 & !Q2 & !dir
+  # Q1 & dir & mode
+  # Q0 & !dir & mode
+
+downFull =>
+    !dir & mode
+
+downHalf =>
+    !dir & !mode
+
+upFull =>
+    dir & mode
+
+upHalf =>
+    dir & !mode
+
+%END

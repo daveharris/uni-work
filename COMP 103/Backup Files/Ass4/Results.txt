@@ -1,0 +1,167 @@
+###### Question 1 #######
+
+For the sequences file
+*********************************
+
+FOR 2,000 LINES
+Sorting Type     	Avg Time (ms)
+SelectionSort    		181
+InsertionSort    		165
+BubbleSort       		415
+ShellSort        			20
+QuickSort        			15
+MergeSort        		10
+
+FOR 4,000 LINES         
+Sorting Type     	Avg Time (ms)
+SelectionSort    		676
+InsertionSort    		621
+BubbleSort       		1868
+ShellSort        			31
+QuickSort        			25
+MergeSort        		25
+                
+FOR 6,000 LINES         
+Sorting Type     	Avg Time (ms)
+SelectionSort    		1883
+InsertionSort    		1887
+BubbleSort       		5638
+ShellSort        			50
+QuickSort        			40
+MergeSort        		35
+                
+FOR 8,000 LINES
+Sorting Type     	Avg Time (ms)
+SelectionSort    		3781
+InsertionSort    		3676
+BubbleSort       		11877
+ShellSort        			75
+QuickSort       	 		51
+MergeSort        		45
+                
+FOR 10,000 LINES
+Sorting Type     	Avg Time (ms)
+SelectionSort    		7366
+InsertionSort    		7170
+BubbleSort       		20084
+ShellSort        			91
+QuickSort       	 		55
+MergeSort        		60
+                
+
+For the fast algorithms only (Merge and Quick)
+--------------------------------------------------------
+                
+FOR 20,000 LINES                
+Sorting Type     	Avg Time (ms)
+QuickSort       			121
+MergeSort        		251
+                
+FOR 40,000 LINES                
+Sorting Type     	Avg Time (ms)
+QuickSort        			256
+MergeSort        		441
+                
+FOR 60,000 LINES                
+Sorting Type     	Avg Time (ms)
+QuickSort        			396
+MergeSort        		661
+                
+FOR 80,000 LINES                
+Sorting Type     	Avg Time (ms)
+QuickSort        			541
+MergeSort        		666
+                
+FOR 100,000 LINES               
+Sorting Type     	Avg Time (ms)
+QuickSort        			711
+MergeSort        		841
+                
+
+
+###### Question 2 #######
+
+For the sequences-almost-sorted file
+******************************************
+
+FOR 2,000 LINES
+Sorting Type     	Avg Time (ms)
+SelectionSort    		10
+InsertionSort    		0
+BubbleSort       		311
+ShellSort        			10
+QuickSort        			10
+MergeSort       			 10
+                
+FOR 4,000 LINES         
+Sorting Type     	Avg Time (ms)
+SelectionSort    		15
+InsertionSort    		11
+BubbleSort       		1407
+ShellSort        			35
+QuickSort       	 		25
+MergeSort        		20
+                
+FOR 6,000 LINES         
+Sorting Type     	Avg Time (ms)
+SelectionSort    		30
+InsertionSort    		10
+BubbleSort       		4456
+ShellSort        			40
+QuickSort        			40
+MergeSort        		30
+                
+FOR 8,000 LINES
+Sorting Type     	Avg Time (ms)
+SelectionSort    		16
+InsertionSort    		30
+BubbleSort       		8683
+ShellSort        			56
+QuickSort        			31
+MergeSort        		42
+                
+FOR 10,000 LINES
+Sorting Type     	Avg Time (ms)
+SelectionSort    		40
+InsertionSort    		20
+BubbleSort       		14977
+ShellSort        			65
+QuickSort        			45
+MergeSort        		50
+                
+
+For the fast algorithms only (Merge and Quick)
+--------------------------------------------------------
+                
+FOR 20,000 LINES                
+Sorting Type     	Avg Time (ms)
+QuickSort        			101
+MergeSort        		220
+                
+FOR 40,000 LINES                
+Sorting Type     Avg Time (ms)  
+QuickSort        		185
+MergeSort       		 376
+                
+FOR 60,000 LINES                
+Sorting Type     	Avg Time (ms)
+QuickSort        			280
+MergeSort        		531
+                
+FOR 80,000 LINES                
+Sorting Type     	Avg Time (ms)
+QuickSort        			376
+MergeSort        		496
+                
+FOR 100,000 LINES               
+Sorting Type     	Avg Time (ms)
+QuickSort        			481
+MergeSort        		636
+
+###### Question 3 #######
+
+From my times that I took, mergeSort and quickSort were the quickest when the number of lines that were read was large.
+When the number of lines read was small however, mergeSort and quickSort were not the fastest when the collection is almost sorted,
+but actually insertionSort was the quickest.  When the collection is not sorted at all, mergeSort was the fastest.  The times were consistently
+faster for the almost sorted file than the un-sorted as expected.  BubbleSort is the slowest of all algorithms, by a huge margin, even for only
+10,000 lines.

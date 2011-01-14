@@ -1,0 +1,25 @@
+David Harris
+300069566
+
+COMP306 - Project 2 Part A
+========================
+
+1. Flooding can be used to broadcast a data frame to all hosts in a network. Briefly discuss how you could make the implementation of this naive flooding algorithm more efficient for the broadcast of data frames.
+
+The naive approach to flooding can be made more efficient in three ways.  Firstly,
+ sequence number controlled flooding and secondly, reverse path forwarding and finally not sending the packet in on the link that it came in on.
+
+Sequence-number controlled flooding is where a node puts its address and a broadcast sequence number and wraps this into a packet which it sends out to all other nodes.  Each node contains a list of forwarded, received and duplicated packets.  If the sequence number of a packet is contained in the list, it is dropped.  Hence it stops forwarding packets to nodes that have already received packets.  If it is not in the list, it is duplicated. forwarded to to the nodes and added to the list.
+
+Reverse Path Forwarding (also sometimes called reverse path broadcast) is the second approach to achieving higher efficiency for flooding protocol.  If the sender of the packet is on the shortest path to the source, then the packet is transmitted as per normal.  If this is not the case, the packet is dropped because the packet will reach this node from another path from another node.  
+
+Sending the packet out on the link it came in on is a very inefficient way to flood the network.  This is because if a packet has has come from a another host/router then it obviously has received the packet and there is no point sending it back to it.  This is relatively easy to implement and will increase the efficiency by a reasonable amount.  In testing, it was found to increase the point where cnet crashes due to overloaded network from about 63 to 110 packets.
+
+
+2.  Within the more efficient broadcast protocols identified above briefly highlight what you see are some of the key implementation issues raised? E.g. state information, maintenance, scalability, etc.
+
+For the sequence controlled flooding state information and a way of uniquely identifying packets is needed.  To identify each set of broadcast packets, a sequence number is used.  This starts from 0 and increases with each transmission from the source.
+
+The reverse path forwarding method is highly scalable, but needs a way of finding the shortest path back to the source.  In a large network this can be quite a time consuming task and slow down the transmission of packets.
+
+Not sending out packets on the link where it came from is not very computationally intensive, but increases the efficiency by a large factor.

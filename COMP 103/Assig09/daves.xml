@@ -1,0 +1,59 @@
+<animalgame>
+<node>
+<question>Does it have webbed feet?</question>
+<node>
+<question>Does it make a Quack Quack sound?</question>
+<node>
+<animal>Duck</animal>
+</node>
+<node>
+<question>Does it have fur?</question>
+<node>
+<animal>Platypus</animal>
+</node>
+<node>
+<animal>Swan</animal>
+</node>
+</node>
+</node>
+<node>
+<question>Has it got legs?</question>
+<node>
+<question>Has it got a trunk?</question>
+<node>
+<animal>Elephant</animal>
+</node>
+<node>
+<question>Does it bark?</question>
+<node>
+<animal>Dog</animal>
+</node>
+<node>
+<animal>Cat</animal>
+</node>
+</node>
+</node>
+<node>
+<question>Does it live in Water?</question>
+<node>
+<question>Does it have fur?</question>
+<node>
+<animal>Seal</animal>
+</node>
+<node>
+<animal>Fish</animal>
+</node>
+</node>
+<node>
+<question>Is it slimy?</question>
+<node>
+<animal>Worm</animal>
+</node>
+<node>
+<animal>Snake</animal>
+</node>
+</node>
+</node>
+</node>
+</node>
+</animalgame>
